@@ -22,7 +22,44 @@ height: 66px;
 
 background: transparent url(icons/desktop/Logo.png)0% 0% no-repeat padding-box;
 opacity: 1;
+transform: translate(60%);
 }
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-decoration: none;
+    
+}
+li {
+    display:inline;
+    float: left;
+    font-family: 'Roboto', sans-serif;
+    transform: translate(100%);
+    text-decoration: none;
+
+}
+a {
+    color: black;
+    word-spacing: 10px;
+    }
+a:link {
+        text-decoration: none
+    }
+a:visited {
+        text-decoration: none
+    }
+a:active {
+        text-decoration: none
+    }
+a:hover {
+        text-decoration: underline
+    }
+#menu-layer{
+    transform: translate(55%, -55%);
+}
+
 
 #page {
 
