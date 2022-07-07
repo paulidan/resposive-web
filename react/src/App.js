@@ -5,6 +5,8 @@ import layer_8 from './icons/desktop/Layer_8.png';
 import layer_12 from './icons/desktop/Layer_12.png';
 import layer_9 from './icons/desktop/Layer_9.png';
 import layer_10 from './icons/desktop/Layer_10.png';
+import logo from './icons/desktop/Logo.png';
+import layer_29 from './icons/desktop/Layer_29_copy.png';
 import './App.css';
 
 function App() {
@@ -20,7 +22,7 @@ function App() {
             <img src={layer_7} alt="typo box" />
             <img src={layer_11} alt="Typography" />
             <img src={layer_8} alt="resp box" />
-            <img src={layer_12} alt="Responisive" />
+            <img src={layer_12} alt="Responsive" />
             <img src={layer_9} alt="ux box" />
             <img src={layer_10} alt="UX" />
           </div>
@@ -28,10 +30,10 @@ function App() {
       </div>
       <div id="menu">
         <div class="logo">
-          <img src="icons/desktop/Logo.png" alt="logo" />
+          <img src={logo} alt="logo" />
         </div>
         <div id="menu-layer">
-          <img src="icons/desktop/Layer_29_copy.png" alt="home" />
+          <img src={layer_29} alt="home" />
           <nav class="navbar">
             <div class="container">
               <div class="navbar-expand">
