@@ -5,7 +5,13 @@
 
 #menu {
 top:646px;
-left: 0px;;
+left: 0px;
+width:1500px;
+height:94px;
+
+/* UI Properties */
+background: transparent url('../resposive-web/icons/desktop/BG.png') 0% 0% no-repeat padding-box;
+opacity: 1;
 }
 
 #menu .xyz {
