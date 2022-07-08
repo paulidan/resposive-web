@@ -37,32 +37,36 @@ function App() {
         </div>
       </div>
       <div id="menu">
-        <div class="logo">
-          <img src={logo} alt="logo" />
-        </div>
-        <div id="menu-layer">
-          <img src={layer_29} alt="home" />
-          <nav class="navbar">
-            <div class="container">
-              <div class="navbar-expand">
-                <ul class="navbar-nav">
-                  <li class="nav-item @@home">
-                    <a class="nav-link" href="#">Home</a>
+        
+          <div class="navbar">
+                  <div id="logo">
+                    <img src={logo} alt="logo" />
+                  </div>
+                  
+                  <ul class="main-nav">
+                  <li class="nav-link active">
+                    <div class="nav-item">
+                      <a class="nav-item" href="#">Home</a>
+                    </div>
                   </li>
-                  <li class="nav-item @@Menu2">
-                    <a class="nav-link" href="#">Menu2</a>
+                  <li class="nav-link">
+                    <div class="nav-item">
+                      <a class="nav-item" href="#">Menu2</a>
+                    </div>
                   </li>
-                  <li class="nav-item @@Menu3">
-                    <a class="nav-link" href="#">Menu3</a>
+                  <li class="nav-link">
+                    <div class="nav-item">
+                     <a class="nav-item" href="#">Menu3</a>
+                    </div>
                   </li>
-                  <li class="nav-item @@Pogoda">
-                    <a class="nav-link" href="#">Pogoda</a>
+                  <li class="nav-link ">
+                   <div class="nav-item">
+                     <a class="nav-item" href="#">Pogoda</a>
+                    </div>
                   </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </div>
+                  </ul>
+          </div>
+        
       </div>
     </div>
   );
