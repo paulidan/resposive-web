@@ -7,6 +7,7 @@ import layer_9 from './icons/desktop/Layer_9.png';
 import layer_10 from './icons/desktop/Layer_10.png';
 import logo from './icons/desktop/Logo.png';
 import layer_29 from './icons/desktop/Layer_29_copy.png';
+import layer_37 from './icons/desktop/Layer_37.png';
 import './App.css';
 
 function App() {
@@ -15,16 +16,23 @@ function App() {
     <div className="App">
       <div id="header"> 
         <div class="background">
-          <div class="heading">
+          <img src={layer_37} alt="background pic" />
+          <div id="heading">
             <h1> Feel the Power of Typography</h1>
           </div>
           <div class="boxes">
-            <img src={layer_7} alt="typo box" />
-            <img src={layer_11} alt="Typography" />
-            <img src={layer_8} alt="resp box" />
-            <img src={layer_12} alt="Responsive" />
-            <img src={layer_9} alt="ux box" />
-            <img src={layer_10} alt="UX" />
+            <div class="red_boxes">
+              <img src={layer_7} alt="typo box" />
+              <img src={layer_11} alt="Typography" />
+            </div>
+            <div class='blue_boxes'>
+              <img src={layer_8} alt="resp box" />
+              <img src={layer_12} alt="Responsive" />
+            </div>
+            <div class="green_boxes">
+              <img src={layer_9} alt="ux box" />
+              <img src={layer_10} alt="UX" />
+            </div>
           </div>
         </div>
       </div>
