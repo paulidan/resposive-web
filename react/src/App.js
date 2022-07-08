@@ -29,32 +29,31 @@ function App() {
         </div>
       </div>
       <div id="menu">
-        <div class="logo">
-          <img src={logo} alt="logo" />
-        </div>
-        <div id="menu-layer">
-          <img src={layer_29} alt="home" />
-          <nav class="navbar">
-            <div class="container">
-              <div class="navbar-expand">
-                <ul class="navbar-nav">
-                  <li class="nav-item @@home">
-                    <a class="nav-link" href="#">Home</a>
+        
+          <div class="navbar">
+                  <div id="logo">
+                    <img src={logo} alt="logo" />
+                  </div>
+                  <div id="menu-layer">
+                    <img src={layer_29} alt="home" />
+                  </div> 
+                  <ul class="main-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                    
                   </li>
-                  <li class="nav-item @@Menu2">
+                  <li class="nav-item">
                     <a class="nav-link" href="#">Menu2</a>
                   </li>
-                  <li class="nav-item @@Menu3">
+                  <li class="nav-item">
                     <a class="nav-link" href="#">Menu3</a>
                   </li>
-                  <li class="nav-item @@Pogoda">
+                  <li class="nav-item">
                     <a class="nav-link" href="#">Pogoda</a>
                   </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </div>
+                  </ul>
+          </div>
+        
       </div>
     </div>
   );
