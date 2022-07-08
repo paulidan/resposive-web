@@ -34,22 +34,27 @@ function App() {
                   <div id="logo">
                     <img src={logo} alt="logo" />
                   </div>
-                  <div id="menu-layer">
-                    <img src={layer_29} alt="home" />
-                  </div> 
+                  
                   <ul class="main-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Home</a>
-                    
+                  <li class="nav-link active">
+                    <div class="nav-item">
+                      <a class="nav-item" href="#">Home</a>
+                    </div>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Menu2</a>
+                  <li class="nav-link">
+                    <div class="nav-item">
+                      <a class="nav-item" href="#">Menu2</a>
+                    </div>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Menu3</a>
+                  <li class="nav-link">
+                    <div class="nav-item">
+                     <a class="nav-item" href="#">Menu3</a>
+                    </div>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Pogoda</a>
+                  <li class="nav-link ">
+                   <div class="nav-item">
+                     <a class="nav-item" href="#">Pogoda</a>
+                    </div>
                   </li>
                   </ul>
           </div>
