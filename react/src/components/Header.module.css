@@ -1,0 +1,58 @@
+#heading {
+    top: 94px;
+    left: 0px;
+    width: 1500px;
+    height: 199px;
+    text-align: center;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    font-family: Lato-Black, Lato, sans-serif;
+    margin-top: -40%;
+  }
+  
+  #header .background > img {
+    margin-bottom: -300px;
+    top: -358px;
+    left: -11px;
+    width: 1518px;
+    height: 1215px;
+    background: transparent url(./icons/desktop/Layer_37.png) 0% 0% no-repeat padding-box;
+    opacity: 1;
+  }  
+  
+  #header .boxes{
+    height: 80px;
+    width: 1250px;
+    display: inline-flex;
+    opacity: 1;
+    margin: 15%;
+    justify-content: space-between;
+  }
+  
+  #header .red_boxes {
+    height: 80px;
+    width: 320px;
+  }
+  #header .red_boxes img>*{
+    display: flex;
+    opacity: 1;
+  }
+  
+  #header .blue_boxes {
+    height: 80px;
+    width: 320px;
+  }
+  #header .blue_boxes img>*{
+    display: flex;
+    opacity: 1;
+  }
+  
+  #header .green_boxes {
+    height: 80px;
+    width: 320px;
+  }
+  #header .green_boxes img>*{
+    display: flex;
+    opacity: 1;
+  }
