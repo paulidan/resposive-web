@@ -1,10 +1,10 @@
 import Styles from './Navbar.module.css';
 
-function Navbar{
+function Navbar(){
     return(
         <div id="menu">
             <div className="navbar">
-                <div id="logo">
+                <div id={logo}>
                   <img src={logo} alt="logo" />
                 </div>    
                 <ul className="main-nav">
