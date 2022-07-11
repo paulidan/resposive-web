@@ -1,5 +1,4 @@
 #heading {
-    top: 94px;
     left: 0px;
     width: 1500px;
     height: 199px;
@@ -8,11 +7,12 @@
     color: #FFFFFF;
     opacity: 1;
     font-family: Lato-Black, Lato, sans-serif;
-    margin-top: -45%;
+    margin-top: -950px;
+    margin-bottom: -200px;
   }
   
   #header .background > img {
-    margin-bottom: -300px;
+ 
     top: -358px;
     left: -11px;
     width: 1518px;

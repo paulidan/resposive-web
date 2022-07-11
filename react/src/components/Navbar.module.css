@@ -57,6 +57,12 @@ margin-left: 0;
   border-bottom: 5px solid #B0B0B0;
   
 }
+.nav_link.active, .nav_link:visited {
+  background-color: #EAD280;
+  border-top: 10px solid #DFBB42;
+  border-bottom: 5px solid #B0B0B0;
+}
+
 .nav_item {
   margin-top: 30px;
 }
