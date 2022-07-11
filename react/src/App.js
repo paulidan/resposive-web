@@ -1,14 +1,8 @@
-//import logo from './logo.svg';
-import layer_7 from './icons/desktop/Layer_7.png';
-import layer_11 from './icons/desktop/Layer_11.png';
-import layer_8 from './icons/desktop/Layer_8.png';
-import layer_12 from './icons/desktop/Layer_12.png';
-import layer_9 from './icons/desktop/Layer_9.png';
-import layer_10 from './icons/desktop/Layer_10.png';
-import logo from './icons/desktop/Logo.png';
-import layer_29 from './icons/desktop/Layer_29_copy.png';
-import layer_37 from './icons/desktop/Layer_37.png';
+
 import './App.css';
+import Navbar from './components/Navbar';
+import Header from './components/Header';
+
 
 
 function App() {
@@ -16,58 +10,10 @@ function App() {
 
     <div className="App">
       <div id="header"> 
-        <div class="background">
-          <img src={layer_37} alt="background pic" />
-          <div id="heading">
-            <h1> Feel the Power of Typography</h1>
-          </div>
-          <div class="boxes">
-            <div class="red_boxes">
-              <img src={layer_7} alt="typo box" />
-              <img src={layer_11} alt="Typography" />
-            </div>
-            <div class='blue_boxes'>
-              <img src={layer_8} alt="resp box" />
-              <img src={layer_12} alt="Responsive" />
-            </div>
-            <div class="green_boxes">
-              <img src={layer_9} alt="ux box" />
-              <img src={layer_10} alt="UX" />
-            </div>
-          </div>
-        </div>
+        <Header />
       </div>
       <div id="menu">
-        
-          <div class="navbar">
-                  <div id="logo">
-                    <img src={logo} alt="logo" />
-                  </div>
-                  
-                  <ul class="main-nav">
-                  <li class="nav-link active">
-                    <div class="nav-item">
-                      <a class="nav-item" href="#">Home</a>
-                    </div>
-                  </li>
-                  <li class="nav-link">
-                    <div class="nav-item">
-                      <a class="nav-item" href="#">Menu2</a>
-                    </div>
-                  </li>
-                  <li class="nav-link">
-                    <div class="nav-item">
-                     <a class="nav-item" href="#">Menu3</a>
-                    </div>
-                  </li>
-                  <li class="nav-link ">
-                   <div class="nav-item">
-                     <a class="nav-item" href="#">Pogoda</a>
-                    </div>
-                  </li>
-                  </ul>
-          </div>
-        
+        <Navbar />
       </div>
     </div>
   );

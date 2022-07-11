@@ -11,6 +11,7 @@ import layer_37 from '../icons/desktop/Layer_37.png';
 
 function Header(){
     return(
+      <div id={HeaderStyle.header}> 
         <div className={HeaderStyle.background}>
           <img src={layer_37} alt="background pic" />
           <div id={HeaderStyle.heading}>
@@ -31,6 +32,7 @@ function Header(){
             </div>
           </div>
         </div>
+      </div>
     );
 }
 

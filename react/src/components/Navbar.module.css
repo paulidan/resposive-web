@@ -7,74 +7,74 @@
     
     }
     
-    #logo {
-    top: 660px;
-    left: 182px;
-    width: 269px;
-    height: 66px;
-    display: inline-block;
-    margin-top: 95px;
-    margin-left: 0;
-    
+#logo {
+top: 660px;
+left: 182px;
+width: 269px;
+height: 66px;
+display: inline-block;
+margin-top: 95px;
+margin-left: 0;
+
+}
+.main_nav{
+  display: flex;
+  width: 55%;
+  float: right;
+  list-style: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 26px;
+  margin-top: 70px;
+  
+}
+
+
+.navbar {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    display:flex;
+    width: 100vw;
+    justify-content: space-between;
+    float: right;
+    list-style: none;
+    border-color: white;    
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.nav_link {
+
+  display: inline-block;
+  width:118px;
+  height: 4em;
+
+}
+.nav_link.active, .nav_link:hover {
+  background-color: #EAD280;
+  border-top: 10px solid #DFBB42;
+  border-bottom: 5px solid #B0B0B0;
+  
+}
+.nav_item {
+  margin-top: 30px;
+}
+a {
+    color:#5A5C5B ;
+    word-spacing: 10px;        
     }
-    .main-nav{
-      display: flex;
-      width: 55%;
-      float: right;
-      list-style: none;
-      font-family: 'Roboto', sans-serif;
-      font-size: 26px;
-      margin-top: 70px;
-      
+a:link {
+        text-decoration: none
     }
-    
-    
-    .navbar {
-        padding-top: 1%;
-        padding-bottom: 1%;
-        display:flex;
-        width: 100vw;
-        justify-content: space-between;
-        float: right;
-        list-style: none;
-        border-color: white;    
+a:visited {
+        text-decoration: none
     }
-    
-    *{
-      box-sizing: border-box;
+a:active {
+        text-decoration: none
     }
-    
-    .nav-link {
-    
-      display: inline-block;
-      width:118px;
-      height: 4em;
-    
+a:hover {
+        text-decoration: goldenrod;
     }
-    .nav-link.active, .nav-link:hover {
-      background-color: #EAD280;
-      border-top: 10px solid #DFBB42;
-      border-bottom: 5px solid #B0B0B0;
-      
-    }
-    .nav-item {
-      margin-top: 30px;
-    }
-    a {
-        color:#5A5C5B ;
-        word-spacing: 10px;        
-        }
-    a:link {
-            text-decoration: none
-        }
-    a:visited {
-            text-decoration: none
-        }
-    a:active {
-            text-decoration: none
-        }
-    a:hover {
-            text-decoration: goldenrod;
-        }
+
     
-        
