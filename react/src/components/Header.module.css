@@ -8,7 +8,7 @@
     color: #FFFFFF;
     opacity: 1;
     font-family: Lato-Black, Lato, sans-serif;
-    margin-top: -40%;
+    margin-top: -55%;
   }
   
   #header .background > img {
@@ -17,23 +17,23 @@
     left: -11px;
     width: 1518px;
     height: 1215px;
-    background: transparent url(./icons/desktop/Layer_37.png) 0% 0% no-repeat padding-box;
     opacity: 1;
   }  
   
-  #header .boxes{
+  #header .boxes {
     height: 80px;
     width: 1250px;
-    display: inline-flex;
+    display: flex;
     opacity: 1;
     margin: 15%;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   
   #header .red_boxes {
     height: 80px;
     width: 320px;
   }
+
   #header .red_boxes img>*{
     display: flex;
     opacity: 1;
@@ -52,6 +52,7 @@
     height: 80px;
     width: 320px;
   }
+
   #header .green_boxes img>*{
     display: flex;
     opacity: 1;
