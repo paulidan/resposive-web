@@ -1,5 +1,5 @@
 #menu {
-    max-width: 1500px;
+    max-width: 1400px;
     max-height:94px;
     margin: 0 auto;
     padding: 10px;
@@ -13,8 +13,8 @@ left: 182px;
 width: 269px;
 height: 66px;
 display: inline-block;
-margin-top: 95px;
-margin-left: 0;
+margin-top: 70px;
+margin-left: 80px;
 
 }
 .main_nav{
@@ -24,7 +24,7 @@ margin-left: 0;
   list-style: none;
   font-family: 'Roboto', sans-serif;
   font-size: 26px;
-  margin-top: 70px;
+  margin-top: 45px;
   
 }
 
@@ -35,7 +35,6 @@ margin-left: 0;
     display:flex;
     width: 100vw;
     justify-content: space-between;
-    float: right;
     list-style: none;
     border-color: white;    
 }
@@ -47,11 +46,17 @@ margin-left: 0;
 .nav_link {
 
   display: inline-block;
-  width:118px;
+  width:120px;
   height: 4em;
 
 }
 .nav_link.active, .nav_link:hover {
+  background-color: #EAD280;
+  border-top: 10px solid #DFBB42;
+  border-bottom: 5px solid #B0B0B0;
+  
+}
+.nav_link.active, .nav_link:active {
   background-color: #EAD280;
   border-top: 10px solid #DFBB42;
   border-bottom: 5px solid #B0B0B0;
@@ -82,5 +87,33 @@ a:active {
 a:hover {
         text-decoration: goldenrod;
     }
+
+@media (min-width: 1100px) {
+
+      /* style dla 1050px */
+}
+
+@media (max-width: 1100px) and (min-width: 1000px) {
+
+        /* style dla 950px */
+        
+}
+
+@media (max-width: 1000px) and (min-width: 800px) {
+          /* style dla 750px */
+          
+}
+
+@media (max-width: 800px) and (min-width: 500px) {
+            /* style dla 450px */            
+}
+
+@media (max-width: 500px) {
+              /* style dla 300px */
+}
+
+@media (max-width: 800px) and (min-width: 600px) {
+      /* style css */
+}
 
     

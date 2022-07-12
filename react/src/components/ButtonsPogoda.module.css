@@ -7,6 +7,7 @@
     transition: 1s;
     font-family: 'Roboto', sans-serif;
     font-size: 26px;
+    border-radius:2cm;
   }
   
   .Buttons:hover {
