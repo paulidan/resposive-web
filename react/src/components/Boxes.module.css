@@ -1,0 +1,183 @@
+#mainBox {
+    /* Self Layout Properties */
+    width: 100%;
+    height: 588px;
+
+    /* UI Properties*/
+    background-color: #f1f1f1;
+}
+
+#container {
+    /* Self Layout Properties */
+    width: 1500px;
+    height: 588px;
+    margin: auto;
+
+    /* Content Layout Properties */
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.subBox {
+    /* Self Layout Properties */
+    width: 303px;
+    height: 123px;
+    position: absolute;
+
+    /* Content Layout Properties */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* UI Properties */
+    letter-spacing: 0px;
+    text-align: center;
+    font-family: 'Lato Light', sans-serif;
+}
+
+#mainBox, .subBox {
+    opacity: 1;
+}
+
+#topLeftBoxOutline {
+    /* Layout Properties */
+    top: 70px;
+    left: 165px;
+
+    /* UI Properties */
+    background: transparent url('../icons/desktop/Layer_14_copy_4.png') 0% 0% no-repeat padding-box;
+}
+
+#topLeftBox {
+    /* Self Layout Properties */
+    top: 71px;
+    left: 166px;
+    width: 301px;
+    height: 121px;
+
+    /* UI Properties */
+    background: transparent url('../icons/desktop/Layer_14_copy_5.png') 0% 0% no-repeat padding-box;
+}
+
+#topLeftBox p {
+    /* UI Properties */
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    color: #428D9E;
+}
+
+#topRightBox {
+    /* Layout Properties */
+    top: 70px;
+    left: 1032px;
+
+    /* UI Properties */
+    background: transparent url('../icons/desktop/Layer_14_copy_6.png') 0% 0% no-repeat padding-box;
+}
+
+#topRightBox p {
+    /* UI Properties */
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+#bottomLeftBox {
+    /* Layout Properties */
+    top: 395px;
+    left: 165px;
+
+    /* UI Properties */
+    background: transparent url('../icons/desktop/Layer_14_copy_7.png') 0% 0% no-repeat padding-box;
+}
+
+#bottomLeftBox p {
+    /* UI Properties */
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+#bottomRightBox {
+    /* Layout Properties */
+    top: 395px;
+    left: 1032px;
+
+    /* UI Properties */
+    background: transparent url('../icons/desktop/Layer_14_copy_8.png') 0% 0% no-repeat padding-box;
+}
+
+#bottomRightBox p {
+    /* UI Properties */
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+#centerBoxOutline {
+    /* Self Layout Properties */
+    width: 614px;
+    height: 329px;
+
+    /* Content Layout Properties */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* UI Properties */
+    background: transparent url('../icons/desktop/Layer_14_copy_4.png') 0% 0% no-repeat padding-box;
+    background-size: cover;
+}
+
+#centerBox {
+    /* Layout Properties */
+    width: 612px;
+    height: 327px;
+    z-index: 3;
+
+    /* UI Properties */
+    background-color: #FFF;
+}
+
+#centerBoxInner {
+    /* Layout Properties */
+    padding-top: 18px;
+    padding-left: 18px;
+    margin: 0;
+    width: 609px;
+    height: 309px;
+
+    /* UI Properties */
+    background: transparent url('../icons/desktop/Pattern.png') 0% 0% no-repeat padding-box;
+}
+
+#centerBoxInner p {
+    /* Layout Properties */
+    margin: 0;
+    width: 574px;
+
+    /* UI Properties */
+    text-align: left;
+    letter-spacing: 0px;
+    line-height: 2;
+}
+
+#centerBoxHeader {
+    /* Layout Properties */
+    width: 229px;
+    height: 29px;
+
+    /* UI Properties */
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+    color: #428E9E;
+}
+
+#centerBoxText {
+    /* Layout Properties */
+    width: 276px;
+    height: 29px;
+
+    /* UI Properties */
+    font-size: 16px;
+    color: #333333;
+}
