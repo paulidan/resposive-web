@@ -1,6 +1,6 @@
 import Navbar from '../components/Navbar';
 import Header from '../components/Header';
-
+import ButtonsPogoda from '../components/ButtonsPogoda';
 function PogodaTermPage(){
     return (
         <div className="App">
@@ -11,7 +11,7 @@ function PogodaTermPage(){
             <Navbar />
           </div>
           <div>
-              POGODA
+            <ButtonsPogoda />
           </div>
         </div>
       );

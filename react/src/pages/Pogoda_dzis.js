@@ -1,5 +1,6 @@
 import Navbar from '../components/Navbar';
 import Header from '../components/Header';
+import ButtonsPogoda from '../components/ButtonsPogoda';
 
 function PogodaDzisPage(){
     return (
@@ -11,7 +12,7 @@ function PogodaDzisPage(){
             <Navbar />
           </div>
           <div>
-              POGODA
+            <ButtonsPogoda />
           </div>
         </div>
       );

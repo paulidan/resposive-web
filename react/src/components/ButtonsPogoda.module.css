@@ -2,7 +2,7 @@
     background: transparent;
     padding: 50px;
     margin: 50px;
-    border: 5px solid #DFBB42;
+    border: 5px solid #EAD280;
     color: #858585;
     transition: 1s;
     font-family: 'Roboto', sans-serif;
@@ -10,9 +10,13 @@
   }
   
   .Buttons:hover {
-    background: #DFBB42;
+    background: #EAD280;
     color: white;
     cursor:-webkit-grab;
+  }
+  .Buttons:active{
+    background: #EAD280;
+    color: white;
   }
   
 .ButtonsMenu{
