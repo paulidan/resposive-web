@@ -4,7 +4,7 @@ import Clip_bo from '../icons/desktop/Clip_bo.png';
 import Clip_bj from '../icons/desktop/Clip_bj.png';
 import Clip_ from '../icons/desktop/Clip_.png';
 import Clip from '../icons/desktop/Clip.png';
-import Icon from '../icons/desktop/Icon.png';
+import CarouselTextbox from './CarouselTextbox';
 import Styles from './Carousel.module.css';
 
 function Carousel() {
@@ -39,58 +39,7 @@ function Carousel() {
                         <p>«</p>
                     </div>
                 </div>
-                <div id={Styles.textBox}>
-
-                    <div id={Styles.textBoxHeader}>
-                        <img src={Icon} alt="Icon" />
-                        <p>Title</p>
-                    </div>
-                    <div id={Styles.textBoxContent}>
-                        <div className={Styles.textBoxItem}>
-                            <div className={Styles.textBoxItemNumber}>
-                                <p>1</p>
-                                <div></div>
-                            </div>
-                            <p className={Styles.textBoxItemText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac neque bibendum, vehicula ipsum et, tincidunt ligula.</p>
-                        </div>
-                        <div className={Styles.textBoxItem}>
-                            <div className={Styles.textBoxItemNumber}>
-                                <p>2</p>
-                                <div></div>
-                            </div>
-                            <p className={Styles.textBoxItemText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac neque bibendum, vehicula ipsum et, tincidunt ligula.</p>
-                        </div>
-                        <div className={Styles.textBoxItem}>
-                            <div className={Styles.textBoxItemNumber}>
-                                <p>3</p>
-                                <div></div>
-                            </div>
-                            <p className={Styles.textBoxItemText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac neque bibendum, vehicula ipsum et, tincidunt ligula.</p>
-                        </div>
-                        <div className={Styles.textBoxItem}>
-                            <div className={Styles.textBoxItemNumber}>
-                                <p>4</p>
-                                <div></div>
-                            </div>
-                            <p className={Styles.textBoxItemText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac neque bibendum, vehicula ipsum et, tincidunt ligula.</p>
-                        </div>
-                        <div className={Styles.textBoxItem}>
-                            <div className={Styles.textBoxItemNumber}>
-                                <p>5</p>
-                                <div></div>
-                            </div>
-                            <p className={Styles.textBoxItemText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac neque bibendum, vehicula ipsum et, tincidunt ligula.</p>
-                        </div>
-                        <div className={Styles.textBoxItem}>
-                            <div className={Styles.textBoxItemNumber}>
-                                <p>6</p>
-                                <div></div>
-                            </div>
-                            <p className={Styles.textBoxItemText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac neque bibendum, vehicula ipsum et, tincidunt ligula.</p>
-                        </div>
-                    </div>
-
-                </div>
+                <CarouselTextbox />
             </div>
         </div>
     );
