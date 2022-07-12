@@ -48,7 +48,7 @@
     width: 232px;
 
     /* UI Properties */
-    clip-path: polygon(15% 0%, 85% 0%, 100% 8%, 100% 92.5%, 85% 100%, 15% 100%, 0% 92.5%, 0% 7.5%);
+    mask: url('../icons/desktop/Layer_17_bv.png');
 }
 
 #topPhotoBox2 {
@@ -105,15 +105,64 @@
 }
 
 .bottomPhotoBox {
+    /* Self Layout Properties */
+    position: relative;
     height: 612px;
 }
 
 #bottomPhotoBox1 {
+    /* Self Layout Properties */
     width: 329px;
 }
 
 #bottomPhotoBox2 {
+    /* Self Layout Properties */
     width: 336px;
+}
+
+.bottomPhotoOverlay {
+    /* Self Layout Properties */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+
+    /* UI Properties */
+    opacity: 0.8;
+}
+
+.bottomPhotoOverlay p {
+    /* Self Layout Properties */
+    width: 99px;
+    top: 358px;
+    position: absolute;
+    margin: 0;
+
+    /* UI Properties */
+    color: #333333;
+    font-family: 'Lato Light', sans-serif;
+    font-size: 200px;
+}
+
+#bottomPhotoOverlay1 p {
+    /* Self Layout Properties */
+    right: 14px;
+}
+
+#bottomPhotoOverlay2 p {
+    /* Self Layout Properties */
+    left: 14px;
+}
+
+#bottomPhotoOverlay1 {
+    /* UI Properties */
+    background: transparent url('../icons/desktop/Polygon_1_bb.png') 0% 0% no-repeat padding-box;
+}
+
+#bottomPhotoOverlay2 {
+    /* UI Properties */
+    background: transparent url('../icons/desktop/Layer_24.png') 0% 0% no-repeat padding-box;
 }
 
 #textBox {
@@ -123,4 +172,31 @@
 
     /* UI Properties */
     background: transparent url('../icons/desktop/Layer_16_copy_6.png') 0% 0% no-repeat padding-box;
+}
+
+#textBoxHeader {
+    /* Self Layout Properties */
+    padding-left: 21px;
+    padding-right: 21px;
+    height: 76px;
+    width: 100%;
+
+    /* Content Layout Properties */
+    align-items: center;
+    display: flex;
+
+    /* UI Properties */
+    background: transparent url('../icons/desktop/Layer_25.png') 0% 0% no-repeat padding-box;
+}
+
+#textBoxHeader p {
+    /* Self Layout Properties */
+    padding-left: 3.5%;
+    text-align: left;
+
+    /* UI Properties */
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-size: 48px;
+    letter-spacing: 14.4px;
 }
