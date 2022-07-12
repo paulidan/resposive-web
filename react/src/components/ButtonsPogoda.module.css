@@ -1,0 +1,29 @@
+.Buttons{
+    background: transparent;
+    padding: 50px;
+    margin: 50px;
+    border: 5px solid #DFBB42;
+    color: #858585;
+    transition: 1s;
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+  }
+  
+  .Buttons:hover {
+    background: #DFBB42;
+    color: white;
+    cursor:-webkit-grab;
+  }
+  
+.ButtonsMenu{
+    margin-top: 190px;
+    margin-left: 11%;
+    margin-right: 11%;
+	color: #858585;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	background-color: white;
+}
