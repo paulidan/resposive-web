@@ -2,6 +2,7 @@ import Navbar from '../components/Navbar';
 import Header from '../components/Header';
 import ButtonsPogoda from '../components/ButtonsPogoda';
 
+
 function PogodaDzisPage(){
     return (
         <div className="App">
@@ -14,6 +15,7 @@ function PogodaDzisPage(){
           <div>
             <ButtonsPogoda />
           </div>
+          
         </div>
       );
 }
