@@ -1,0 +1,27 @@
+#container {
+    /* Layout Properties */
+    display: flex;
+    margin: 0 auto;
+    width: 1500px;
+    height: 1373px;
+
+    /* UI Properties */
+    background: transparent url('../icons/desktop/BG.png') 0% 0% no-repeat padding-box;
+}
+
+#topPhotoContainer {
+    /* Layout Properties */
+    display: flex;
+    align-items: center;
+    padding-left: 180px;
+    padding-right: 180px;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 70px;
+}
+
+.topPhotoBox {
+    width: 263px;
+    height: 478px;
+    background: transparent url('../icons/desktop/Layer_16.png') 0% 0% no-repeat padding-box;
+}
