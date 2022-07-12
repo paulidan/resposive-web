@@ -1,5 +1,6 @@
 import Navbar from '../components/Navbar';
 import Header from '../components/Header';
+import CurrentWeather from '../components/Weather/CurrentWeather';
 
 function PogodaPage(){
     return (
@@ -10,8 +11,8 @@ function PogodaPage(){
           <div id="menu">
             <Navbar />
           </div>
-          <div>
-              POGODA
+          <div id='weather'>
+            <CurrentWeather />
           </div>
         </div>
       );
