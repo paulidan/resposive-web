@@ -4,8 +4,8 @@
     margin: 0 auto;
     padding: 10px;
     display: flex;
-    
-    }
+    align-items: center;
+}
     
 #logo {
 top: 660px;
@@ -13,26 +13,24 @@ left: 182px;
 width: 269px;
 height: 66px;
 display: inline-block;
-margin-top: 95px;
 margin-left: 0;
 
 }
 .main_nav{
+  margin: 0;
   display: flex;
   width: 55%;
   float: right;
   list-style: none;
   font-family: 'Roboto', sans-serif;
   font-size: 26px;
-  margin-top: 70px;
   
 }
 
 
 .navbar {
-    padding-top: 1%;
-    padding-bottom: 1%;
     display:flex;
+    align-items: center;
     width: 100vw;
     justify-content: space-between;
     float: right;
