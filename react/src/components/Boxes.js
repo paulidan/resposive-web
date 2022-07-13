@@ -29,11 +29,13 @@ function Boxes() {
                             </p>
                         </div>
                     </div> 
-                </div> 
-                <div className={styles.subBox} id={styles.topLeftBoxOutline}>
                 </div>
-                <div className={styles.subBox} id={styles.topLeftBox}>
-                    <p>BOX NAME 1</p> 
+                <div id={styles.topLeftBoxContainer}>
+                    <div className={styles.subBox} id={styles.topLeftBoxOutline}>
+                    </div>
+                    <div className={styles.subBox} id={styles.topLeftBox}>
+                        <p>BOX NAME 1</p> 
+                    </div>
                 </div>
             </div>
         </div>
