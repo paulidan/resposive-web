@@ -10,8 +10,6 @@ import './App.css';
 
 
 function App() {
-
-  //const url ='https://api.openweathermap.org/data/2.5/weather?q=katowice&appid=fd54d9727b22aa867dc1f33db65eaafc'
   
   return (
     <Routes>

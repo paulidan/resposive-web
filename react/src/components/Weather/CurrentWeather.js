@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import CurrentStyle from './CurrentW.module.css';
+import sun from '../../icons/desktop/weathersun.png';
+import rain from '../../icons/desktop/weatherrain.png';
+import cloud from '../../icons/desktop/weathercloud.png';
 
 const api = {
     key: 'fd54d9727b22aa867dc1f33db65eaafc',
@@ -24,6 +27,13 @@ function CurrentWeather(){
         }
 
     }
+
+    const icons = {
+        'Clear': sun,
+        'Rain': rain,
+        'Clouds': cloud
+    };
+
 
     const dateBuilder = (d) => {
         // let months= ['January', 'Fabruary', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
@@ -54,14 +64,20 @@ function CurrentWeather(){
                 {(typeof weather.main != 'undefined')?(
                     <div>
                         <div className={CurrentStyle.location_box}>
-                            <div className={CurrentStyle.location}>{weather.name}</div>
+                            <div className={CurrentStyle.location}>{weather.name}, {weather.sys.country}</div>
                                 <div className={CurrentStyle.date}>{dateBuilder(new Date())}</div>
                                 </div>
                                 <div className={CurrentStyle.weather_box}>
                                     <div className={CurrentStyle.temp}>
                                         {Math.round(weather.main.temp)}°C
+                                        <div className={CurrentStyle.feels}>
+                                            feels like {Math.round(weather.main.feels_like)}°C
+                                        </div>
+                                        <div className={CurrentStyle.weather}>
+                                            {weather.weather[0].main} <img src={icons[weather.weather[0].main]} />
                                     </div>
-                                     <div className={CurrentStyle.weather}>Sunny</div>
+                                    </div>
+
                                 </div> 
                         </div>
                     
