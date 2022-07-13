@@ -50,14 +50,14 @@ main{
 }
 
 .location_box .location{
-    color: black;
+    color: #858585;
     font-size: 32px;
     text-align: center;
 
 }
 
 .location_box .date{
-    color: black;
+    color: #858585;
     font-size: 20px;
     font-style: italic;
     text-align: center;
