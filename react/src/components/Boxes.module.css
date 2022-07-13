@@ -1,29 +1,59 @@
 #mainBox {
-    /* Self Layout Properties */
-    width: 100%;
-
     /* UI Properties*/
     background-color: #f1f1f1;
 }
 
-#topLeftBoxOutline {
-    /* UI Properties */
-    background: transparent url('../icons/desktop/Layer_14_copy_4.png') 0% 0% no-repeat padding-box;
+#container {
+    /* Content Layout Properties */
+    display: flex;
+    align-items: center;
 }
 
-#topRightBox {
-    /* UI Properties */
-    background: transparent url('../icons/desktop/Layer_14_copy_6.png') 0% 0% no-repeat padding-box;
+#centerBoxContainer {
+    /* Self Layout Properties */
+    position: relative;
 }
 
-#bottomLeftBox {
-    /* UI Properties */
-    background: transparent url('../icons/desktop/Layer_14_copy_7.png') 0% 0% no-repeat padding-box;
+#centerBoxOutline {
+    /* Self Layout Properties */
+    width: 100%;
+    height: 100%;
 }
 
-#bottomRightBox {
+#centerBox {
+    /* Self Layout Properties */
+    position: absolute;
+    top: 1px;
+    left: 1px;      
+
     /* UI Properties */
-    background: transparent url('../icons/desktop/Layer_14_copy_8.png') 0% 0% no-repeat padding-box;
+    background-color: #FFF;
+}
+
+#centerBoxInner p {
+    margin: 0;
+    text-align: left;
+    letter-spacing: 0px;
+}
+
+#centerBoxHeader {
+    /* Self Layout Properties */
+    width: 229px;
+    height: 29px;
+
+    /* UI Properties */
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+    color: #428E9E;
+}
+
+#centerBoxText {
+    /* Self Layout Properties */
+    width: 276px;
+    height: 29px;
+
+    /* UI Properties */
+    color: #333333;
 }
 
 @media only screen and (max-width: 600px) {
@@ -46,15 +76,17 @@
         width: 93.75%;
 
         /* Content Layout Properties */
-        display: flex;
         flex-wrap: wrap;
-        align-items: center;
         justify-content: space-between;
+    }
+
+    .subBox {
+        /* UI Properties */
+        font-family: 'Lato', sans-serif;
     }
 
     #centerBoxContainer {
         /* Self Layout Properties */
-        position: relative;
         order: 0;
         width: 100%;
         height: 340px;
@@ -63,8 +95,6 @@
     #centerBoxOutline {
         /* Self Layout Properties */
         position: absolute;
-        width: 100%;
-        height: 100%;
 
         /* UI Properties */
         background: transparent url('../icons/smartphone/Layer_14_copy_4.png') 0% 0% no-repeat padding-box;
@@ -72,21 +102,14 @@
     }
 
     #centerBox {
-        /* Self Layout Properties */
-        position: absolute;
-        z-index: 1;                 /* Put centerBox text above topLeftBox */
-        top: 1px;
-        left: 1px;
+        /* Self Layout Properties */    
         width: calc(100% - 2px);
         height: calc(100% - 2px);
-
-        /* UI Properties */
-        background-color: #FFF;
+        z-index: 1;
     }
 
     #centerBoxInner {
         /* Self Layout Properties */
-        padding: 0;
         height: 338px;
 
         /* UI Properties */
@@ -97,33 +120,17 @@
         /* Self Layout Properties */
         padding-left: 8px;
         padding-right: 8px;
-        margin: 0;
 
         /* UI Properties */
-        text-align: left;
         font-size: 12px;
-        letter-spacing: 0px;
     }
 
     #centerBoxHeader {
-        /* Self Layout Properties */
-        width: 229px;
-        height: 29px;
-
         /* UI Properties */
-        color: #428E9E;
         line-height: 1.5;
-        font-size: 24px;
-        font-family: 'Lato', sans-serif;
     }
 
     #centerBoxText {
-        /* Self Layout Properties */
-        width: 276px;
-        height: 29px;
-
-        /* UI Properties */
-        color: #333333;
         line-height: 3;
         font-family: 'Lato Light', sans-serif;
     }
@@ -133,6 +140,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    #topLeftBox p, #topRightBox p, #bottomLeftBox p, #bottomRightBox p {
+        /* UI Properties */
+        font-size: 30px;
     }
 
     #topRightBox, #bottomLeftBox, #bottomRightBox {
@@ -152,6 +164,9 @@
     #topLeftBoxOutline {
         /* Self Layout Properties */
         height: 100%;
+
+        /* UI Properties */
+        background: transparent url('../icons/smartphone/Layer_14_copy_4.png') 0% 0% no-repeat padding-box;    
     }
 
     #topLeftBox {
@@ -167,16 +182,36 @@
         background-color: #f1f1f1;
     }
 
+    #topLeftBox p {
+        color: #428D9E;
+    }
+
     #topRightBox {
+        /* Self Layout Properties */
         order: 2;
+
+        /* UI Properties */
+        background: transparent url('../icons/smartphone/Layer_14_copy_6.png') 0% 0% no-repeat padding-box;    
+    }
+
+    #topRightBox p, #bottomLeftBox p, #bottomRightBox p {
+        color: #FFF;
     }
 
     #bottomLeftBox {
+        /* Self Layout Properties */
         order: 3;
+
+        /* UI Properties */
+        background: transparent url('../icons/smartphone/Layer_14_copy_7.png') 0% 0% no-repeat padding-box;    
     }
 
     #bottomRightBox {
+        /* Self Layout Properties */
         order: 4;
+
+        /* UI Properties */
+        background: transparent url('../icons/smartphone/Layer_14_copy_8.png') 0% 0% no-repeat padding-box;    
     }
 
 }
@@ -184,6 +219,7 @@
 @media only screen and (min-width: 992px) {
     #mainBox {
         /* Self Layout Properties */
+        width: 100%;
         height: 588px;
     }
 
@@ -194,9 +230,7 @@
         margin: auto;
 
         /* Content Layout Properties */
-        display: flex;
         position: relative;
-        align-items: center;
         justify-content: center;
     }
 
@@ -225,6 +259,9 @@
         /* Self Layout Properties */
         top: 70px;
         left: 165px;
+
+        /* UI Properties */
+        background: transparent url('../icons/desktop/Layer_14_copy_4.png') 0% 0% no-repeat padding-box;
     }
 
     #topLeftBox {
@@ -238,6 +275,16 @@
         background: transparent url('../icons/desktop/Layer_14_copy_5.png') 0% 0% no-repeat padding-box;
     }
 
+    #topLeftBox p, #topRightBox p, #bottomLeftBox p, #bottomRightBox p {
+        /* UI Properties */
+        font-size: 40px;
+    }
+
+    #topRightBox p, #bottomLeftBox p, #bottomRightBox p {
+        /* UI Properties */
+        color: #FFF;
+    }
+
     #topLeftBox p {
         /* UI Properties */
         font-family: 'Lato', sans-serif;
@@ -249,66 +296,45 @@
         /* Self Layout Properties */
         top: 70px;
         left: 1032px;
-    }
 
-    #topRightBox p {
         /* UI Properties */
-        font-size: 40px;
-        color: #FFFFFF;
+        background: transparent url('../icons/desktop/Layer_14_copy_6.png') 0% 0% no-repeat padding-box;    
     }
 
     #bottomLeftBox {
         /* Self Layout Properties */
         top: 395px;
         left: 165px;
-    }
 
-    #bottomLeftBox p {
         /* UI Properties */
-        font-size: 40px;
-        color: #FFFFFF;
+        background: transparent url('../icons/desktop/Layer_14_copy_7.png') 0% 0% no-repeat padding-box;    
     }
 
     #bottomRightBox {
         /* Self Layout Properties */
         top: 395px;
         left: 1032px;
-    }
 
-    #bottomRightBox p {
         /* UI Properties */
-        font-size: 40px;
-        color: #FFFFFF;
+        background: transparent url('../icons/desktop/Layer_14_copy_8.png') 0% 0% no-repeat padding-box;    
     }
 
     #centerBoxContainer {
         /* Self Layout Properties */
         width: 614px;
         height: 329px;
-        position: relative;
     }
 
     #centerBoxOutline {
-        /* Self Layout Properties */
-        width: 100%;
-        height: 100%;
-
         /* UI Properties */
         background: transparent url('../icons/desktop/Layer_14_copy_4.png') 0% 0% no-repeat padding-box;
-        background-size: cover;
-    }
+        background-size: cover;}
 
     #centerBox {
         /* Self Layout Properties */
-        position: absolute;
-        top: 1px;
-        left: 1px;
         width: 612px;
         height: 327px;
         z-index: 3;
-
-        /* UI Properties */
-        background-color: #FFF;
     }
 
     #centerBoxInner {
@@ -324,12 +350,9 @@
 
     #centerBoxInner p {
         /* Self Layout Properties */
-        margin: 0;
         width: 574px;
 
         /* UI Properties */
-        text-align: left;
-        letter-spacing: 0px;
         line-height: 2;
     }
 
@@ -345,12 +368,7 @@
     }
 
     #centerBoxText {
-        /* Self Layout Properties */
-        width: 276px;
-        height: 29px;
-
         /* UI Properties */
         font-size: 16px;
-        color: #333333;
     }
 }

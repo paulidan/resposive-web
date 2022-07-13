@@ -34,7 +34,7 @@ function Boxes() {
                     <div className={styles.subBox} id={styles.topLeftBoxOutline}>
                     </div>
                     <div className={styles.subBox} id={styles.topLeftBox}>
-                        <p>BOX NAME 1</p> 
+                        <p>1</p> 
                     </div>
                 </div>
             </div>
