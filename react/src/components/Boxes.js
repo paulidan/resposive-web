@@ -1,17 +1,31 @@
+import { useState, useEffect } from 'react';
 import styles from './Boxes.module.css';
 
 function Boxes() {
+
+    /* Detect device based on screen width */
+    const [device, setDevice] = useState("desktop");
+    const deviceWidth = window.innerWidth;
+    useEffect(() => {
+        if(window.innerWidth <= 600) {
+            setDevice("mobile");
+        }
+        else if(window.innerWidth <= 992) {
+            setDevice("tablet");
+        }
+    });
+
     return (
         <div id={styles.mainBox}>     
             <div id={styles.container}>       
                 <div className={styles.subBox} id={styles.topRightBox}>
-                    <p>BOX NAME 2</p>
+                    {device === "mobile" ? <p>2</p> : <p>BOX NAME 2</p>}
                 </div>
                 <div className={styles.subBox} id={styles.bottomLeftBox}>
-                    <p>BOX NAME 3</p>
+                    {device === "mobile" ? <p>3</p> : <p>BOX NAME 3</p>}
                 </div>
                 <div className={styles.subBox} id={styles.bottomRightBox}>
-                    <p>BOX NAME 4</p>
+                    {device === "mobile" ? <p>4</p> : <p>BOX NAME 4</p>}
                 </div>
                 <div id={styles.centerBoxContainer}>
                     <div className={styles.subBox} id={styles.centerBoxOutline}>
@@ -34,7 +48,7 @@ function Boxes() {
                     <div className={styles.subBox} id={styles.topLeftBoxOutline}>
                     </div>
                     <div className={styles.subBox} id={styles.topLeftBox}>
-                        <p>1</p> 
+                        {device === "mobile" ? <p>1</p> : <p>BOX NAME 1</p>}
                     </div>
                 </div>
             </div>
