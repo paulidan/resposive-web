@@ -103,7 +103,7 @@
         position: absolute;
 
         /* UI Properties */
-        background: transparent url('../icons/smartphone/Layer_14_copy_4.png') 0% 0% no-repeat padding-box;
+        background-color: #428e9e;
         background-size: cover;
     }
 
@@ -124,8 +124,7 @@
 
     #centerBoxInner p {
         /* Self Layout Properties */
-        padding-left: 8px;
-        padding-right: 8px;
+        padding: 0 8px;
 
         /* UI Properties */
         font-size: 12px;
@@ -172,7 +171,7 @@
         height: 100%;
 
         /* UI Properties */
-        background: transparent url('../icons/smartphone/Layer_14_copy_4.png') 0% 0% no-repeat padding-box;    
+        background-color: #428e9e;    
     }
 
     #topLeftBox {
@@ -197,7 +196,7 @@
         order: 2;
 
         /* UI Properties */
-        background: transparent url('../icons/smartphone/Layer_14_copy_6.png') 0% 0% no-repeat padding-box;    
+        background-color: #c83434;    
     }
 
     #topRightBox p, #bottomLeftBox p, #bottomRightBox p {
@@ -209,7 +208,7 @@
         order: 3;
 
         /* UI Properties */
-        background: transparent url('../icons/smartphone/Layer_14_copy_7.png') 0% 0% no-repeat padding-box;    
+        background-color: #dfbb42;    
     }
 
     #bottomRightBox {
@@ -217,7 +216,7 @@
         order: 4;
 
         /* UI Properties */
-        background: transparent url('../icons/smartphone/Layer_14_copy_8.png') 0% 0% no-repeat padding-box;    
+        background-color: #508b61;    
     }
 
 }
@@ -271,7 +270,7 @@
         left: 165px;
 
         /* UI Properties */
-        background: transparent url('../icons/desktop/Layer_14_copy_4.png') 0% 0% no-repeat padding-box;
+        background-color: #428e9e;
     }
 
     #topLeftBox {
@@ -282,7 +281,7 @@
         height: 121px;
 
         /* UI Properties */
-        background: transparent url('../icons/desktop/Layer_14_copy_5.png') 0% 0% no-repeat padding-box;
+        background-color: #fff;
     }
 
     #topLeftBox p, #topRightBox p, #bottomLeftBox p, #bottomRightBox p {
@@ -308,7 +307,7 @@
         left: 1032px;
 
         /* UI Properties */
-        background: transparent url('../icons/desktop/Layer_14_copy_6.png') 0% 0% no-repeat padding-box;    
+        background-color: #c83434;    
     }
 
     #bottomLeftBox {
@@ -317,7 +316,7 @@
         left: 165px;
 
         /* UI Properties */
-        background: transparent url('../icons/desktop/Layer_14_copy_7.png') 0% 0% no-repeat padding-box;    
+        background-color: #dfbb42;    
     }
 
     #bottomRightBox {
@@ -326,7 +325,7 @@
         left: 1032px;
 
         /* UI Properties */
-        background: transparent url('../icons/desktop/Layer_14_copy_8.png') 0% 0% no-repeat padding-box;    
+        background-color: #508b61;    
     }
 
     #centerBoxContainer {
@@ -337,7 +336,7 @@
 
     #centerBoxOutline {
         /* UI Properties */
-        background: transparent url('../icons/desktop/Layer_14_copy_4.png') 0% 0% no-repeat padding-box;
+        background-color: #428e9e;
         background-size: cover;}
 
     #centerBox {
