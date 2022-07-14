@@ -171,27 +171,31 @@
     }
 
     #topLeftBox p, #topRightBox p, #bottomLeftBox p, #bottomRightBox p {
+        /* Self Layout Properties */
+        margin: 0;
+
         /* UI Properties */
         font-size: 1.875rem;
     }
 
     #topRightBox, #bottomLeftBox, #bottomRightBox {
         /* Self Layout Properties */
-        width: 3.75rem;
-        height: 3.75rem;
+        padding: 0.75rem 1.331rem;
     }
 
     #topLeftBoxContainer {
         /* Self Layout Properties */
         order: 1;
         position: relative;
-        width: 3.75rem;
-        height: 3.75rem;
+        padding: 1.875rem 1.875rem;
     }
 
     #topLeftBoxOutline {
         /* Self Layout Properties */
-        height: 100%;  
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 1.875rem 1.875rem;
     }
 
     #topLeftBox {
@@ -200,8 +204,7 @@
         position: absolute;
         top: 0.0625rem;
         left: 0.0625rem;
-        width: 3.625rem;
-        height: 3.75rem;            /* Change to 3.625rem when inactive */
+        padding: 0.75rem 1.2688rem; /* Change to 0.6875rem 1.2688rem when inactive */
 
         /* UI Properties */
         background-color: #f1f1f1;
