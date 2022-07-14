@@ -2,21 +2,23 @@ import Navbar from '../components/Navbar';
 import Header from '../components/Header';
 import ButtonsPogoda from '../components/ButtonsPogoda';
 import CurrentWeather from '../components/Weather/CurrentWeather';
+
 function PogodaSzukPage(){
     return (
         <div className="App">
           <div id="header"> 
             <Header />
-          </div>
-          <div id="menu">
+            <div id="menu">
             <Navbar />
           </div>
+          </div>
+          
           <div>
             <ButtonsPogoda />
           </div>
-          <div id="weather">
+          <div id='weather'>
             <CurrentWeather />
-            </div>
+          </div>
         </div>
       );
 }

@@ -15,13 +15,13 @@
     color: white;
     cursor:-webkit-grab;
   }
-  .Buttons:active{
-    background: #EAD280;
+  button:focus{
+    background-color: #EAD280;
     color: white;
   }
   
 .ButtonsMenu{
-    margin-top: 190px;
+    margin-top: 50px;
     margin-left: 11%;
     margin-right: 11%;
 	color: #858585;

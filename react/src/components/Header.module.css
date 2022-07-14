@@ -1,28 +1,33 @@
 #heading {
     left: 0px;
-    width: 1500px;
-    height: 199px;
     text-align: center;
     letter-spacing: 0px;
     color: #FFFFFF;
-    opacity: 1;
     font-family: Lato-Black, Lato, sans-serif;
-    margin-top: -950px;
-    margin-bottom: -200px;
+    margin-top: -600px;
+    position: relative;
+   
+    
   }
+
   
   #header .background > img {
  
     top: -358px;
     left: -11px;
-    width: 1518px;
-    height: 1215px;
+    max-width: 1278px;
+    max-height: 915px;
     opacity: 1;
+    object-fit:cover;
+    background-repeat: no-repeat;  
+    background-attachment: fixed;
+    overflow: hidden;
+    
   }  
   
   #header .boxes {
-    height: 80px;
-    width: 1250px;
+    min-height: 80px;
+    max-width: 1250px;
     display: flex;
     opacity: 1;
     margin: 15%;

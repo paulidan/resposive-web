@@ -1,6 +1,5 @@
 import ButtonsPogodaStyle from "./ButtonsPogoda.module.css";
 import React, {components} from 'react';
-import { Route, Routes } from "react-router";
 import { Link } from "react-router-dom";
 
 
@@ -17,7 +16,7 @@ function ButtonsPogoda()  {
                 <button className={ButtonsPogodaStyle.Buttons}> Pogoda na dziś</button>
             </Link>
             <Link to={"/pogoda/term"}>
-                <button className={ButtonsPogodaStyle.Buttons}>Pogoda długoterminow</button>
+                <button className={ButtonsPogodaStyle.Buttons}>Pogoda długoterminowa</button>
             </Link>
         </div>
        
