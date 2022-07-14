@@ -5,7 +5,6 @@ import sun from '../../icons/desktop/weathersun.png';
 import rain from '../../icons/desktop/weatherrain.png';
 import cloud from '../../icons/desktop/weathercloud.png';
 import { weatherApi } from './Api';
-// import Search from './Search';
 
 
 function CurrentWeather() {
@@ -13,28 +12,19 @@ function CurrentWeather() {
     const [query, setQuery] = useState('');
     const [weather, setWeather] = useState({});
 
-    // const handleOnSearchChange = (searchData) => {
-    //     const [lat, lon] = searchData.value.split(" ");
+    const Search = evt => {
+        console.log(evt);
+        if (evt.code === 'Enter') {
+            fetch(`${weatherApi.base}weather?q=${query}&units=metric&APPID=${weatherApi.key}`)
+                .then(res => res.json())
+                .then(result => {
+                    setWeather(result);
+                    setQuery('');
+                    console.log(result);
+                });
+        }
 
-    //     const searching = fetch(
-    //         fetch(`${weatherApi.base}weather?q=${query}&units=metric&APPID=${weatherApi.key}`)
-    //             .then(res => res.json())
-    //     )
-            const Search = evt => {
-                console.log(evt);
-                if(evt.code === 'Enter'){
-                    fetch(`${weatherApi.base}weather?q=${query}&units=metric&APPID=${weatherApi.key}`)
-                    .then(res => res.json())
-                    .then(result => {
-                        setWeather(result);
-                        setQuery('');
-                        console.log(result);
-                    });
-                }
-
-            }
-    //         .catch(console.log);
-    // }
+    }
 
     const icons = {
         'Clear': sun,
@@ -60,17 +50,16 @@ function CurrentWeather() {
         <div className={CurrentStyle.app}>
             <main>
                 <div className={SearchStyle.search_box}>
-                    <input 
-                    type='text'
-                    className={SearchStyle.search_bar}
-                    placeholder='Search...'
-                    onChange={e => setQuery (e.target.value)}
-                    value= {query}
-                    onKeyPress={Search}
+                    <input
+                        type='text'
+                        className={SearchStyle.search_bar}
+                        placeholder='Search...'
+                        onChange={e => setQuery(e.target.value)}
+                        value={query}
+                        onKeyPress={Search}
                     />
-                    {/* <Search onSearchChange={handleOnSearchChange} /> */}
                 </div>
-                {(typeof weather.main != 'undefined') ? (
+                {weather.main ? (
                     <div>
                         <div className={CurrentStyle.location_box}>
                             <div className={CurrentStyle.location}>{weather.name}, {weather.sys.country}</div>
