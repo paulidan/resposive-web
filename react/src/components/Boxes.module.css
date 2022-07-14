@@ -70,8 +70,8 @@
 
 #centerBoxHeader {
     /* Self Layout Properties */
-    width: 14.313rem;
-    height: 1.813rem;
+    width: 14.3125rem;
+    height: 1.8125rem;
 
     /* UI Properties */
     font-size: 1.5rem;
@@ -82,19 +82,19 @@
 #centerBoxText {
     /* Self Layout Properties */
     width: 17.25rem;
-    height: 1.188rem;
+    height: 1.1875rem;
 
     /* UI Properties */
     color: #333;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 62rem) {
     .pDesktopSubBox {
         display: none;
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 37.5rem) {
     
     #mainBox {
         /* Self Layout Properties */
@@ -201,7 +201,7 @@
         top: 0.0625rem;
         left: 0.0625rem;
         width: 3.625rem;
-        height: 3.75rem;               /* Change to 58px when inactive */
+        height: 3.75rem;            /* Change to 3.625rem when inactive */
 
         /* UI Properties */
         background-color: #f1f1f1;
@@ -224,7 +224,7 @@
 
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 62rem) {
     #mainBox {
         /* Self Layout Properties */
         width: 100%;
@@ -244,8 +244,7 @@
 
     .subBox {
         /* Self Layout Properties */
-        width: 18.938rem;
-        height: 7.688rem;
+        padding: 2.3333rem 2.1075rem;
         position: absolute;
 
         /* Content Layout Properties */
@@ -267,18 +266,26 @@
         opacity: 1;
     }
 
+    #topLeftBoxContainer {
+        /* Self Layout Properties */
+        position: absolute;
+        top: 4.375rem;
+        left: 10.3125rem;
+        padding: 3.844rem 9.469rem;
+    }
+
     #topLeftBoxOutline {
         /* Self Layout Properties */
-        top: 4.375rem;
-        left: 10.313rem;
+        top: 0;
+        left: 0;
+        padding: 3.844rem 9.469rem;
     }
 
     #topLeftBox {
         /* Self Layout Properties */
-        top: 4.438rem;
-        left: 10.375rem;
-        width: 18.813rem;
-        height: 7.563rem;
+        top: 0.0625rem;
+        left: 0.0625rem;
+        padding: 2.2705rem 1.937rem;
 
         /* UI Properties */
         background-color: #fff;
@@ -287,50 +294,50 @@
     #topLeftBox p, #topRightBox p, #bottomLeftBox p, #bottomRightBox p {
         /* UI Properties */
         font-size: 2.5rem;
+        margin: 0;
     }
 
     #topLeftBox p {
         /* UI Properties */
         font-family: 'Lato', sans-serif;
-        font-size: 2.5rem;
     }
 
     #topRightBox {
         /* Self Layout Properties */
         top: 4.375rem;
-        right: 10.313rem;   
+        right: 10.3125rem;   
     }
 
     #bottomLeftBox {
         /* Self Layout Properties */
         top: 24.688rem;
-        left: 10.313rem;
+        left: 10.3125rem;
     }
 
     #bottomRightBox {
         /* Self Layout Properties */
-        top: 24.688rem;
-        right: 10.313rem;  
+        top: 24.6875rem;
+        right: 10.3125rem;  
     }
 
     #centerBoxContainer {
         /* Self Layout Properties */
         width: 38.375rem;
-        height: 20.563rem;
+        height: 20.5625rem;
     }
 
     #centerBox {
         /* Self Layout Properties */
         width: 38.25rem;
-        height: 20.438rem;
+        height: 20.4375rem;
         z-index: 3;
     }
 
     #centerBoxInner {
         /* Self Layout Properties */
         padding: 1.125rem 0 0 1.125rem;
-        width: 38.063rem;
-        height: 20.438rem;
+        width: 38.0625rem;
+        height: 20.4375rem;
 
         /* UI Properties */
         background: transparent url('../icons/desktop/Pattern.png') bottom no-repeat padding-box;
@@ -346,7 +353,7 @@
 
     #centerBoxHeader {
         /* Self Layout Properties */
-        width: 14.313rem;
+        width: 14.3125rem;
         height: 1.813rem;
 
         /* UI Properties */
