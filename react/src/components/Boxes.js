@@ -1,36 +1,25 @@
 import { useState, useEffect } from 'react';
 import styles from './Boxes.module.css';
 
-function Boxes() {
-
-    /* Detect device based on screen width */
-    const [device, setDevice] = useState("desktop");
-    const deviceWidth = window.innerWidth;
-    useEffect(() => {
-        if(window.innerWidth <= 600) {
-            setDevice("mobile");
-        }
-        else if(window.innerWidth <= 992) {
-            setDevice("tablet");
-        }
-    });
+const Boxes = () => {
 
     return (
         <div id={styles.mainBox}>     
             <div id={styles.container}>       
                 <div className={styles.subBox} id={styles.topRightBox}>
-                    {device === "mobile" ? <p>2</p> : <p>BOX NAME 2</p>}
+                    <p className={styles.pMobileSubBox}>2</p>
+                    <p className={styles.pDesktopSubBox}>BOX NAME 2</p>
                 </div>
                 <div className={styles.subBox} id={styles.bottomLeftBox}>
-                    {device === "mobile" ? <p>3</p> : <p>BOX NAME 3</p>}
+                    <p className={styles.pMobileSubBox}>3</p>
+                    <p className={styles.pDesktopSubBox}>BOX NAME 3</p>
                 </div>
                 <div className={styles.subBox} id={styles.bottomRightBox}>
-                    {device === "mobile" ? <p>4</p> : <p>BOX NAME 4</p>}
+                    <p className={styles.pMobileSubBox}>4</p>
+                    <p className={styles.pDesktopSubBox}>BOX NAME 4</p>
                 </div>
                 <div id={styles.centerBoxContainer}>
-                    <div className={styles.subBox} id={styles.centerBoxOutline}>
-                        
-                    </div> 
+                    <div className={styles.subBox} id={styles.centerBoxOutline} />
                     <div className={styles.subBox} id={styles.centerBox}>
                         <div id={styles.centerBoxInner}>
                             <p>
@@ -45,10 +34,10 @@ function Boxes() {
                     </div> 
                 </div>
                 <div id={styles.topLeftBoxContainer}>
-                    <div className={styles.subBox} id={styles.topLeftBoxOutline}>
-                    </div>
+                    <div className={styles.subBox} id={styles.topLeftBoxOutline} />
                     <div className={styles.subBox} id={styles.topLeftBox}>
-                        {device === "mobile" ? <p>1</p> : <p>BOX NAME 1</p>}
+                        <p className={styles.pMobileSubBox}>1</p>
+                        <p className={styles.pDesktopSubBox}>BOX NAME 1</p>
                     </div>
                 </div>
             </div>

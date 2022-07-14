@@ -56,6 +56,12 @@
     color: #333333;
 }
 
+@media only screen and (max-width: 991px) {
+    .pDesktopSubBox {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     
     #mainBox {
@@ -249,6 +255,10 @@
         letter-spacing: 0px;
         text-align: center;
         font-family: 'Lato Light', sans-serif;
+    }
+
+    .pMobileSubBox {
+        display: none;
     }
 
     #mainBox, .subBox {
