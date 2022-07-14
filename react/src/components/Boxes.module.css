@@ -100,7 +100,7 @@
         /* Self Layout Properties */
         margin: 0 auto;
         height: 480px;
-        width: 100vw;
+        width: 100%;
 
         /* Content Layout Properties */
         display: flex;
@@ -150,7 +150,7 @@
         padding: 0 8px;
 
         /* UI Properties */
-        font-size: 12px;
+        font-size: 0.75rem;
     }
 
     #centerBoxHeader {
@@ -172,7 +172,7 @@
 
     #topLeftBox p, #topRightBox p, #bottomLeftBox p, #bottomRightBox p {
         /* UI Properties */
-        font-size: 30px;
+        font-size: 1.875rem;
     }
 
     #topRightBox, #bottomLeftBox, #bottomRightBox {
@@ -286,13 +286,13 @@
 
     #topLeftBox p, #topRightBox p, #bottomLeftBox p, #bottomRightBox p {
         /* UI Properties */
-        font-size: 40px;
+        font-size: 2.5rem;
     }
 
     #topLeftBox p {
         /* UI Properties */
         font-family: 'Lato', sans-serif;
-        font-size: 40px;
+        font-size: 2.5rem;
     }
 
     #topRightBox {
@@ -351,13 +351,13 @@
         height: 29px;
 
         /* UI Properties */
-        font-size: 24px;
+        font-size: 1.5rem;
         font-family: 'Lato', sans-serif;
         color: #428E9E;
     }
 
     #centerBoxText {
         /* UI Properties */
-        font-size: 16px;
+        font-size: 1rem;
     }
 }
