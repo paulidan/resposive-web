@@ -9,6 +9,35 @@
     align-items: center;
 }
 
+#topLeftBoxOutline {
+    /* UI Properties */
+    background-color: #428e9e;
+}
+
+#topLeftBox p {
+    color: #428D9E;
+}
+
+#topRightBox {
+    /* UI Properties */
+    background-color: #c83434;
+}
+
+#topRightBox p, #bottomLeftBox p, #bottomRightBox p {
+    /* UI Properties */
+    color: #FFF;
+}
+
+#bottomLeftBox {
+    /* UI Properties */
+    background-color: #dfbb42; 
+}
+
+#bottomRightBox {
+    /* UI Properties */
+    background-color: #508b61;  
+}
+
 #centerBoxContainer {
     /* Self Layout Properties */
     position: relative;
@@ -18,6 +47,9 @@
     /* Self Layout Properties */
     width: 100%;
     height: 100%;
+
+    /* UI Properties */
+    background-color: #428e9e;
 }
 
 #centerBox {
@@ -98,15 +130,6 @@
         height: 340px;
     }
 
-    #centerBoxOutline {
-        /* Self Layout Properties */
-        position: absolute;
-
-        /* UI Properties */
-        background-color: #428e9e;
-        background-size: cover;
-    }
-
     #centerBox {
         /* Self Layout Properties */    
         width: calc(100% - 2px);
@@ -168,10 +191,7 @@
 
     #topLeftBoxOutline {
         /* Self Layout Properties */
-        height: 100%;
-
-        /* UI Properties */
-        background-color: #428e9e;    
+        height: 100%;  
     }
 
     #topLeftBox {
@@ -187,36 +207,19 @@
         background-color: #f1f1f1;
     }
 
-    #topLeftBox p {
-        color: #428D9E;
-    }
-
     #topRightBox {
         /* Self Layout Properties */
         order: 2;
-
-        /* UI Properties */
-        background-color: #c83434;    
-    }
-
-    #topRightBox p, #bottomLeftBox p, #bottomRightBox p {
-        color: #FFF;
     }
 
     #bottomLeftBox {
         /* Self Layout Properties */
-        order: 3;
-
-        /* UI Properties */
-        background-color: #dfbb42;    
+        order: 3;  
     }
 
     #bottomRightBox {
         /* Self Layout Properties */
         order: 4;
-
-        /* UI Properties */
-        background-color: #508b61;    
     }
 
 }
@@ -268,9 +271,6 @@
         /* Self Layout Properties */
         top: 70px;
         left: 165px;
-
-        /* UI Properties */
-        background-color: #428e9e;
     }
 
     #topLeftBox {
@@ -289,43 +289,28 @@
         font-size: 40px;
     }
 
-    #topRightBox p, #bottomLeftBox p, #bottomRightBox p {
-        /* UI Properties */
-        color: #FFF;
-    }
-
     #topLeftBox p {
         /* UI Properties */
         font-family: 'Lato', sans-serif;
         font-size: 40px;
-        color: #428D9E;
     }
 
     #topRightBox {
         /* Self Layout Properties */
         top: 70px;
-        left: 1032px;
-
-        /* UI Properties */
-        background-color: #c83434;    
+        left: 1032px;   
     }
 
     #bottomLeftBox {
         /* Self Layout Properties */
         top: 395px;
         left: 165px;
-
-        /* UI Properties */
-        background-color: #dfbb42;    
     }
 
     #bottomRightBox {
         /* Self Layout Properties */
         top: 395px;
-        left: 1032px;
-
-        /* UI Properties */
-        background-color: #508b61;    
+        left: 1032px;  
     }
 
     #centerBoxContainer {
@@ -333,11 +318,6 @@
         width: 614px;
         height: 329px;
     }
-
-    #centerBoxOutline {
-        /* UI Properties */
-        background-color: #428e9e;
-        background-size: cover;}
 
     #centerBox {
         /* Self Layout Properties */
