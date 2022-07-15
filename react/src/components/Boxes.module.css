@@ -28,8 +28,8 @@
 #topLeftBox {
     /* Self Layout Properties */
     position: absolute;
-    top: 0.0625rem;
-    left: 0.0625rem;
+    top: 0.06rem;
+    left: 0.06rem;
 }
 
 #topLeftBox p {
@@ -81,8 +81,8 @@
 #centerBox {
     /* Self Layout Properties */
     position: absolute;
-    top: 0.0625rem;
-    left: 0.0625rem;      
+    top: 0.06rem;
+    left: 0.06rem;      
 
     /* UI Properties */
     background-color: #FFF;
@@ -95,10 +95,6 @@
 }
 
 #centerBoxHeader {
-    /* Self Layout Properties */
-    width: 14.3125rem;
-    height: 1.8125rem;
-
     /* UI Properties */
     font-size: 1.5rem;
     font-family: 'gLato', sans-serif;
@@ -107,10 +103,6 @@
 }
 
 #centerBoxText {
-    /* Self Layout Properties */
-    width: 17.25rem;
-    height: 1.1875rem;
-
     /* UI Properties */
     color: #333;
 }
@@ -124,7 +116,7 @@
 @media only screen and (max-width: 37.5rem) {
     #mainBox {
         /* Self Layout Properties */
-        padding: 40px 0;
+        padding: 2.5rem 0;
 
         /* Content Layout Properties */
         display: flex;
@@ -163,8 +155,8 @@
 
     #centerBox {
         /* Self Layout Properties */    
-        width: calc(100% - 0.125rem);
-        height: calc(100% - 0.125rem);
+        width: calc(100% - 0.12rem);
+        height: calc(100% - 0.12rem);
         z-index: 1;
     }
 
@@ -179,7 +171,7 @@
 
     #centerBoxInner p {
         /* Self Layout Properties */
-        padding: 0 0.547rem;
+        padding: 0 0.6rem;
 
         /* UI Properties */
         font-size: 0.75rem;
@@ -198,6 +190,7 @@
 
     #topLeftBox, #topRightBox, #bottomLeftBox, #bottomRightBox {
         /* Content Layout Properties */
+        align-self: flex-start;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -205,25 +198,25 @@
 
     #topLeftBox p, #topRightBox p, #bottomLeftBox p, #bottomRightBox p {
         /* UI Properties */
-        font-size: 1.875rem;
+        font-size: 1.9rem;
     }
 
     #topRightBox, #bottomLeftBox, #bottomRightBox {
         /* Self Layout Properties */
-        padding: 0.75rem 1.331rem;
+        padding: 0.75rem 1.3rem;
     }
 
     #topLeftBoxContainer {
         /* Self Layout Properties */
         order: 1;
         position: relative;
-        padding: 1.875rem 1.875rem;
+        padding: 1.9rem 1.9rem;
     }
 
     #topLeftBox {
         /* Self Layout Properties */
-        margin-top: -0.125rem;      /* Change to 0 when inactive */
-        padding: 0.75rem 1.2688rem; /* Change to 0.6875rem 1.2688rem when inactive */
+        margin-top: -0.13rem;      /* Change to 0 when inactive */
+        padding: 0.78rem 1.28rem;  /* Change to 0.6875rem 1.29rem when inactive */
 
         /* UI Properties */
         background-color: #f1f1f1;
@@ -249,7 +242,7 @@
     #container {
         /* Self Layout Properties */
         width: 93.75rem;
-        padding: 130px 443px;
+        padding: 8.15rem 27.5rem;
         margin: auto;
 
         /* Content Layout Properties */
@@ -259,7 +252,7 @@
 
     .subBox {
         /* Self Layout Properties */
-        padding: 2.3333rem 2.1075rem;
+        padding: 2.3rem 2.1rem;
         position: absolute;
 
         /* Content Layout Properties */
@@ -287,14 +280,14 @@
     #topLeftBoxContainer {
         /* Self Layout Properties */
         position: absolute;
-        top: 4.375rem;
-        left: 10.3125rem;
-        padding: 3.844rem 9.469rem;
+        top: 4.4rem;
+        left: 10.3rem;
+        padding: 3.85rem 9.5rem;
     }
 
     #topLeftBox {
         /* Self Layout Properties */
-        padding: 2.2705rem 1.937rem;
+        padding: 2.28rem 1.95rem;
 
         /* UI Properties */
         background-color: #fff;
@@ -313,25 +306,25 @@
 
     #topRightBox {
         /* Self Layout Properties */
-        top: 4.375rem;
-        right: 10.3125rem;   
+        top: 4.4rem;
+        right: 10.3rem;   
     }
 
     #bottomLeftBox {
         /* Self Layout Properties */
-        top: 24.688rem;
-        left: 10.3125rem;
+        top: 24.7rem;
+        left: 10.3rem;
     }
 
     #bottomRightBox {
         /* Self Layout Properties */
-        top: 24.6875rem;
-        right: 10.3125rem;  
+        top: 24.7rem;
+        right: 10.3rem;  
     }
 
     #centerBoxContainer {
         /* Self Layout Properties */
-        padding: 10.28125rem 19.1875rem;
+        padding: 10.3rem 19.2rem;
     }
 
     #centerBox {
@@ -342,8 +335,8 @@
 
     #centerBoxInner {
         /* Self Layout Properties */
-        padding: 1.125rem 1.25rem 0 1.125rem;
-        max-height: 20.4375rem;
+        padding: 1.15rem 1.25rem 0 1.15rem;
+        max-height: 20.45rem;
 
         /* UI Properties */
         background: transparent url('../icons/desktop/Pattern.png') bottom no-repeat padding-box;
@@ -351,7 +344,7 @@
 
     #centerBoxInner p {
         /* Self Layout Properties */
-        max-width: 35.875rem;
+        max-width: 35.85rem;
 
         /* UI Properties */
         line-height: 2;
