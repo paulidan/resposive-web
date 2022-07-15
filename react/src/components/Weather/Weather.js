@@ -1,5 +1,5 @@
 import React from 'react';
-import Pogoda from'./Pogoda_na_dzis.css';
+import Pogoda from'./Pogoda_na_dzis.module.css';
 import moment from 'moment';
 import 'moment-timezone';
 import { Card } from 'semantic-ui-react';
