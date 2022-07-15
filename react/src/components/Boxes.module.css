@@ -29,7 +29,8 @@
     /* Self Layout Properties */
     position: absolute;
     top: 0.0625rem;
-    left: 0.0625rem;}
+    left: 0.0625rem;
+}
 
 #topLeftBox p {
     /* UI Properties */
@@ -100,7 +101,8 @@
 
     /* UI Properties */
     font-size: 1.5rem;
-    font-family: 'Lato', sans-serif;
+    font-family: 'gLato', sans-serif;
+    font-weight: 400;
     color: #428E9E;
 }
 
@@ -142,7 +144,8 @@
 
     .subBox {
         /* UI Properties */
-        font-family: 'Lato', sans-serif;
+        font-family: 'gLato', sans-serif;
+        font-weight: 400;
     }
 
     #centerBoxContainer {
@@ -189,7 +192,8 @@
 
     #centerBoxText {
         line-height: 3;
-        font-family: 'Lato Light', sans-serif;
+        font-family: 'gLato', sans-serif;
+        font-weight: 300;
     }
 
     #topLeftBox, #topRightBox, #bottomLeftBox, #bottomRightBox {
@@ -266,14 +270,17 @@
         /* UI Properties */
         letter-spacing: 0;
         text-align: center;
-        font-family: 'Lato Light', sans-serif;
+        font-family: 'gLato', sans-serif;
+        font-weight: 300;
     }
 
     .pMobileSubBox {
+        /* Self Layout Properties */
         display: none;
     }
 
     #mainBox, .subBox {
+        /* UI Properties */
         opacity: 1;
     }
 
@@ -300,7 +307,8 @@
 
     #topLeftBox p {
         /* UI Properties */
-        font-family: 'Lato', sans-serif;
+        font-family: 'gLato', sans-serif;
+        font-weight: 400;
     }
 
     #topRightBox {

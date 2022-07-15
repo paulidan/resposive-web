@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import styles from './Boxes.module.css';
 
 const Boxes = () => {
-
     return (
         <div id={styles.mainBox}>     
             <div id={styles.container}>       
