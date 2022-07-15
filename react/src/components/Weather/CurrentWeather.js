@@ -5,6 +5,8 @@ import sun from '../../icons/desktop/weathersun.png';
 import rain from '../../icons/desktop/weatherrain.png';
 import cloud from '../../icons/desktop/weathercloud.png';
 import { weatherApi } from './Api';
+import { format } from 'date-fns';
+import { pl } from 'date-fns/locale'
 
 
 function CurrentWeather() {
@@ -32,20 +34,6 @@ function CurrentWeather() {
         'Clouds': cloud
     };
 
-
-    const dateBuilder = (d) => {
-        // let months= ['January', 'Fabruary', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-        // let days= ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-
-        // let day = days[d.getDay()];
-        // let date = d.getDate();
-        // let month = months[d.getMonth()];
-        // let year = d.getFullYear();
-
-        // return `${day} ${date} ${month} ${year}`
-        return `${d.toLocaleString()}`
-    }
-
     return (
         <div className={CurrentStyle.app}>
             <main>
@@ -63,7 +51,7 @@ function CurrentWeather() {
                     <div>
                         <div className={CurrentStyle.location_box}>
                             <div className={CurrentStyle.location}>{weather.name}, {weather.sys.country}</div>
-                            <div className={CurrentStyle.date}>{dateBuilder(new Date())}</div>
+                            <div className={CurrentStyle.date}>{format(new Date(), 'cccc, dd/MM/yy, h:mm', { locale: pl })}</div>
                         </div>
                         <div className={CurrentStyle.weather_box}>
                             <div className={CurrentStyle.temp}>
