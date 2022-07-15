@@ -239,14 +239,15 @@
 }
 
 @media only screen and (min-width: 62rem) {
+
     #container {
         /* Self Layout Properties */
         width: 93.75rem;
-        padding: 8.15rem 27.5rem;
+        padding: 8.15rem 27.9rem;
         margin: auto;
+        position: relative;
 
         /* Content Layout Properties */
-        position: relative;
         justify-content: center;
     }
 
@@ -329,6 +330,8 @@
 
     #centerBox {
         /* Self Layout Properties */
+        width: calc(100% - 0.13rem);
+        height: calc(100% - 0.13rem);
         padding: 0;
         z-index: 3;
     }
@@ -336,16 +339,13 @@
     #centerBoxInner {
         /* Self Layout Properties */
         padding: 1.15rem 1.25rem 0 1.15rem;
-        max-height: 20.45rem;
+        height: 100%;
 
         /* UI Properties */
         background: transparent url('../icons/desktop/Pattern.png') bottom no-repeat padding-box;
     }
 
     #centerBoxInner p {
-        /* Self Layout Properties */
-        max-width: 35.85rem;
-
         /* UI Properties */
         line-height: 2;
     }
