@@ -99,8 +99,8 @@
     #mainBox {
         /* Self Layout Properties */
         margin: 0 auto;
-        height: 30rem;
         width: 100%;
+        padding: 40px 0;
 
         /* Content Layout Properties */
         display: flex;
@@ -110,10 +110,11 @@
 
     #container {
         /* Self Layout Properties */
-        height: 24.875rem;
         width: 93.75%;
+        height: 75%;
 
         /* Content Layout Properties */
+        display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
@@ -125,9 +126,15 @@
 
     #centerBoxContainer {
         /* Self Layout Properties */
-        order: 0;
         width: 100%;
-        height: 21.25rem;
+        padding: 10rem 0;
+        order: 0;
+    }
+
+    #centerBoxOutline {
+        position: absolute;
+        top: 0;
+        padding: 10rem 0;
     }
 
     #centerBox {
@@ -139,7 +146,8 @@
 
     #centerBoxInner {
         /* Self Layout Properties */
-        height: 21.125rem;
+        height: 100%;
+        width: 100%;
 
         /* UI Properties */
         background: transparent url('../icons/smartphone/Pattern.png') bottom no-repeat padding-box;
@@ -147,7 +155,7 @@
 
     #centerBoxInner p {
         /* Self Layout Properties */
-        padding: 0 0.5rem;
+        padding: 0 0.547rem;
 
         /* UI Properties */
         font-size: 0.75rem;
@@ -195,7 +203,8 @@
         position: absolute;
         top: 0;
         left: 0;
-        padding: 1.875rem 1.875rem;
+        width: 100%;
+        height: 100%;
     }
 
     #topLeftBox {
@@ -281,7 +290,8 @@
         /* Self Layout Properties */
         top: 0;
         left: 0;
-        padding: 3.844rem 9.469rem;
+        height: 100%;
+        width: 100%;
     }
 
     #topLeftBox {
@@ -325,22 +335,25 @@
 
     #centerBoxContainer {
         /* Self Layout Properties */
-        width: 38.375rem;
-        height: 20.5625rem;
+        padding: 10.28125rem 19.1875rem;
+    }
+
+    #centerBoxOutline {
+        /* Self Layout Properties */
+        top: 0;
+        left: 0;
     }
 
     #centerBox {
         /* Self Layout Properties */
-        width: 38.25rem;
-        height: 20.4375rem;
+        padding: 0;
         z-index: 3;
     }
 
     #centerBoxInner {
         /* Self Layout Properties */
-        padding: 1.125rem 0 0 1.125rem;
-        width: 38.0625rem;
-        height: 20.4375rem;
+        padding: 1.125rem 1.25rem 0 1.125rem;
+        max-height: 20.4375rem;
 
         /* UI Properties */
         background: transparent url('../icons/desktop/Pattern.png') bottom no-repeat padding-box;
@@ -348,17 +361,13 @@
 
     #centerBoxInner p {
         /* Self Layout Properties */
-        width: 35.875rem;
+        max-width: 35.875rem;
 
         /* UI Properties */
         line-height: 2;
     }
 
     #centerBoxHeader {
-        /* Self Layout Properties */
-        width: 14.3125rem;
-        height: 1.813rem;
-
         /* UI Properties */
         font-size: 1.5rem;
         font-family: 'Lato', sans-serif;
