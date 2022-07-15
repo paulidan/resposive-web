@@ -1,4 +1,8 @@
 #mainBox {
+    /* Self Layout Properties */
+    margin: 0 auto;
+    width: 100%;
+    
     /* UI Properties*/
     background-color: #f1f1f1;
 }
@@ -10,17 +14,36 @@
 }
 
 #topLeftBoxOutline {
+    /* Self Layout Properties */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
     /* UI Properties */
     background-color: #428e9e;
 }
 
+#topLeftBox {
+    /* Self Layout Properties */
+    position: absolute;
+    top: 0.0625rem;
+    left: 0.0625rem;}
+
 #topLeftBox p {
+    /* UI Properties */
     color: #428D9E;
 }
 
 #topRightBox {
     /* UI Properties */
     background-color: #c83434;
+}
+
+#topLeftBox p, #topRightBox p, #bottomLeftBox p, #bottomRightBox p {
+    /* Self Layout Properties */
+    margin: 0;
 }
 
 #topRightBox p, #bottomLeftBox p, #bottomRightBox p {
@@ -45,6 +68,8 @@
 
 #centerBoxOutline {
     /* Self Layout Properties */
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
 
@@ -95,11 +120,8 @@
 }
 
 @media only screen and (max-width: 37.5rem) {
-    
     #mainBox {
         /* Self Layout Properties */
-        margin: 0 auto;
-        width: 100%;
         padding: 40px 0;
 
         /* Content Layout Properties */
@@ -114,7 +136,6 @@
         height: 75%;
 
         /* Content Layout Properties */
-        display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
@@ -132,8 +153,8 @@
     }
 
     #centerBoxOutline {
+        /* Self Layout Properties */
         position: absolute;
-        top: 0;
         padding: 10rem 0;
     }
 
@@ -179,9 +200,6 @@
     }
 
     #topLeftBox p, #topRightBox p, #bottomLeftBox p, #bottomRightBox p {
-        /* Self Layout Properties */
-        margin: 0;
-
         /* UI Properties */
         font-size: 1.875rem;
     }
@@ -198,21 +216,9 @@
         padding: 1.875rem 1.875rem;
     }
 
-    #topLeftBoxOutline {
-        /* Self Layout Properties */
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-
     #topLeftBox {
         /* Self Layout Properties */
         margin-top: -0.125rem;      /* Change to 0 when inactive */
-        position: absolute;
-        top: 0.0625rem;
-        left: 0.0625rem;
         padding: 0.75rem 1.2688rem; /* Change to 0.6875rem 1.2688rem when inactive */
 
         /* UI Properties */
@@ -233,20 +239,13 @@
         /* Self Layout Properties */
         order: 4;
     }
-
 }
 
 @media only screen and (min-width: 62rem) {
-    #mainBox {
-        /* Self Layout Properties */
-        width: 100%;
-        height: 36.75rem;
-    }
-
     #container {
         /* Self Layout Properties */
         width: 93.75rem;
-        height: 36.75rem;
+        padding: 130px 443px;
         margin: auto;
 
         /* Content Layout Properties */
@@ -286,18 +285,8 @@
         padding: 3.844rem 9.469rem;
     }
 
-    #topLeftBoxOutline {
-        /* Self Layout Properties */
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-    }
-
     #topLeftBox {
         /* Self Layout Properties */
-        top: 0.0625rem;
-        left: 0.0625rem;
         padding: 2.2705rem 1.937rem;
 
         /* UI Properties */
@@ -307,7 +296,6 @@
     #topLeftBox p, #topRightBox p, #bottomLeftBox p, #bottomRightBox p {
         /* UI Properties */
         font-size: 2.5rem;
-        margin: 0;
     }
 
     #topLeftBox p {
@@ -338,12 +326,6 @@
         padding: 10.28125rem 19.1875rem;
     }
 
-    #centerBoxOutline {
-        /* Self Layout Properties */
-        top: 0;
-        left: 0;
-    }
-
     #centerBox {
         /* Self Layout Properties */
         padding: 0;
@@ -365,13 +347,6 @@
 
         /* UI Properties */
         line-height: 2;
-    }
-
-    #centerBoxHeader {
-        /* UI Properties */
-        font-size: 1.5rem;
-        font-family: 'Lato', sans-serif;
-        color: #428E9E;
     }
 
     #centerBoxText {
