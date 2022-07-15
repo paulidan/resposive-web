@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
 import CurrentStyle from './CurrentW.module.css';
-import SearchStyle from './Search.module.css';
 import sun from '../../icons/desktop/weathersun.png';
 import rain from '../../icons/desktop/weatherrain.png';
 import cloud from '../../icons/desktop/weathercloud.png';
 import { weatherApi } from './Api';
 import { format } from 'date-fns';
 import { pl } from 'date-fns/locale'
-
 
 function CurrentWeather() {
 
@@ -37,16 +35,6 @@ function CurrentWeather() {
     return (
         <div className={CurrentStyle.app}>
             <main>
-                <div className={SearchStyle.search_box}>
-                    <input
-                        type='text'
-                        className={SearchStyle.search_bar}
-                        placeholder='Search...'
-                        onChange={e => setQuery(e.target.value)}
-                        value={query}
-                        onKeyPress={Search}
-                    />
-                </div>
                 {weather.main ? (
                     <div>
                         <div className={CurrentStyle.location_box}>

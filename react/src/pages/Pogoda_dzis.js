@@ -1,6 +1,7 @@
 import Navbar from '../components/Navbar';
 import Header from '../components/Header';
 import ButtonsPogoda from '../components/ButtonsPogoda';
+import Search from '../components/Weather/Search';
 
 
 function PogodaDzisPage(){
@@ -14,6 +15,9 @@ function PogodaDzisPage(){
           </div>
           <div>
             <ButtonsPogoda />
+          </div>
+          <div id="searchbar">
+            <Search />
           </div>
           
         </div>
