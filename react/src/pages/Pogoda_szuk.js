@@ -8,7 +8,6 @@ import { weatherApi } from '../components/Weather/Api';
 
 const WeatherSearchPage = () => {
   const [currentWeather, setCurrentWeather] = useState(null);
-  const [forecast, setForecast] = useState(null);
 
   const handleSearch = (searchData) => {
     const [lat, lon] = searchData.value.split(" ");
@@ -27,7 +26,6 @@ const WeatherSearchPage = () => {
   }
 
   console.log(currentWeather);
-  console.log(forecast);
 
   return (
     <div className="App">
