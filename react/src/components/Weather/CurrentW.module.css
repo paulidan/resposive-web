@@ -18,46 +18,16 @@ main{
     padding: 25px;
 }
 
-.search_box{
-    width: 100%;
-    margin: 0 0 75px;
-}
-
-.search_box .search_bar{
-    display: inline-block;
-    width: 40%;
-    padding: 15px;
-    text-align: center;
-
-    appearance: none;
-    background: none;
-    border: none;
-    outline: none;
-    
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 0px 0px 16px 16px;
-    margin-top: -25px;
-    box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
-
-    font-size: 20px;
-    transition: 0.4s ease;
-}
-
-.search_box .search-bar:focus{
-    display: block;
-    width: 100%;
-    padding: 15px;
-}
 
 .location_box .location{
-    color: black;
+    color: #858585;
     font-size: 32px;
     text-align: center;
 
 }
 
 .location_box .date{
-    color: black;
+    color: #858585;
     font-size: 20px;
     font-style: italic;
     text-align: center;
@@ -65,7 +35,7 @@ main{
 }
 
 .weather_box{
-    text-align: center;
+    align-items: center;
 }
 
 .weather_box .temp{
@@ -77,13 +47,27 @@ main{
     padding: 15px 25px;
     color: #DFBB42;
     font-size: 102px;
-    text-align: center;
     text-shadow: 3px 6px rgba(195, 195, 195, 0.35);
 }
 
+.weather_box .feels{
+    position: relative;
+    margin: 10px auto;
+    background-color: rgba(195, 195, 195, 0.35);
+    border-radius: 16px;
+    padding: 15px 25px;
+    color: #DFBB42;
+    font-size: 30px;
+    text-shadow: 3px 3px rgba(195, 195, 195, 0.25);
+}
+
 .weather_box .weather{
-    text-align: center;
-    color: #EAD280;
-    font-size: 48px;
+    color: #DFBB42;
+    font-size: 37px;
     text-shadow: 3px 3px rgba(255, 255, 255, 0.5);
+}
+
+.weather_box .weather >img{
+    opacity: 1;
+    height: 70px;
 }

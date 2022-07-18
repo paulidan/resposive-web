@@ -2,7 +2,7 @@ import Navbar from '../components/Navbar';
 import Header from '../components/Header';
 import ButtonsPogoda from '../components/ButtonsPogoda';
 import Pogoda_na_dzis from '../components/Weather/Pogoda_na_dzis';
-import Weather from '../components/Weather/Weather';
+
 
 
 
@@ -20,7 +20,6 @@ function PogodaDzisPage(){
             <ButtonsPogoda />
           </div>
           <div id="weather2">
-            
             <Pogoda_na_dzis />
             </div>
         </div>

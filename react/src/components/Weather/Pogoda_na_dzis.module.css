@@ -21,7 +21,7 @@ body{
 
 
 p {
-    text-align: center;
+    text-align: left;
     color:#5A5C5B;
     font-size: 26px;
     text-shadow: 3px 3px rgba(255, 255, 255, 0.5);
@@ -72,7 +72,7 @@ p {
     width: 35px;
     height: 35px;
     border: none;
-    background-color: white;
+    background-color:  transparent;
     color: #EAD280;
 }
 
@@ -82,4 +82,25 @@ p {
     color:#5A5C5B;
     font-size: 26px;
     text-shadow: 3px 3px rgba(255, 255, 255, 0.5);
+}
+.container{
+    position: relative;
+    display: inline-block;
+    margin: 20px auto;
+    background-color: rgba(215, 215, 215, 0.52);
+    border-radius: 16px;
+    padding: 15px 85px;
+    color: #DFBB42;
+    font-size: 102px;
+    text-shadow: 3px 6px rgba(195, 195, 195, 0.35);
+}
+.temperatura{
+    position: relative;
+    margin: 10px auto;
+    background-color: rgba(195, 195, 195, 0.35);
+    border-radius: 16px;
+    padding: 15px 25px;
+    color: #DFBB42;
+    font-size: 30px;
+    text-shadow: 3px 3px rgba(195, 195, 195, 0.25);
 }

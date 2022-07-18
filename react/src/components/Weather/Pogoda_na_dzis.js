@@ -3,6 +3,7 @@ import Pogoda from './Pogoda_na_dzis.module.css';
 import Weather from './Weather';
 import { Dimmer, Loader } from 'semantic-ui-react';
 
+
 export default function Pogoda_na_dzis() {
 
  
@@ -29,6 +30,9 @@ export default function Pogoda_na_dzis() {
   
   
     }, [lat,long])
+
+ 
+
 
     function handleResponse(response) {
         if (response.ok) {

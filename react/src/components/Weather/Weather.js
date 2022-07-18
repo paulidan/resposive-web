@@ -1,9 +1,11 @@
 import React from 'react';
 import Pogoda from'./Pogoda_na_dzis.module.css';
-import 'moment-timezone';
 import { Card, Button } from 'semantic-ui-react';
-import { useState, useEffect } from "react";
-
+import moment from 'moment-timezone';
+import { pl } from 'date-fns/locale';
+import sun from '../../icons/desktop/weathersun.png';
+import rain from '../../icons/desktop/weatherrain.png';
+import cloud from '../../icons/desktop/weathercloud.png';
 
 export default function Weather({weatherData}) {
 
@@ -17,6 +19,7 @@ export default function Weather({weatherData}) {
 //        }, []);
         
 //refresh button
+
     const refresh = () => {
         window.location.reload();
     }
@@ -27,10 +30,11 @@ export default function Weather({weatherData}) {
     return (
     <Card>
         <Card.Content>
-            <Card.Header className={Pogoda.header}> {weatherData.name}
-            
-            </Card.Header>
-            <p>Temperatura: {weatherData.main.temp.toLocaleString(undefined,{maximumFractionDigits:0})} °C</p>
+            <div className={Pogoda.container}>
+                <Card.Header className={Pogoda.header}> {weatherData.name} </Card.Header>
+            <div className={Pogoda.temperatura}>
+                Temperatura: {weatherData.main.temp.toLocaleString(undefined,{maximumFractionDigits:0})} °C
+            </div>
             <p>Data: {moment().format('dddd')}, <span>{moment().format('LL')}</span></p>
             <p>Wschód słońca: {new Date(weatherData.sys.sunrise * 1000).toLocaleTimeString('pl-IN')}</p>
             <p>Zachód słońca: {new Date(weatherData.sys.sunset * 1000).toLocaleTimeString('pl-IN')}</p>
@@ -46,6 +50,7 @@ export default function Weather({weatherData}) {
                         <path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                     </svg>
                 </Button>
+                </div>
         </Card.Content>
       </Card>
     )
