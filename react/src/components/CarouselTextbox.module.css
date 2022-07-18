@@ -23,7 +23,7 @@
         align-items: center;
     
         /* UI Properties */
-        background: transparent url('../icons/desktop/Layer_25.png') 0% 0% no-repeat padding-box;
+        background-color: #7ec8ea;
     }
     
     #textBoxHeader p {
@@ -79,7 +79,7 @@
         width: 100%;
     
         /* UI Properties */
-        background: transparent url('../icons/desktop/Layer_28.png') 0% 0% no-repeat padding-box;
+        background-color: #1883b4;
     }
     
     .textBoxItemText {
