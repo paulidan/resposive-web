@@ -6,7 +6,7 @@ export const weatherApi = {
 export const geoApiOptions = {
     method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': '585f64551msh8df7b7fdb5f2118p181e78jsnf5e0d709a8f8',
+		'X-RapidAPI-Key': '1585f64551msh8df7b7fdb5f2118p181e78jsnf5e0d709a8f8',
 		'X-RapidAPI-Host': 'wft-geo-db.p.rapidapi.com'
     }
 };

@@ -1,28 +1,27 @@
+import { useState } from 'react';
 import Navbar from '../components/Navbar';
 import Header from '../components/Header';
-import ButtonsPogoda from '../components/ButtonsPogoda';
+import ButtonsWeather from '../components/ButtonsWeather';
 import Search from '../components/Weather/Search';
 import CurrentWeather from '../components/Weather/CurrentWeather';
 import { weatherApi } from '../components/Weather/Api';
-import { useState } from 'react';
 
-function PogodaTermPage() {
-
+const WeatherTermPage = () => {
   const [currentWeather, setCurrentWeather] = useState(null);
   const [forecast, setForecast] = useState(null);
-
-
-  const handleOnSearchChange = (searchData) => {
+  
+  const handleSearch  = (searchData) => {
     const [lat, lon] = searchData.value.split(" ");
 
-    const currentWeatherFetch = fetch(
+    const fetchCurrentWeather = fetch(
       `${weatherApi.base}/weather?lat=${lat}&lon=${lon}&appid=${weatherApi.key}&units=metric`
     );
-    const forecastFetch = fetch(
+
+    const fetchForecast = fetch(
       `${weatherApi.base}/forecast?lat=${lat}&lon=${lon}&appid=${weatherApi.key}&units=metric`
     );
 
-    Promise.all([currentWeatherFetch, forecastFetch])
+    Promise.all([fetchCurrentWeather, fetchForecast])
       .then(async (response) => {
         const weatherResponse = await response[0].json();
         const forecastResponse = await response[1].json();
@@ -46,14 +45,14 @@ function PogodaTermPage() {
         <Navbar />
       </div>
       <div>
-        <ButtonsPogoda />
+        <ButtonsWeather />
       </div>
       <div className="searchbar">
-        <Search onSearchChange={handleOnSearchChange} />
+        <Search onSearchChange={handleSearch} />
         {currentWeather && <CurrentWeather data={currentWeather} />}
       </div>
     </div>
   );
 }
 
-export default PogodaTermPage;
+export default WeatherTermPage;

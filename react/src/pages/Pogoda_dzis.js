@@ -1,9 +1,8 @@
 import Navbar from '../components/Navbar';
 import Header from '../components/Header';
-import ButtonsPogoda from '../components/ButtonsPogoda';
+import ButtonsWeather from '../components/ButtonsWeather';
 
-
-function PogodaDzisPage(){
+const WeatherPage = () => {
     return (
         <div className="App">
           <div id="header"> 
@@ -13,11 +12,11 @@ function PogodaDzisPage(){
             <Navbar />
           </div>
           <div>
-            <ButtonsPogoda />
+            <ButtonsWeather />
           </div>
           
         </div>
       );
 }
 
-export default PogodaDzisPage;
+export default WeatherPage;

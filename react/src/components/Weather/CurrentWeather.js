@@ -12,13 +12,18 @@ const icons = {
     'Rain': rain,
     'Clouds': cloud
 };
+
+const dateFormatPurposueDescription = {
+    date: 'cccc, dd/MM/yy, h:mm'
+};
+
 const CurrentWeather = ({ data }) => {
     return (
         <div className={CurrentStyle.app}>
             <div>
                 <div className={CurrentStyle.location_box}>
                     <div className={CurrentStyle.location}>{data.city}</div>
-                    <div className={CurrentStyle.date}>{format(new Date(), 'cccc, dd/MM/yy, h:mm', { locale: pl })}</div>
+                    <div className={CurrentStyle.date}>{format(new Date(), dateFormatPurposueDescription.date, { locale: pl })}</div>
                 </div>
                 <div className={CurrentStyle.weather_box}>
                     <div className={CurrentStyle.temp}> {Math.round(data.main.temp)}°C
