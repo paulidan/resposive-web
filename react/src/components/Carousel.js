@@ -11,11 +11,9 @@ function Carousel() {
             <div id={Styles.container}>
                 <div id={Styles.topPhotoContainer}>
                     <div className={Styles.topPhotoBox} id={Styles.topPhotoBox1}>
-                        <img src={Clip_bw} alt="Top Photo 1"/>
-                    </div>
+                        <img src={Clip_bw} alt="Top Photo 1"/></div>
                     <div className={Styles.topPhotoBox} id={Styles.topPhotoBox2}>
-                        <img src={Clip_bs} alt="Top Photo 2"/>
-                    </div>
+                        <img src={Clip_bs} alt="Top Photo 2"/></div>
                     <div className={Styles.topPhotoBox} id={Styles.topPhotoBox3}>
                         <img src={Clip_bo} alt="Top Photo 3"/>
                         <p>BOX CAPTION</p>
