@@ -1,4 +1,45 @@
 @media only screen and (max-width: 37.5rem) {
+    #textBox {
+        background-color: gray;
+    }
+
+    #textBoxHeader {
+        /* Self Layout Properties */
+        padding: 0.88rem 1.3rem;
+        height: 17.55%;
+        width: 100%;
+    
+        /* Content Layout Properties */
+        display: flex;
+        align-items: center;
+    
+        /* UI Properties */
+        background-color: #7ec8ea;
+    }
+    
+    #textBoxHeader p {
+        /* Self Layout Properties */
+        margin: 0;
+        padding-left: 4.6%;
+        text-align: left;
+    
+        /* UI Properties */
+        font-family: 'Lato', sans-serif;
+        font-style: italic;
+        font-size: 2.4rem;
+        letter-spacing: 0.7rem;
+    }
+
+    #textBoxContent {
+        padding: 10px;
+        text-align: left;
+    }
+
+    .textBoxItemText {
+        font-family: 'Lato', sans-serif;
+        font-size: 0.9rem;
+        margin: 0;
+    }
 }
 
 @media only screen and (min-width: 60rem) {
@@ -9,7 +50,7 @@
         padding-bottom: 2.5rem;
     
         /* UI Properties */
-        background: transparent url('../icons/desktop/Layer_16_copy_6.png') 0% 0% no-repeat padding-box;
+        background-color: #fff;
     }
     
     #textBoxHeader {
