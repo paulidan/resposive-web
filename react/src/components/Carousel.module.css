@@ -7,22 +7,89 @@
     #container {
         /* Self Layout Properties */
         padding: 170px 0 40px 0;
+        margin: 0 auto;
         width: 93.75%;
+        height: 1691px;
+
+        /* Content Layout Properties */
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
     }
 
     #topPhotoContainer {
         /* Content Layout Properties */
+        height: 21.5%;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
     }
-    
+
+    .topPhotoBox {
+        /* Self Layout Properties */
+        position: relative;
+        padding: 20px 10px 10px 10px;
+    }
+
     .topPhotoBox img {
         /* Self Layout Properties */
         width: 120px;
     }
 
+    .topPhotoBox p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+    }
+
+    #topPhotoBox1 {
+        /* UI Properties */
+        background: transparent url('../icons/smartphone/Layer_16.png') 0% 0% no-repeat padding-box;
+    }
+
+    #topPhotoBox2 {
+        /* UI Properties */
+        background: transparent url('../icons/smartphone/Layer_16_copy.png') 0% 0% no-repeat padding-box;
+    }
+
+    #topPhotoBox3 p, #topPhotoBox4 p {
+        /* UI Properties */
+        font-family: 'Lato Light', sans-serif;
+        font-size: 18px;
+        line-height: 2;
+    }
+
+    .boxCaptionLine {
+        /* Self Layout Properties */
+        padding: 0 1px;
+
+        /* UI Properties */
+        background-color: rgba(255,255,255,0.8);
+    }
+
+    #topPhotoBox3 {
+        /* UI Properties */
+        background: transparent url('../icons/smartphone/Layer_30.png') 0% 0% no-repeat padding-box;
+    }
+
+    #topPhotoBox3 p {
+        color: #62A559;
+    }
+
+    #topPhotoBox4 {
+        /* UI Properties */
+        background: transparent url('../icons/smartphone/Layer_16_copy_4.png') 0% 0% no-repeat padding-box;
+    }
+
+    #topPhotoBox4 {
+        color: #BF79C3;
+    }
+
     .topPhotoDesktop {
-        /* Content Layout Properties */
+        /* Selft Layout Properties */
         display: none;
     }
 }

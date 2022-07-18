@@ -25,12 +25,12 @@ function Carousel() {
                     <div className={Styles.topPhotoBox} id={Styles.topPhotoBox3}>
                         <img src={img_desk_topPhotoBox3} alt="Top Photo 3" className={Styles.topPhotoDesktop}/>
                         <img src={img_phone_topPhotoBox3} alt="Top Photo 3" className={Styles.topPhotoPhone}/>
-                        <p>BOX CAPTION</p>
+                        <p><span className={Styles.boxCaptionLine}>BOX</span> <span className={Styles.boxCaptionLine}>CAPTION</span></p>
                     </div>
                     <div className={Styles.topPhotoBox} id={Styles.topPhotoBox4}>
                         <img src={img_desk_topPhotoBox4} alt="Top Photo 4" className={Styles.topPhotoDesktop}/>
                         <img src={img_phone_topPhotoBox4} alt="Top Photo 4" className={Styles.topPhotoPhone}/>
-                        <p>BOX CAPTION</p>
+                        <p><span className={Styles.boxCaptionLine}>BOX</span> <span className={Styles.boxCaptionLine}>CAPTION</span></p>
                     </div>
                 </div>
                 <div id={Styles.bottomItemContainer}>
