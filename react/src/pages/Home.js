@@ -5,15 +5,6 @@ import Carousel from '../components/Carousel';
 function HomePage() {
     return (
         <div className="App">
-            <div id="header"> 
-                <Header />
-            </div>
-            <div id="menu">
-                <Navbar />
-            </div>
-            <div>
-                HOME
-            </div>
             <div id="carousel">
                 <Carousel />
             </div>

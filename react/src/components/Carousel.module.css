@@ -1,12 +1,20 @@
+#mainBox {
+    width: 100%;
+    background: transparent url('../icons/desktop/BG.png') 0% 0% no-repeat padding-box;
+    background-size: cover;
+}
+
 #container {
     /* Self Layout Properties */
-    height: 1373px;
     margin: 0 auto;
-    width: 1500px;
+    padding: 141px 180px 72px 180px;
+    height: 1373px;
+    width: 93.75rem;
 
     /* Content Layout Properties */
     display: flex;
     flex-wrap: wrap;
+    align-content: space-around;
 
     /* UI Properties */
     background: transparent url('../icons/desktop/BG.png') 0% 0% no-repeat padding-box;
@@ -14,9 +22,6 @@
 
 #topPhotoContainer {
     /* Self Layout Properties */
-    margin-top: 141px;
-    padding-left: 180px;
-    padding-right: 180px;
     width: 100%;
 
     /* Content Layout Properties */
@@ -26,15 +31,7 @@
 
 .topPhotoBox {
     /* Self Layout Properties */
-    height: 478px;
-    padding-top: 9px;
-    width: 263px;
-
-    /* Content Layout Properties */
-    align-content: space-evenly;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    padding: 24px 15px 15px 15px;
 }
 
 #topPhotoBox1 {
@@ -44,6 +41,7 @@
 
 #topPhotoBox1 img, #topPhotoBox2 img {
     /* Self Layout Properties */
+    display: block;
     height: 439px;
     width: 232px;
 
@@ -56,6 +54,14 @@
     background: transparent url('../icons/desktop/Layer_16_copy.png') 0% 0% no-repeat padding-box;
 }
 
+#topPhotoBox3, #topPhotoBox4 {
+    /* Content Layout Properties */
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 0;
+    align-content: space-evenly;
+}
+
 #topPhotoBox3 img, #topPhotoBox4 img {
     /* Self Layout Properites */
     height: 230px;
@@ -66,7 +72,9 @@
 }
 
 #topPhotoBox3 p, #topPhotoBox4 p {
+    /* Self Layout Properties */
     margin: 0;
+
     /* UI Properites */
     font-family: 'Lato Light', sans-serif;
     font-size: 36px;
@@ -94,8 +102,6 @@
 
 #bottomItemContainer {
     /* Self Layout Properties */
-    padding-left: 180px;
-    padding-right: 180px;
     width: 100%;
 
     /* Content Layout Properties */
@@ -107,17 +113,22 @@
 .bottomPhotoBox {
     /* Self Layout Properties */
     position: relative;
-    height: 612px;
 }
 
 #bottomPhotoBox1 {
     /* Self Layout Properties */
-    width: 329px;
+    padding: 306px 164.5px;
+
+    /* UI Properties */
+    background: transparent url('../icons/desktop/Clip_.png') 0% 0% no-repeat padding-box;
 }
 
 #bottomPhotoBox2 {
     /* Self Layout Properties */
-    width: 336px;
+    padding: 306px 168px;
+    
+    /* UI Properties */
+    background: transparent url('../icons/desktop/Clip.png') 0% 0% no-repeat padding-box;
 }
 
 .bottomPhotoOverlay {
@@ -134,7 +145,7 @@
 
 .bottomPhotoOverlay p {
     /* Self Layout Properties */
-    width: 99px;
+    width: 30%;
     top: 358px;
     position: absolute;
     margin: 0;
