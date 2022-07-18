@@ -1,7 +1,7 @@
 #textBox {
     /* Self Layout Properties */
-    height: 612px;
-    width: 445px;
+    height: 100%;
+    width: 39%;
     padding-bottom: 40px;
 
     /* UI Properties */
@@ -12,12 +12,12 @@
     /* Self Layout Properties */
     padding-left: 21px;
     padding-right: 21px;
-    height: 76px;
+    height: 13.4%;
     width: 100%;
 
     /* Content Layout Properties */
-    align-items: center;
     display: flex;
+    align-items: center;
 
     /* UI Properties */
     background: transparent url('../icons/desktop/Layer_25.png') 0% 0% no-repeat padding-box;
@@ -37,7 +37,7 @@
 
 #textBoxContent {
     /* Self Layout Properties */
-    height: calc(100% - 76px);
+    height: 86.6%;
 
     /* Content Layout Properties */
     display: flex;
@@ -54,7 +54,7 @@
 
 .textBoxItemNumber {
     /* Self Layout Properties */
-    width: 60px;
+    width: 13.5%;
 }
 
 .textBoxItemNumber p {

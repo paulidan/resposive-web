@@ -1,5 +1,8 @@
 #mainBox {
+    /* Self Layout Properties */
     width: 100%;
+
+    /* UI Properties */
     background: transparent url('../icons/desktop/BG.png') 0% 0% no-repeat padding-box;
     background-size: cover;
 }
