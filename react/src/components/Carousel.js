@@ -34,14 +34,16 @@ function Carousel() {
                     </div>
                 </div>
                 <div id={Styles.bottomItemContainer}>
-                    <div className={Styles.bottomPhotoBox} id={Styles.bottomPhotoBox1}>
-                        <div className={Styles.bottomPhotoOverlay} id={Styles.bottomPhotoOverlay1}>
-                            <p>»</p>
+                    <div id={Styles.bottomPhotoContainer}>
+                        <div className={Styles.bottomPhotoBox} id={Styles.bottomPhotoBox1}>
+                            <div className={Styles.bottomPhotoOverlay} id={Styles.bottomPhotoOverlay1}>
+                                <p>»</p>
+                            </div>
                         </div>
-                    </div>
-                    <div className={Styles.bottomPhotoBox} id={Styles.bottomPhotoBox2}>
-                        <div className={Styles.bottomPhotoOverlay} id={Styles.bottomPhotoOverlay2}>
-                            <p>«</p>
+                        <div className={Styles.bottomPhotoBox} id={Styles.bottomPhotoBox2}>
+                            <div className={Styles.bottomPhotoOverlay} id={Styles.bottomPhotoOverlay2}>
+                                <p>«</p>
+                            </div>
                         </div>
                     </div>
                     <CarouselTextbox />

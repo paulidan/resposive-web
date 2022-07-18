@@ -2,6 +2,7 @@
     #mainBox {
         /* UI Properties */
         background: transparent url('../icons/smartphone/BG.png') 0% 0% no-repeat padding-box;
+        background-position: center;
     }
 
     #container {
@@ -18,8 +19,10 @@
     }
 
     #topPhotoContainer {
-        /* Content Layout Properties */
+        /* Self Layout Properties */
         height: 21.5%;
+
+        /* Content Layout Properties */
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -38,6 +41,7 @@
     }
 
     .topPhotoBox p {
+        /* Self Layout Properties */
         position: absolute;
         top: 50%;
         left: 50%;
@@ -76,6 +80,7 @@
     }
 
     #topPhotoBox3 p {
+        /* UI Properties */
         color: #62A559;
     }
 
@@ -85,12 +90,88 @@
     }
 
     #topPhotoBox4 {
+        /* UI Properties */
         color: #BF79C3;
     }
 
     .topPhotoDesktop {
-        /* Selft Layout Properties */
+        /* Self Layout Properties */
         display: none;
+    }
+
+    #bottomPhotoContainer {
+        /* Self Layout Properties */
+        height: 650px;
+        width: 100%;
+
+        /* Content Layout Properties */
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+
+    .bottomPhotoBox {
+        /* Self Layout Properties */
+        position: relative;
+        width: 100%;
+        padding: 157.5px 0;
+    }
+
+    #bottomPhotoBox1 {
+        /* UI Properties */
+        background: transparent url('../icons/smartphone/Clip_y.png') 0% 0% no-repeat padding-box;
+    }
+
+    #bottomPhotoBox2 {
+        /* UI Properties */
+        background: transparent url('../icons/smartphone/Clip.png') 0% 0% no-repeat padding-box;
+    }
+
+    .bottomPhotoOverlay {
+        /* Self Layout Properties */
+        position: absolute;
+        height: 63.5%;
+        left: 0;
+        right: 0;
+    }
+
+    .bottomPhotoOverlay p {
+        /* Self Layout Properties */
+        width: 33%;
+        position: absolute;
+        margin: 0;
+
+        /* UI Properties */
+        color: #333;
+        font-family: 'Lato Light', sans-serif;
+        font-size: 9.4rem;
+        line-height: 0.5;
+    }
+
+    #bottomPhotoOverlay1 {
+        /* Self Layout Properties */
+        bottom: 0;
+        
+        /* UI Properties */
+        background: transparent url('../icons/smartphone/Polygon_1.png') 0% 0% no-repeat padding-box;
+    }
+
+    #bottomPhotoOverlay1 p {
+        /* Self Layout Properties */
+        bottom: 22%;
+    }
+
+    #bottomPhotoOverlay2 {
+        /* Self Layout Properties */
+        top: 0;
+
+        /* UI Properties */
+        background: transparent url('../icons/smartphone/Polygon_1_copy.png') 0% 0% no-repeat padding-box;
+    }
+
+    #bottomPhotoOverlay2 p {
+        /* Self Layout Properties */
+        top: 0;
     }
 }
 
@@ -212,6 +293,16 @@
         justify-content: space-between;
     }
 
+    #bottomPhotoContainer {
+        /* Self Layout Properties */
+        width: 59.65%;
+
+        /* Content Layout Properties */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
     .bottomPhotoBox {
         /* Self Layout Properties */
         position: relative;
@@ -253,7 +344,7 @@
         margin: 0;
 
         /* UI Properties */
-        color: #333333;
+        color: #333;
         font-family: 'Lato Light', sans-serif;
         font-size: 12.5rem;
     }
