@@ -5,9 +5,7 @@ import Carousel from '../components/Carousel';
 function HomePage() {
     return (
         <div className="App">
-            <div id="carousel">
-                <Carousel />
-            </div>
+            <Carousel />
         </div>
     );
 }
