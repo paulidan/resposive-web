@@ -1,7 +1,11 @@
-import Clip_bw from '../icons/desktop/Clip_bw.png';
-import Clip_bs from '../icons/desktop/Clip_bs.png';
-import Clip_bo from '../icons/desktop/Clip_bo.png';
-import Clip_bj from '../icons/desktop/Clip_bj.png';
+import img_desk_topPhotoBox1 from '../icons/desktop/Clip_bw.png';
+import img_desk_topPhotoBox2 from '../icons/desktop/Clip_bs.png';
+import img_desk_topPhotoBox3 from '../icons/desktop/Clip_bo.png';
+import img_desk_topPhotoBox4 from '../icons/desktop/Clip_bj.png';
+import img_phone_topPhotoBox1 from '../icons/smartphone/Clip_bo.png';
+import img_phone_topPhotoBox2 from '../icons/smartphone/Clip_bk.png';
+import img_phone_topPhotoBox3 from '../icons/smartphone/Clip_be.png';
+import img_phone_topPhotoBox4 from '../icons/smartphone/Clip_.png';
 import CarouselTextbox from './CarouselTextbox';
 import Styles from './Carousel.module.css';
 
@@ -11,15 +15,17 @@ function Carousel() {
             <div id={Styles.container}>
                 <div id={Styles.topPhotoContainer}>
                     <div className={Styles.topPhotoBox} id={Styles.topPhotoBox1}>
-                        <img src={Clip_bw} alt="Top Photo 1"/></div>
+                        <img src={img_desk_topPhotoBox1} alt="Top Photo 1"/>
+                    </div>
                     <div className={Styles.topPhotoBox} id={Styles.topPhotoBox2}>
-                        <img src={Clip_bs} alt="Top Photo 2"/></div>
+                        <img src={img_desk_topPhotoBox2} alt="Top Photo 2"/>
+                    </div>
                     <div className={Styles.topPhotoBox} id={Styles.topPhotoBox3}>
-                        <img src={Clip_bo} alt="Top Photo 3"/>
+                        <img src={img_desk_topPhotoBox3} alt="Top Photo 3"/>
                         <p>BOX CAPTION</p>
                     </div>
                     <div className={Styles.topPhotoBox} id={Styles.topPhotoBox4}>
-                        <img src={Clip_bj} alt="Top Photo 4"/>
+                        <img src={img_desk_topPhotoBox4} alt="Top Photo 4"/>
                         <p>BOX CAPTION</p>
                     </div>
                 </div>
