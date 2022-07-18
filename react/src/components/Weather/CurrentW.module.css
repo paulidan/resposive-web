@@ -28,7 +28,7 @@ main{
 
 .location_box .date{
     color: #858585;
-    font-size: 20px;
+    font-size: 25px;
     font-style: italic;
     text-align: center;
 
@@ -43,7 +43,6 @@ main{
     display: inline-block;
     margin: 30px auto;
     background-color: rgba(195, 195, 195, 0.35);
-    border-radius: 16px;
     padding: 15px 25px;
     color: #DFBB42;
     font-size: 102px;
@@ -54,7 +53,6 @@ main{
     position: relative;
     margin: 10px auto;
     background-color: rgba(195, 195, 195, 0.35);
-    border-radius: 16px;
     padding: 15px 25px;
     color: #DFBB42;
     font-size: 30px;

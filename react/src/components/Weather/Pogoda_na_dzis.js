@@ -1,6 +1,6 @@
 import React, { Component, useEffect, useState } from "react";
 import Pogoda from './Pogoda_na_dzis.module.css';
-import Weather from './Weather';
+import CurrentWeather from './CurrentWeather';
 import { Dimmer, Loader } from 'semantic-ui-react';
 
 
@@ -51,10 +51,10 @@ export default function Pogoda_na_dzis() {
       }
       
       return (
-        <div className={Pogoda.Pogoda_na_dzis}>
+        <div className={Pogoda.Pogoda_na_dzis}> {console.log("ala 0", weatherData)}
           {(!!weatherData && !!weatherData?.main ) ? (
             <div>
-              <Weather weatherData={weatherData}/>
+              <CurrentWeather data={weatherData}/>
               
             </div>
           ): (

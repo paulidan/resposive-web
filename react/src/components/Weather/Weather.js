@@ -19,7 +19,12 @@ export default function Weather({weatherData}) {
 //        }, []);
         
 //refresh button
-
+const weather = useSta[{}];
+const icons = {
+    'Clear': sun,
+    'Rain': rain,
+    'Clouds': cloud
+};
     const refresh = () => {
         window.location.reload();
     }
@@ -32,6 +37,7 @@ export default function Weather({weatherData}) {
         <Card.Content>
             <div className={Pogoda.container}>
                 <Card.Header className={Pogoda.header}> {weatherData.name} </Card.Header>
+                {weather.weather[0].main} <img src={icons[weather.weather[0].main]} />
             <div className={Pogoda.temperatura}>
                 Temperatura: {weatherData.main.temp.toLocaleString(undefined,{maximumFractionDigits:0})} °C
             </div>
