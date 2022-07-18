@@ -2,7 +2,7 @@
     /* Self Layout Properties */
     height: 100%;
     width: 39%;
-    padding-bottom: 40px;
+    padding-bottom: 2.5rem;
 
     /* UI Properties */
     background: transparent url('../icons/desktop/Layer_16_copy_6.png') 0% 0% no-repeat padding-box;
@@ -10,8 +10,7 @@
 
 #textBoxHeader {
     /* Self Layout Properties */
-    padding-left: 21px;
-    padding-right: 21px;
+    padding: 0 1.3rem;
     height: 13.4%;
     width: 100%;
 
@@ -31,8 +30,8 @@
     /* UI Properties */
     font-family: 'Lato', sans-serif;
     font-style: italic;
-    font-size: 48px;
-    letter-spacing: 14.4px;
+    font-size: 3rem;
+    letter-spacing: 0.9rem;
 }
 
 #textBoxContent {
@@ -54,25 +53,26 @@
 
 .textBoxItemNumber {
     /* Self Layout Properties */
+    height: 100%;
     width: 13.5%;
 }
 
 .textBoxItemNumber p {
     /* Self Layout Properties */
     margin: 0;
-    padding-bottom: 8px;
+    padding-bottom: 0.5rem;
     
     /* UI Properites */
     color: #333;
     font-family: 'Lato', sans-serif;
-    font-size: 35.78px;
+    font-size: 2.2rem;
     font-weight: 600;
 }
 
 .textBoxItemNumber div {
     /* Self Layout Properties */
-    height: 9px;
-    width: 60px;
+    height: 15%;
+    width: 100%;
 
     /* UI Properties */
     background: transparent url('../icons/desktop/Layer_28.png') 0% 0% no-repeat padding-box;
@@ -85,6 +85,6 @@
 
     /* UI Properties */
     font-family: 'Lato', sans-serif;
-    font-size: 14px;
+    font-size: 0.9rem;
     text-align: left;
 }
