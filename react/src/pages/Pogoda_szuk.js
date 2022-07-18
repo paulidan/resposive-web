@@ -17,17 +17,10 @@ const WeatherSearchPage = () => {
       `${weatherApi.base}/weather?lat=${lat}&lon=${lon}&appid=${weatherApi.key}&units=metric`
     );
 
-    const fetchForecast = fetch(
-      `${weatherApi.base}/forecast?lat=${lat}&lon=${lon}&appid=${weatherApi.key}&units=metric`
-    );
-
-    Promise.all([fetchCurrentWeather, fetchForecast])
+    Promise.all([fetchCurrentWeather])
       .then(async (response) => {
         const weatherResponse = await response[0].json();
-        const forecastResponse = await response[1].json();
-
         setCurrentWeather({ city: searchData.label, ...weatherResponse });
-        setForecast({ city: searchData.label, ...forecastResponse });
 
       })
       .catch((err) => console.log(err));
