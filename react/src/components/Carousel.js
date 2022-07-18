@@ -15,17 +15,21 @@ function Carousel() {
             <div id={Styles.container}>
                 <div id={Styles.topPhotoContainer}>
                     <div className={Styles.topPhotoBox} id={Styles.topPhotoBox1}>
-                        <img src={img_desk_topPhotoBox1} alt="Top Photo 1"/>
+                        <img src={img_desk_topPhotoBox1} alt="Top Photo 1" className={Styles.topPhotoDesktop}/>
+                        <img src={img_phone_topPhotoBox1} alt="Top Photo 1" className={Styles.topPhotoPhone}/>
                     </div>
                     <div className={Styles.topPhotoBox} id={Styles.topPhotoBox2}>
-                        <img src={img_desk_topPhotoBox2} alt="Top Photo 2"/>
+                        <img src={img_desk_topPhotoBox2} alt="Top Photo 2" className={Styles.topPhotoDesktop}/>
+                        <img src={img_phone_topPhotoBox2} alt="Top Photo 2" className={Styles.topPhotoPhone}/>
                     </div>
                     <div className={Styles.topPhotoBox} id={Styles.topPhotoBox3}>
-                        <img src={img_desk_topPhotoBox3} alt="Top Photo 3"/>
+                        <img src={img_desk_topPhotoBox3} alt="Top Photo 3" className={Styles.topPhotoDesktop}/>
+                        <img src={img_phone_topPhotoBox3} alt="Top Photo 3" className={Styles.topPhotoPhone}/>
                         <p>BOX CAPTION</p>
                     </div>
                     <div className={Styles.topPhotoBox} id={Styles.topPhotoBox4}>
-                        <img src={img_desk_topPhotoBox4} alt="Top Photo 4"/>
+                        <img src={img_desk_topPhotoBox4} alt="Top Photo 4" className={Styles.topPhotoDesktop}/>
+                        <img src={img_phone_topPhotoBox4} alt="Top Photo 4" className={Styles.topPhotoPhone}/>
                         <p>BOX CAPTION</p>
                     </div>
                 </div>

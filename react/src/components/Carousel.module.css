@@ -11,12 +11,19 @@
     }
 
     #topPhotoContainer {
+        /* Content Layout Properties */
         display: flex;
         flex-wrap: wrap;
     }
+    
     .topPhotoBox img {
+        /* Self Layout Properties */
         width: 120px;
-        height: 120px;
+    }
+
+    .topPhotoDesktop {
+        /* Content Layout Properties */
+        display: none;
     }
 }
 
@@ -65,7 +72,7 @@
         background: transparent url('../icons/desktop/Layer_16.png') 0% 0% no-repeat padding-box;
     }
 
-    #topPhotoBox1 img, #topPhotoBox2 img {
+    #topPhotoBox1 .topPhotoDesktop, #topPhotoBox2 .topPhotoDesktop {
         /* Self Layout Properties */
         display: block;
         width: 14.5rem;
@@ -122,6 +129,10 @@
     #topPhotoBox4 {
         /* UI Properties */
         background: transparent url('../icons/desktop/Layer_16_copy_3.png') 0% 0% no-repeat padding-box;
+    }
+
+    .topPhotoPhone {
+        display: none;
     }
 
     #bottomItemContainer {
