@@ -7,14 +7,17 @@ const WeatherPage = () => {
         <div className="App">
           <div id="header"> 
             <Header />
-          </div>
-          <div id="menu">
+            <div id="menu">
             <Navbar />
           </div>
+          </div>
+          
           <div>
             <ButtonsWeather />
           </div>
-          
+          <div id="weather2">
+            <Pogoda_na_dzis />
+            </div>
         </div>
       );
 }

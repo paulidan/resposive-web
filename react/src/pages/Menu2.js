@@ -6,10 +6,11 @@ function Menu2Page(){
         <div className="App">
           <div id="header"> 
             <Header />
-          </div>
-          <div id="menu">
+            <div id="menu">
             <Navbar />
           </div>
+          </div>
+          
           <div>
               MENU2
           </div>

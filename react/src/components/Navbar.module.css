@@ -1,31 +1,29 @@
 #menu {
-    max-width: 1400px;
-    max-height:94px;
-    margin: 0 auto;
+    max-width: 65%;
+    left: 215px;
     padding: 10px;
     display: flex;
-    
+    margin-top: -5%;
+    position: sticky;
     }
     
 #logo {
 top: 660px;
-left: 182px;
-width: 269px;
-height: 66px;
-display: inline-block;
-margin-top: 70px;
-margin-left: 80px;
+left: 142px;
+max-width: 269px;
+max-height: 66px;
+display:block;
+margin: 0 auto;
 
 }
 .main_nav{
   display: flex;
-  width: 55%;
   float: right;
   list-style: none;
   font-family: 'Roboto', sans-serif;
-  font-size: 26px;
-  margin-top: 45px;
-  
+  font-size: 26px; 
+  margin-top: -2.75%;
+
 }
 
 
@@ -44,11 +42,9 @@ margin-left: 80px;
 }
 
 .nav_link {
-
   display: inline-block;
   width:120px;
   height: 4em;
-
 }
 .nav_link.active, .nav_link:hover {
   background-color: #EAD280;
@@ -56,17 +52,13 @@ margin-left: 80px;
   border-bottom: 5px solid #B0B0B0;
   
 }
-.nav_link.active, .nav_link:active {
+.nav_link.active, .nav_link:focus {
   background-color: #EAD280;
   border-top: 10px solid #DFBB42;
   border-bottom: 5px solid #B0B0B0;
   
 }
-.nav_link.active, .nav_link:visited {
-  background-color: #EAD280;
-  border-top: 10px solid #DFBB42;
-  border-bottom: 5px solid #B0B0B0;
-}
+
 
 .nav_item {
   margin-top: 30px;
@@ -112,8 +104,7 @@ a:hover {
               /* style dla 300px */
 }
 
-@media (max-width: 800px) and (min-width: 600px) {
-      /* style css */
-}
+
+
 
     
