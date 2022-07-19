@@ -16,7 +16,7 @@ function ButtonsWeather()  {
                 <button className={ButtonsWeatherStyle.Buttons}> Pogoda na dziś</button>
             </Link>
             <Link to={"/pogoda/term"}>
-                <button className={ButtonsWeatherStyle.Buttons}>Pogoda długoterminow</button>
+                <button className={ButtonsWeatherStyle.Buttons}>Pogoda długoterminowa</button>
             </Link>
         </div>
        

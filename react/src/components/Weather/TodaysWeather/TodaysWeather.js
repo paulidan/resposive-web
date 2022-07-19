@@ -1,6 +1,6 @@
 import React, { Component, useEffect, useState } from "react";
-import Pogoda from './Pogoda_na_dzis.module.css';
-import CurrentWeather from './CurrentWeather';
+import Weather from './TodaysWeather.module.css';
+import CurrentWeather from '../CurrentWeather/CurrentWeather';
 import { Dimmer, Loader } from 'semantic-ui-react';
 
 
@@ -51,14 +51,14 @@ export default function Pogoda_na_dzis() {
       }
       
       return (
-        <div className={Pogoda.Pogoda_na_dzis}> {console.log("ala 0", weatherData)}
+        <div className={Weather.TodaysWeather}> {console.log("ala 0", weatherData)}
           {(!!weatherData && !!weatherData?.main ) ? (
             <div>
               <CurrentWeather data={weatherData}/>
               
             </div>
           ): (
-            <div className={Pogoda.Dimmerr}>
+            <div className={Weather.Dimmerr}>
               <Dimmer active>
                 <Loader>Ladowanie...</Loader>
               </Dimmer>

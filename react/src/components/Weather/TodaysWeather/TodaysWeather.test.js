@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
-import Pogoda_na_dzis from './Pogoda_na_dzis';
+import TodaysWeather from './TodaysWeather';
 
 test('renders learn react link', () => {
-  render(<Pogoda_na_dzis />);
+  render(<TodaysWeather />);
   const linkElement = screen.getByText(/learn react/i);
   expect(linkElement).toBeInTheDocument();
 });

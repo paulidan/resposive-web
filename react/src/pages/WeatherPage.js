@@ -14,7 +14,6 @@ function WeatherPage(){
           </div>
           <div>
               <ButtonsWeather />
-
           </div>
         </div>
         
