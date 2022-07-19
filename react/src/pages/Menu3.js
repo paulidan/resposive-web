@@ -1,21 +1,16 @@
 import Navbar from '../components/Navbar';
 import Header from '../components/Header';
 
-function Menu3Page(){
-    return (
-        <div className="App">
-          <div id="header"> 
-            <Header />
-            <div id="menu">
-            <Navbar />
-          </div>
-          </div>
-          
-          <div>
-              MENU3
-          </div>
-        </div>
-      );
+function Menu3Page() {
+  return (
+    <div className="App">
+      <Header />
+      <Navbar />
+      <div>
+        MENU3
+      </div>
+    </div>
+  );
 }
 
 export default Menu3Page;

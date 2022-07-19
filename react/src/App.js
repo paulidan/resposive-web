@@ -8,21 +8,17 @@ import WeatherToday from './pages/WeatherToday';
 import WeatherTermPage from './pages/WeatherTermPage';
 import './App.css';
 
-
 function App() {
-  
   return (
     <Routes>
- 
-      <Route path='/' element={<HomePage/>} /> 
-      <Route path='/menu2' element={<Menu2Page/>} /> 
-      <Route path='/menu3' element={<Menu3Page/>} /> 
-      <Route path='/pogoda' element={<WeatherPage/>} /> 
-      <Route path='/pogoda/szukaj' element={<WeatherSearchPage/>} /> 
-      <Route path='/pogoda/dzis' element={<WeatherToday/>} /> 
-      <Route path='/pogoda/term' element={<WeatherTermPage/>} /> 
+      <Route path='/' element={<HomePage />} />
+      <Route path='/menu2' element={<Menu2Page />} />
+      <Route path='/menu3' element={<Menu3Page />} />
+      <Route path='/pogoda' element={<WeatherPage />} />
+      <Route path='/pogoda/szukaj' element={<WeatherSearchPage />} />
+      <Route path='/pogoda/dzis' element={<WeatherToday />} />
+      <Route path='/pogoda/term' element={<WeatherTermPage />} />
     </Routes>
-
   );
 }
 

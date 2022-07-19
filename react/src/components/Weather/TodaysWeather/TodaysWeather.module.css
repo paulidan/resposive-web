@@ -1,76 +1,71 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: Lato-Black, Lato, sans-serif;
     background-size: cover;
-    min-height: 100vh;
-    padding: 25px;
+    min-height: 55.5rem;
+    padding: 1.5rem;
 }
-.header{
+
+.header {
     margin: auto;
     text-align: center;
     color: #EAD280;
-    font-size: 48px;
-    text-shadow: 3px 3px rgba(255, 255, 255, 0.5);
+    font-size: 3rem;
+    text-shadow: 0.1rem 0.1rem rgba(255, 255, 255, 0.5);
 }
-
 
 p {
     text-align: left;
     color:#5A5C5B;
-    font-size: 26px;
-    text-shadow: 3px 3px rgba(255, 255, 255, 0.5);
-   
+    font-size: 1.5rem;
+    text-shadow: 0.1rem 0.1rem rgba(255, 255, 255, 0.5);
 }
-
 
 .weather2{
     text-align: center;
     color: #EAD280;
-    font-size: 48px;
-    text-shadow: 3px 3px rgba(255, 255, 255, 0.5);
+    font-size: 3rem;
+    text-shadow: 0.1rem 0.1rem rgba(255, 255, 255, 0.5);
 }
 
-
 .day{
-    padding: 15px;
+    padding: 1rem;
     color: black;
     font-family: Lato-Black, Lato, sans-serif;
-    font-size: 18px;
+    font-size: 1.2rem;
     font-weight: 600;
 }
 
 .temp{
-    padding: 15px;
+    padding: 1rem;
     color: black;
     font-family: Lato-Black, Lato, sans-serif;
-    font-size: 18px;
+    font-size: 1.2rem;
 }
 
-
-
 .sunrise-sunset{
-    padding: 15px;
+    padding: 1rem;
     color: black;
     font-family: Lato-Black, Lato, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .description{
-    padding: 15px;
+    padding: 1rem;
     color: black;
     font-family: Lato-Black, Lato, sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
 }
+
 .button{
-    width: 35px;
-    height: 35px;
+    width: 2.2rem;
+    height: 2.2rem;
     border: none;
     background-color:  transparent;
     color: #EAD280;
@@ -78,29 +73,30 @@ p {
 
 .Dimmerr{
     text-align: center;
-    
     color:#5A5C5B;
-    font-size: 26px;
-    text-shadow: 3px 3px rgba(255, 255, 255, 0.5);
+    font-size: 1.5rem;
+    text-shadow: 0.1rem 0.1rem rgba(255, 255, 255, 0.5);
 }
+
 .container{
     position: relative;
     display: inline-block;
-    margin: 20px auto;
+    margin: 1.25rem auto;
     background-color: rgba(215, 215, 215, 0.52);
-    border-radius: 16px;
-    padding: 15px 85px;
+    border-radius: 1rem;
+    padding: 1rem 5.3rem;
     color: #DFBB42;
-    font-size: 102px;
-    text-shadow: 3px 6px rgba(195, 195, 195, 0.35);
+    font-size: 6.4rem;
+    text-shadow: 0.1rem 0.3rem rgba(195, 195, 195, 0.35);
 }
+
 .temperatura{
     position: relative;
-    margin: 10px auto;
+    margin: 0.6rem auto;
     background-color: rgba(195, 195, 195, 0.35);
-    border-radius: 16px;
-    padding: 15px 25px;
+    border-radius: 1rem;
+    padding: 1rem 1.5rem;
     color: #DFBB42;
-    font-size: 30px;
-    text-shadow: 3px 3px rgba(195, 195, 195, 0.25);
+    font-size: 1.8rem;
+    text-shadow: 0.1rem 0.1rem rgba(195, 195, 195, 0.25);
 }

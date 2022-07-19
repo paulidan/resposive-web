@@ -8,7 +8,7 @@ import { weatherApi } from '../components/Weather/Api';
 
 const WeatherSearchPage = () => {
   const [currentWeather, setCurrentWeather] = useState(null);
-  
+
   const handleSearch = (searchData) => {
     const [lat, lon] = searchData.value.split(" ");
 
@@ -29,19 +29,11 @@ const WeatherSearchPage = () => {
 
   return (
     <div className="App">
-      <div id="header">
         <Header />
-      </div>
-      <div id="menu">
         <Navbar />
-      </div>
-      <div>
         <ButtonsWeather />
-      </div>
-      <div className="searchbar">
         <Search onSearchChange={handleSearch} />
         {currentWeather && <CurrentWeather data={currentWeather} />}
-      </div>
     </div>
   );
 }

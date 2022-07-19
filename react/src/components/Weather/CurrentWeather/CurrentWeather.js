@@ -52,10 +52,9 @@ const CurrentWeather = ({ data }) => {
                             {data.weather[0].main} <img src={icons[data.weather[0].main]} />
                         </div>
                     </div>
-
                 </div>
             </div>
-        </div >
+        </div>
     );
 }
 

@@ -27,18 +27,10 @@ const WeatherTermPage = () => {
 
   return (
     <div className="App">
-      <div id="header">
         <Header />
-      </div>
-      <div id="menu">
         <Navbar />
-      </div>
-      <div>
         <ButtonsWeather />
-      </div>
-      <div className="forecast">
         <Forecast />
-      </div>
     </div>
   );
 }

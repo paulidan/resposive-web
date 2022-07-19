@@ -1,71 +1,64 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: Lato-Black, Lato, sans-serif;
 }
 
-.app{
+.app {
     background-size: cover;
-
 }
 
-main{
-    min-height: 100vh;
-    padding: 25px;
-}
-
-
-.location_box .location{
+.location_box .location {
     color: #858585;
-    font-size: 32px;
+    font-size: 2rem;
     text-align: center;
-
 }
 
-.location_box .date{
+.location_box .date {
     color: #858585;
-    font-size: 25px;
+    font-size: 1.6rem;
     font-style: italic;
     text-align: center;
-
 }
 
-.weather_box{
+.weather_box {
     align-items: center;
 }
 
-.weather_box .temp{
+.weather_box .temp {
     position: relative;
     display: inline-block;
-    margin: 30px auto;
+    margin: 1.5rem auto;
     background-color: rgba(195, 195, 195, 0.35);
-    padding: 15px 25px;
+    padding: 1rem 1.5rem;
     color: #DFBB42;
-    font-size: 102px;
-    text-shadow: 3px 6px rgba(195, 195, 195, 0.35);
+    font-size: 6.5rem;
+    text-shadow: 0.1rem 0.3rem rgba(195, 195, 195, 0.35);
+    border-radius: 1rem;
 }
 
-.weather_box .feels{
+.weather_box .feels {
     position: relative;
-    margin: 10px auto;
+    margin: 0.6rem auto;
     background-color: rgba(195, 195, 195, 0.35);
-    padding: 15px 25px;
+    padding: 1rem 1.5rem;
     color: #DFBB42;
-    font-size: 30px;
-    text-shadow: 3px 3px rgba(195, 195, 195, 0.25);
+    font-size: 1.5rem;
+    text-shadow: 0.1rem 0.1rem rgba(195, 195, 195, 0.25);
+    border-radius: 1rem;
 }
 
-.weather_box .weather{
+.weather_box .weather {
     color: #DFBB42;
-    font-size: 37px;
-    text-shadow: 3px 3px rgba(255, 255, 255, 0.5);
+    font-size: 2.5rem;
+    text-shadow: 0.1rem 0.1rem rgba(255, 255, 255, 0.5);
 }
 
-.weather_box .weather >img{
+.weather_box .weather >img {
     opacity: 1;
-    height: 70px;
+    height: 4.4rem;
 }
