@@ -1,7 +1,4 @@
 @media only screen and (max-width: 37.5rem) {
-    :root {
-        background-color: gray;
-    }
     #textBox {
         /* UI Properties */
         background-color: #FFF;
