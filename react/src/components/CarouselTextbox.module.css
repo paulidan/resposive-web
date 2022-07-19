@@ -1,7 +1,10 @@
 @media only screen and (max-width: 37.5rem) {
+    :root {
+        background-color: gray;
+    }
     #textBox {
         /* UI Properties */
-        background-color: gray;
+        background-color: #FFF;
     }
 
     #textBoxHeader {
@@ -33,19 +36,34 @@
 
     #textBoxContent {
         /* Self Layout Properties */
-        padding: 10px;
+        margin: 0;
+        padding: 0 0.6rem 0.6rem 0.6rem;
 
-        /*UI Properties */
+        /* UI Properties */
         text-align: left;
+        list-style-position: inside;
+    }
+    
+    .textBoxItem {
+        /* Self Layout Properties */
+        padding-top: 0.5rem;
     }
 
     .textBoxItemText {
         /* Self Layout Properties */
         margin: 0;
 
+        /* Content Layout Properties */
+        display: inline;
+
         /*UI Properties */
         font-family: 'Lato', sans-serif;
         font-size: 0.9rem;
+    }
+
+    .textBoxItemNumber {
+        /* Content Layout Properties */
+        display: none;
     }
 }
 
@@ -102,9 +120,6 @@
     }
     
     .textBoxItem {
-        /* Self Layout Properties */
-        height: 100%;
-
         /* Content Layout Properties */
         display: flex;
         align-items: flex-end;
@@ -131,7 +146,7 @@
     
     .textBoxItemNumber div {
         /* Self Layout Properties */
-        height: 17.5%;
+        padding-bottom: 00.5rem;
         width: 100%;
     
         /* UI Properties */
