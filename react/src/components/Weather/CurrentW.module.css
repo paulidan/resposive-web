@@ -43,17 +43,17 @@ main{
     display: inline-block;
     margin: 30px auto;
     background-color: rgba(195, 195, 195, 0.35);
-    padding: 15px 25px;
+    padding: 15px 45px;
     color: #DFBB42;
     font-size: 102px;
     text-shadow: 3px 6px rgba(195, 195, 195, 0.35);
 }
 
-.weather_box .feels{
+.weather_box .feels {
     position: relative;
     margin: 10px auto;
     background-color: rgba(195, 195, 195, 0.35);
-    padding: 15px 25px;
+    padding: 15px 35px;
     color: #DFBB42;
     font-size: 30px;
     text-shadow: 3px 3px rgba(195, 195, 195, 0.25);
@@ -68,4 +68,11 @@ main{
 .weather_box .weather >img{
     opacity: 1;
     height: 70px;
+}
+.text{
+    color: #858585;
+    font-size: 30px;
+    text-align: left;
+    position: relative;
+
 }
