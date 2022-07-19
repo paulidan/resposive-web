@@ -7,25 +7,24 @@
 
     #container {
         /* Self Layout Properties */
-        padding: 40px 0;
+        padding: 2.5rem 0;
         margin: 0 auto;
         width: 93.75%;
     }
 
     #topPhotoContainer {
         /* Self Layout Properties */
-        margin-bottom: 40px;
+        margin-bottom: 2.5rem;
 
         /* Content Layout Properties */
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        row-gap: 20px;
+        row-gap: 1.25rem;
     }
 
     .topPhotoBox {
         /* Self Layout Properties */
-        margin: 0 auto;
         position: relative;
         padding: 20px 10px 10px 10px;
     }
@@ -33,7 +32,7 @@
     .topPhotoPhone {
         /* Self Layout Properties */
         display: block;
-        width: 120px;
+        width: 7.5rem;
     }
 
     .topPhotoBox p {
@@ -98,36 +97,33 @@
     #bottomPhotoContainer {
         /* Self Layout Properties */
         margin-bottom: 40px;
-        height: 650px;
         width: 100%;
-
-        /* Content Layout Properties */
-        display: flex;
-        flex-wrap: wrap;
-        align-content: space-between;
     }
 
     .bottomPhotoBox {
         /* Self Layout Properties */
         position: relative;
         width: 100%;
-        padding: 157.5px 0;
+        margin-bottom: 20px;
+        padding: 52.5% 0;
     }
 
     #bottomPhotoBox1 {
         /* UI Properties */
         background: transparent url('../icons/smartphone/Clip_y.png') 0% 0% no-repeat padding-box;
+        background-size: cover;
     }
 
     #bottomPhotoBox2 {
         /* UI Properties */
         background: transparent url('../icons/smartphone/Clip.png') 0% 0% no-repeat padding-box;
+        background-size: cover;
     }
 
     .bottomPhotoOverlay {
         /* Self Layout Properties */
         position: absolute;
-        height: 63.5%;
+        height: 100%;
         left: 0;
         right: 0;
     }
@@ -150,12 +146,13 @@
         bottom: 0;
         
         /* UI Properties */
-        background: transparent url('../icons/smartphone/Polygon_1.png') 0% 0% no-repeat padding-box;
+        background: transparent url('../icons/smartphone/Polygon_1.png') 0% bottom no-repeat padding-box;
+        background-size: contain;
     }
 
     #bottomPhotoOverlay1 p {
         /* Self Layout Properties */
-        bottom: 22%;
+        bottom: 18.5%;
     }
 
     #bottomPhotoOverlay2 {
@@ -163,12 +160,13 @@
         top: 0;
 
         /* UI Properties */
-        background: transparent url('../icons/smartphone/Polygon_1_copy.png') 0% 0% no-repeat padding-box;
+        background: transparent url('../icons/smartphone/Polygon_1_copy.png') 0% top no-repeat padding-box;
+        background-size: contain;
     }
 
     #bottomPhotoOverlay2 p {
         /* Self Layout Properties */
-        top: 0;
+        top: 1.5%;
     }
 }
 
