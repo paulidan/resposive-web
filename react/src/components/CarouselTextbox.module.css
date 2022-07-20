@@ -17,10 +17,8 @@
 }
 
 #textBoxHeader p {
-    /* Self Layout Properties */
-    text-align: left;
-
     /* UI Properties */
+    text-align: left;
     font-family: 'Lato', sans-serif;
     font-style: italic;
 }
@@ -48,7 +46,8 @@
     .textBoxItemText {
         /* UI Properties */
         font-family: 'Lato', sans-serif;
-        font-size: 0.9rem;}
+        font-size: 0.9rem;
+    }
 }
 
 /* Tablet & Desktop Layout */

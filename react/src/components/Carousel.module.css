@@ -143,6 +143,7 @@
         /* UI Properties */
         background: transparent url('../icons/smartphone/BG.png') 0% 0% no-repeat padding-box;
         background-position: center 5.5%;
+        background-size: 200% 210%;
     }
 
     #container {
@@ -285,6 +286,14 @@
     }
 }
 
+/* Center bottomPhoto boxes if only one is displayed per row */
+@media only screen and (min-width: 37.5rem) and (max-width: 46.625rem) {
+    #bottomPhotoContainer {
+        /* Content Layout Properties */
+        justify-content: center;
+    }
+}
+
 /* Tablet Layout */
 @media only screen and (min-width: 37.51rem) and (max-width: 61.99rem) {
     #mainBox {
@@ -382,6 +391,10 @@
     #bottomPhotoContainer {
         /* Self Layout Properties */
         margin-bottom: 3.75rem;
+
+        /* Content Layout Properties */
+        flex-wrap: wrap;
+        row-gap: 1.25rem;
     }
 
     .bottomPhotoBox {
