@@ -1,3 +1,4 @@
+/* Universal Layout */
 #container {
     /* Self Layout Properties */
     margin: 0 auto;
@@ -47,6 +48,96 @@
     font-family: 'Lato Light', sans-serif;   
 }
 
+/* Smartphone & Tablet Layout */
+@media only screen and (max-width: 61.99rem) {
+    #container {
+        /* Self Layout Properties */
+        padding: 2.5rem 0;
+    }
+
+    #topPhotoContainer {
+        /* Content Layout Properties */
+        flex-wrap: wrap;
+        row-gap: 1.25rem;
+    }
+
+    #topPhotoBox3 p, #topPhotoBox4 p {
+        /* Self Layout Properties */
+        width: min-content;         /* Each caption word in new line */
+    }
+
+    #bottomPhotoContainer {
+        /* Self Layout Properties */
+        width: 100%;
+    }
+}
+
+/* Tablet & Desktop Layout */
+@media only screen and (min-width: 37.51rem) {
+    #mainBox {
+        /* Self Layout Properties */
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    #container {
+        /* Content Layout Properties */
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+    }
+
+    #topPhotoBox3, #topPhotoBox4 {
+        /* Content Layout Properties */
+        display: flex;
+    }
+
+    #topPhotoBox3 p, #topPhotoBox4 p {
+        /* Self Layout Properties */
+        margin: 0;
+    }
+
+    #bottomItemContainer {
+        /* Self Layout Properties */
+        width: 100%;
+
+        /* Content Layout Properties */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #bottomPhotoContainer {
+        /* Content Layout Properties */
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .bottomPhotoOverlay {
+        /* Self Layout Properties */
+        top: 0;
+    }
+
+    .bottomPhotoOverlay p {
+        /* Self Layout Properties */
+        width: 30%;
+
+        /* UI Properties */
+        font-size: 12.5rem;
+    }
+
+    #bottomPhotoOverlay1 p {
+        /* Self Layout Properties */
+        right: 4.5%;
+    }
+
+    #bottomPhotoOverlay2 p {
+        /* Self Layout Properties */
+        left: 4.5%;;
+    }
+}
+
+/* Smartphone Layout */
 @media only screen and (max-width: 37.5rem) {
     #mainBox {
         /* UI Properties */
@@ -56,23 +147,23 @@
 
     #container {
         /* Self Layout Properties */
-        padding: 2.5rem 0;
         width: 93.75%;
     }
 
     #topPhotoContainer {
         /* Self Layout Properties */
         margin-bottom: 2.5rem;
-
-        /* Content Layout Properties */
-        flex-wrap: wrap;
-        row-gap: 1.25rem;
     }
 
     .topPhotoBox {
         /* Self Layout Properties */
         position: relative;
         padding: 1.2rem 0.6rem 0.6rem 0.6rem;
+    }
+
+    .topPhotoDesktop, .topPhotoTablet {
+        /* Self Layout Properties */
+        display: none;
     }
 
     .topPhotoPhone {
@@ -101,9 +192,6 @@
     }
 
     #topPhotoBox3 p, #topPhotoBox4 p {
-        /* Self Layout Properties */
-        width: min-content;         /* Each caption word in new line */
-
         /* UI Properties */
         font-size: 1.1rem;
         line-height: 2;
@@ -127,15 +215,9 @@
         background: transparent url('../icons/smartphone/Layer_16_copy_4.png') 0% 0% no-repeat padding-box;
     }
 
-    .topPhotoDesktop, .topPhotoTablet {
-        /* Self Layout Properties */
-        display: none;
-    }
-
     #bottomPhotoContainer {
         /* Self Layout Properties */
         margin-bottom: 2.5rem;
-        width: 100%;
     }
 
     .bottomPhotoBox {
@@ -200,6 +282,7 @@
     }
 }
 
+/* Center topPhoto boxes if only one is displayed per row */
 @media only screen and (max-width: 18.75rem) {
     #topPhotoContainer {
         /* Content Layout Properties */
@@ -210,10 +293,6 @@
 /* Tablet Layout */
 @media only screen and (min-width: 37.51rem) and (max-width: 61.99rem) {
     #mainBox {
-        /* Self Layout Properties */
-        margin: 0 auto;
-        width: 100%;
-
         /* UI Properties */
         background: transparent url('../icons/tablet/BG.png') 0% 0% no-repeat padding-box;
         background-position: center 5.5%;
@@ -222,22 +301,12 @@
 
     #container {
         /* Self Layout Properties */
-        padding: 2.5rem 0;
         width: 94.8%;
-
-        /* Content Layout Properties */
-        display: flex;
-        flex-wrap: wrap;
-        align-content: space-around;
     }
 
     #topPhotoContainer {
         /* Self Layout Properties */
         margin-bottom: 3.75rem;
-
-        /* Content Layout Properties */
-        flex-wrap: wrap;
-        row-gap: 1.25rem;
     }
 
     .topPhotoBox {
@@ -245,12 +314,9 @@
         padding: 1.45rem 0.85rem 0.85rem 0.85rem;
     }
 
-    #topPhotoBox1 {
+    .topPhotoPhone, .topPhotoDesktop {
         /* Self Layout Properties */
-        order: 1;
-
-        /* UI Properties */
-        background: transparent url('../icons/tablet/Layer_16.png') 0% 0% no-repeat padding-box;
+        display: none;
     }
 
     .topPhotoTablet {
@@ -259,9 +325,12 @@
         width: 20.4rem;
     }
 
-    .topPhotoPhone, .topPhotoDesktop {
+    #topPhotoBox1 {
         /* Self Layout Properties */
-        display: none;
+        order: 1;
+
+        /* UI Properties */
+        background: transparent url('../icons/tablet/Layer_16.png') 0% 0% no-repeat padding-box;
     }
 
     #topPhotoBox2 {
@@ -277,7 +346,6 @@
         padding: 2.625rem 0.6rem 2.188rem 0.6rem;
 
         /* Content Layout Properties */
-        display: flex;
         flex-wrap: nowrap;
         align-items: center;
     }
@@ -289,9 +357,7 @@
 
     #topPhotoBox3 p, #topPhotoBox4 p {
         /* Self Layout Properties */
-        width: min-content;
         padding: 0 2rem 0 2.85rem;
-        margin: 0;
 
         /* UI Properites */
         font-size: 1.5rem;
@@ -314,53 +380,32 @@
     }
 
     #bottomItemContainer {
-        /* Self Layout Properties */
-        width: 100%;
-
         /* Content Layout Properties */
-        display: flex;
         flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
     }
 
     #bottomPhotoContainer {
         /* Self Layout Properties */
-        width: 100%;
         margin-bottom: 3.75rem;
+    }
 
-        /* Content Layout Properties */
-        display: flex;
-        justify-content: space-between;
+    .bottomPhotoBox {
+        /* Self Layout Properties */
+        padding: 19rem 11.063rem;
     }
 
     #bottomPhotoBox1 {
-        /* Self Layout Properties */
-        padding: 19rem 11.063rem;
-
         /* UI Properties */
         background: transparent url('../icons/tablet/Clip_.png') 0% 0% no-repeat padding-box;
     }
 
     #bottomPhotoBox2 {
-        /* Self Layout Properties */
-        padding: 19rem 11.063rem;
-        
         /* UI Properties */
         background: transparent url('../icons/tablet/Clip.png') 0% 0% no-repeat padding-box;
     }
 
-    .bottomPhotoOverlay {
-        /* Self Layout Properties */
-        top: 0;
-    }
-
     .bottomPhotoOverlay p {
-        /* Self Layout Properties */
-        width: 30%;
-
         /* UI Properties */
-        font-size: 12.5rem;
         line-height: 0.6;
     }
 
@@ -369,28 +414,15 @@
         background: transparent url('../icons/tablet/Polygon_1.png') 0% 0% no-repeat padding-box;
     }
 
-    #bottomPhotoOverlay1 p {
-        /* Self Layout Properties */
-        right: 4.5%;
-    }
-
     #bottomPhotoOverlay2 {
         /* UI Properties */
         background: transparent url('../icons/tablet/Layer_34.png') 0% 0% no-repeat padding-box;
     }
-
-    #bottomPhotoOverlay2 p {
-        /* Self Layout Properties */
-        left: 4.5%;;
-    }
 }
 
+/* Desktop Layout */
 @media only screen and (min-width: 62rem) {
     #mainBox {
-        /* Self Layout Properties */
-        margin: 0 auto;
-        width: 100%;
-
         /* UI Properties */
         background-color: #f1f1f1;
     }
@@ -400,11 +432,6 @@
         padding: 8.8rem 11.25rem 4.5rem 11.25rem;
         height: 85.8rem;
         width: 93.75rem;
-
-        /* Content Layout Properties */
-        display: flex;
-        flex-wrap: wrap;
-        align-content: space-around;
 
         /* UI Properties */
         background: transparent url('../icons/desktop/BG.png') 0% 0% no-repeat padding-box;
@@ -425,6 +452,10 @@
         background: transparent url('../icons/desktop/Layer_16.png') 0% 0% no-repeat padding-box;
     }
 
+    .topPhotoPhone, .topPhotoTablet {
+        display: none;
+    }
+
     .topPhotoDesktop {
         /* Self Layout Properties */
         display: block;
@@ -441,7 +472,6 @@
 
     #topPhotoBox3, #topPhotoBox4 {
         /* Content Layout Properties */
-        display: flex;
         flex-wrap: wrap;
         flex-basis: 0;
         align-content: space-evenly;
@@ -456,9 +486,6 @@
     }
 
     #topPhotoBox3 p, #topPhotoBox4 p {
-        /* Self Layout Properties */
-        margin: 0;
-
         /* UI Properites */
         font-size: 2.25rem;
     }
@@ -473,28 +500,9 @@
         background: transparent url('../icons/desktop/Layer_16_copy_3.png') 0% 0% no-repeat padding-box;
     }
 
-    .topPhotoPhone, .topPhotoTablet {
-        display: none;
-    }
-
-    #bottomItemContainer {
-        /* Self Layout Properties */
-        width: 100%;
-
-        /* Content Layout Properties */
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
     #bottomPhotoContainer {
         /* Self Layout Properties */
         width: 59.65%;
-
-        /* Content Layout Properties */
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
     }
 
     #bottomPhotoBox1 {
@@ -513,21 +521,9 @@
         background: transparent url('../icons/desktop/Clip.png') 0% 0% no-repeat padding-box;
     }
 
-    .bottomPhotoOverlay {
-        /* Self Layout Properties */
-        top: 0;
-
-        /* UI Properties */
-        opacity: 0.8;
-    }
-
     .bottomPhotoOverlay p {
         /* Self Layout Properties */
-        width: 30%;
         top: 22.5rem;
-
-        /* UI Properties */
-        font-size: 12.5rem;
     }
 
     #bottomPhotoOverlay1 {
@@ -535,18 +531,8 @@
         background: transparent url('../icons/desktop/Polygon_1_bb.png') 0% 0% no-repeat padding-box;
     }
 
-    #bottomPhotoOverlay1 p {
-        /* Self Layout Properties */
-        right: 4.5%;
-    }
-
     #bottomPhotoOverlay2 {
         /* UI Properties */
         background: transparent url('../icons/desktop/Layer_24.png') 0% 0% no-repeat padding-box;
-    }
-
-    #bottomPhotoOverlay2 p {
-        /* Self Layout Properties */
-        left: 4.5%;;
     }
 }
