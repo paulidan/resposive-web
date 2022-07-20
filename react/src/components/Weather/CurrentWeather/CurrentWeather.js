@@ -1,8 +1,4 @@
 import React from "react";
-import CurrentStyle from "./CurrentW.module.css";
-import sun from "../../../icons/desktop/weathersun.png";
-import rain from "../../../icons/desktop/weatherrain.png";
-import cloud from "../../../icons/desktop/weathercloud.png";
 import { format } from "date-fns";
 import { pl } from "date-fns/locale";
 import {
@@ -16,6 +12,10 @@ import {
   DisplaySunrise,
   DisplaySunset,
 } from "../APIValidation";
+import CurrentStyle from "./CurrentW.module.css";
+import sun from "../../../icons/desktop/weathersun.png";
+import rain from "../../../icons/desktop/weatherrain.png";
+import cloud from "../../../icons/desktop/weathercloud.png";
 
 
 const icons = {
