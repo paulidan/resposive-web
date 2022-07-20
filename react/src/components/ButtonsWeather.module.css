@@ -1,0 +1,48 @@
+.Buttons {
+  background: transparent;
+  padding: 3rem;
+  margin: 3rem;
+  border: 0.3rem solid #EAD280;
+  color: #858585;
+  transition: 1s;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  border-radius: 4.8rem;
+  -webkit-box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.2);
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  -o-transition: transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+  -webkit-transform: translateZ(0) scale(1.02) perspective(1000px);
+    transform: translateZ(0) scale(1.02) perspective(1000px);
+  float: center;
+}
+
+.Buttons:hover {
+  background: #EAD280;
+  color: white;
+  cursor: -webkit-grab;
+  -webkit-transform: scale(1.1) perspective(1500px) rotateY(10deg);
+  transform: scale(1.1) perspective(1500px) rotateY(10deg);
+
+}
+
+.Buttons:focus {
+  background-color: #EAD280;
+  color: white;
+}
+
+.ButtonsMenu {
+  margin-top: 3rem;
+  margin-left: 11%;
+  margin-right: 11%;
+  color: #858585;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  background-color: white;
+}

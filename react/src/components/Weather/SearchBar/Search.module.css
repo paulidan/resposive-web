@@ -1,49 +1,43 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: Lato-Black, Lato, sans-serif;
 }
 
-.app{
+.app {
     background-size: cover;
-
 }
 
-main{
-    min-height: 100vh;
-    padding: 25px;
-}
-
-.search_box{
+.search_box {
     width: 100%;
-    margin: 0 0 75px;
+    margin: 0 0 2rem;
 }
 
-.search_box .search_bar{
+.search_box .search_bar {
     display: inline-block;
     width: 40%;
-    padding: 15px;
+    padding: 1rem;
     text-align: center;
 
     appearance: none;
     background: none;
     border: none;
     outline: none;
-    
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 0px 0px 16px 16px;
-    margin-top: -25px;
 
-    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 0 0 1rem 1rem;
+    margin-top: -1.5rem;
+
+    font-size: 1.25rem;
     transition: 0.4s ease;
 }
 
-.search_box .search-bar:focus{
+.search_box .search-bar:focus {
     display: block;
     width: 100%;
-    padding: 15px;
+    padding: 1rem;
 }
