@@ -1,112 +1,65 @@
-@media only screen and (max-width: 37.5rem) {
-    #textBox {
-        /* UI Properties */
-        background-color: #FFF;
-    }
+/* Universal Layout */
+#textBox {
+    /* UI Properties */
+    background-color: #fff;
+}
 
-    #textBoxHeader {
-        /* Self Layout Properties */
-        padding: 0.88rem 1.3rem;
-        height: 17.55%;
-        width: 100%;
+#textBoxHeader {
+    /* Self Layout Properties */
+    width: 100%;
     
-        /* Content Layout Properties */
-        display: flex;
-        align-items: center;
+    /* Content Layout Properties */
+    display: flex;
+    align-items: center;
     
-        /* UI Properties */
-        background-color: #7ec8ea;
-    }
-    
+    /* UI Properties */
+    background-color: #7ec8ea;
+}
+
+#textBoxHeader p {
+    /* Self Layout Properties */
+    text-align: left;
+
+    /* UI Properties */
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+}
+
+#textBoxContent {
+    /* Self Layout Properties */
+    margin: 0;
+}
+
+.textBoxItemText {
+    /* Self Layout Properties */
+    margin: 0;
+
+    /* UI Properties */
+    text-align: left;
+}
+
+/* Smartphone & Tablet Layout */
+@media only screen and (max-width: 61.99rem) {
     #textBoxHeader p {
         /* Self Layout Properties */
         margin: 0;
-        padding-left: 4.6%;
-        text-align: left;
-    
-        /* UI Properties */
-        font-family: 'Lato', sans-serif;
-        font-style: italic;
-        font-size: 2.4rem;
-        letter-spacing: 0.7rem;
-    }
-
-    #textBoxContent {
-        /* Self Layout Properties */
-        margin: 0;
-        padding: 0 0.6rem 0.6rem 0.6rem;
-
-        /* UI Properties */
-        text-align: left;
-        list-style-position: inside;
-    }
-    
-    .textBoxItem {
-        /* Self Layout Properties */
-        padding-top: 0.5rem;
     }
 
     .textBoxItemText {
-        /* Self Layout Properties */
-        margin: 0;
-
-        /* Content Layout Properties */
-        display: inline;
-
-        /*UI Properties */
+        /* UI Properties */
         font-family: 'Lato', sans-serif;
-        font-size: 0.9rem;
-    }
-
-    .textBoxItemNumber {
-        /* Content Layout Properties */
-        display: none;
-    }
+        font-size: 0.9rem;}
 }
 
-@media only screen and (min-width: 37.51rem) and (max-width: 59.99rem) {
-    #textBox {
-        /* Self Layout Properties */
-        width: 100%;
-        padding-bottom: 4rem;
-    
-        /* UI Properties */
-        background-color: #fff;
-    }
-    
-    #textBoxHeader {
-        /* Self Layout Properties */
-        padding: 0.9rem 1.3rem;
-        height: 12.4%;
-        width: 100%;
-    
-        /* Content Layout Properties */
-        display: flex;
-        align-items: center;
-    
-        /* UI Properties */
-        background-color: #7ec8ea;
-    }
-    
+/* Tablet & Desktop Layout */
+@media only screen and (min-width: 37.51rem) {
     #textBoxHeader p {
-        /* Self Layout Properties */
-        margin: 0;
-        padding-left: 1.9%;
-        text-align: left;
-    
         /* UI Properties */
-        font-family: 'Lato', sans-serif;
-        font-style: italic;
         font-size: 3rem;
         letter-spacing: 0.9rem;
-        line-height: 1;
     }
-    
+
     #textBoxContent {
-        /* Self Layout Properties */
-        margin: 0;
-        height: 87.6%;
-    
         /* Content Layout Properties */
         display: flex;
         flex-wrap: wrap;
@@ -122,6 +75,102 @@
         display: flex;
         align-items: flex-end;
         justify-content: space-evenly;
+    }
+
+    .textBoxItemNumber {
+        /* Self Layout Properties */
+        height: 100%;
+    }
+    
+    .textBoxItemNumber p {
+        /* Self Layout Properties */
+        margin: 0;
+        padding-bottom: 0.5rem;
+        
+        /* UI Properites */
+        color: #333;
+        font-family: 'Lato', sans-serif;
+        font-size: 2.2rem;
+        font-weight: 600;
+    }
+    
+    .textBoxItemNumber div {
+        /* Self Layout Properties */
+        padding-bottom: 0.5rem;
+        width: 100%;
+    
+        /* UI Properties */
+        background-color: #1883b4;
+    }
+}
+
+/* Smartphone Layout */
+@media only screen and (max-width: 37.5rem) {
+    #textBoxHeader {
+        /* Self Layout Properties */
+        padding: 0.88rem 1.3rem;
+        height: 17.55%;
+    }
+    
+    #textBoxHeader p {
+        /* Self Layout Properties */
+        padding-left: 4.6%;
+    
+        /* UI Properties */
+        font-size: 2.4rem;
+        letter-spacing: 0.7rem;
+    }
+
+    #textBoxContent {
+        /* Self Layout Properties */
+        padding: 0 0.6rem 0.6rem 0.6rem;
+
+        /* UI Properties */
+        list-style-position: inside;
+        text-align: left;
+    }
+    
+    .textBoxItem {
+        /* Self Layout Properties */
+        padding-top: 0.5rem;
+    }
+
+    .textBoxItemNumber {
+        /* Content Layout Properties */
+        display: none;
+    }
+
+    .textBoxItemText {
+        /* Content Layout Properties */
+        display: inline;
+    }
+}
+
+/* Tablet Layout */
+@media only screen and (min-width: 37.51rem) and (max-width: 61.99rem) {
+    #textBox {
+        /* Self Layout Properties */
+        width: 100%;
+        padding-bottom: 4rem;
+    }
+    
+    #textBoxHeader {
+        /* Self Layout Properties */
+        padding: 0.9rem 1.3rem;
+        height: 12.4%;
+    }
+    
+    #textBoxHeader p {
+        /* Self Layout Properties */
+        padding-left: 1.9%;
+    
+        /* UI Properties */
+        line-height: 1;
+    }
+    
+    #textBoxContent {
+        /* Self Layout Properties */
+        height: 87.6%;
     }
     
     .textBoxItem {
@@ -131,137 +180,51 @@
     
     .textBoxItemNumber {
         /* Self Layout Properties */
-        height: 100%;
         width: 8%;
-    }
-    
-    .textBoxItemNumber p {
-        /* Self Layout Properties */
-        margin: 0;
-        padding-bottom: 0.5rem;
-        
-        /* UI Properites */
-        color: #333;
-        font-family: 'Lato', sans-serif;
-        font-size: 2.2rem;
-        font-weight: 600;
-    }
-    
-    .textBoxItemNumber div {
-        /* Self Layout Properties */
-        padding-bottom: 0.5rem;
-        width: 100%;
-    
-        /* UI Properties */
-        background-color: #1883b4;
     }
     
     .textBoxItemText {
         /* Self Layout Properties */
-        margin: 0;
         width: 83%;
-    
-        /* UI Properties */
-        font-family: 'Lato', sans-serif;
-        font-size: 0.9rem;
-        text-align: left;
     }
 }
 
-@media only screen and (min-width: 60rem) {
+/* Desktop Layout */
+@media only screen and (min-width: 62rem) {
     #textBox {
         /* Self Layout Properties */
         height: 100%;
         width: 39%;
         padding-bottom: 2.5rem;
-    
-        /* UI Properties */
-        background-color: #fff;
     }
     
     #textBoxHeader {
         /* Self Layout Properties */
         padding: 0 1.3rem;
         height: 13.4%;
-        width: 100%;
-    
-        /* Content Layout Properties */
-        display: flex;
-        align-items: center;
-    
-        /* UI Properties */
-        background-color: #7ec8ea;
     }
     
     #textBoxHeader p {
         /* Self Layout Properties */
         padding-left: 3.5%;
-        text-align: left;
-    
-        /* UI Properties */
-        font-family: 'Lato', sans-serif;
-        font-style: italic;
-        font-size: 3rem;
-        letter-spacing: 0.9rem;
     }
     
     #textBoxContent {
         /* Self Layout Properties */
-        margin: 0;
         height: 86.6%;
-    
-        /* Content Layout Properties */
-        display: flex;
-        flex-wrap: wrap;
-        align-content: space-evenly;
-
-        /* UI Properties */
-        list-style-type: none;
-        padding-left: 0;
-    }
-    
-    .textBoxItem {
-        /* Content Layout Properties */
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-evenly;
     }
     
     .textBoxItemNumber {
         /* Self Layout Properties */
-        height: 100%;
         width: 13.5%;
-    }
-    
-    .textBoxItemNumber p {
-        /* Self Layout Properties */
-        margin: 0;
-        padding-bottom: 0.5rem;
-        
-        /* UI Properites */
-        color: #333;
-        font-family: 'Lato', sans-serif;
-        font-size: 2.2rem;
-        font-weight: 600;
-    }
-    
-    .textBoxItemNumber div {
-        /* Self Layout Properties */
-        padding-bottom: 00.5rem;
-        width: 100%;
-    
-        /* UI Properties */
-        background-color: #1883b4;
     }
     
     .textBoxItemText {
         /* Self Layout Properties */
-        margin: 0;
         width: 65%;
     
         /* UI Properties */
         font-family: 'Lato', sans-serif;
         font-size: 0.9rem;
-        text-align: left;
     }
 }

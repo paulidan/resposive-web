@@ -217,6 +217,7 @@
         /* UI Properties */
         background: transparent url('../icons/tablet/BG.png') 0% 0% no-repeat padding-box;
         background-position: center 5.5%;
+        background-size: 200% 210%;
     }
 
     #container {
