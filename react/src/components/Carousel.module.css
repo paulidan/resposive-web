@@ -124,7 +124,7 @@
         background: transparent url('../icons/smartphone/Layer_16_copy_4.png') 0% 0% no-repeat padding-box;
     }
 
-    .topPhotoDesktop {
+    .topPhotoDesktop, .topPhotoTablet {
         /* Self Layout Properties */
         display: none;
     }
@@ -201,6 +201,173 @@
     #topPhotoContainer {
         /* Content Layout Properties */
         justify-content: center;
+    }
+}
+
+/* Tablet Layout */
+@media only screen and (min-width: 37.5rem) and (max-width: 62rem) {
+    #mainBox {
+        /* Self Layout Properties */
+        margin: 0 auto;
+        width: 100%;
+
+        /* UI Properties */
+        background: transparent url('../icons/tablet/BG.png') 0% 0% no-repeat padding-box;
+        background-position: center 5.5%;
+    }
+
+    #container {
+        /* Self Layout Properties */
+        /* padding: 8.8rem 11.25rem 4.5rem 11.25rem; */
+        /* height: 85.8rem; */
+        width: 94.8%;
+
+        /* Content Layout Properties */
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+    }
+
+    #topPhotoContainer {
+        /* Self Layout Properties */
+        margin-bottom: 2.5rem;
+
+        /* Content Layout Properties */
+        flex-wrap: wrap;
+        row-gap: 1.25rem;
+    }
+
+    .topPhotoBox {
+        /* Self Layout Properties */
+        padding: 1.2rem 0.6rem 0.6rem 0.6rem;
+    }
+
+    #topPhotoBox1 {
+        /* UI Properties */
+        background: transparent url('../icons/tablet/Layer_16.png') 0% 0% no-repeat padding-box;
+    }
+
+    #topPhotoBox1 .topPhotoDesktop, #topPhotoBox2 .topPhotoDesktop {
+        /* Self Layout Properties */
+        display: block;
+        width: 14.5rem;
+    }
+
+    #topPhotoBox2 {
+        /* UI Properties */
+        background: transparent url('../icons/tablet/Layer_16_copy.png') 0% 0% no-repeat padding-box;
+    }
+
+    #topPhotoBox3, #topPhotoBox4 {
+        /* Content Layout Properties */
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 0;
+        align-content: space-evenly;
+    }
+
+    #topPhotoBox3 img, #topPhotoBox4 img {
+        /* Self Layout Properites */
+        width: 14.4rem;
+
+        /* UI Properties */
+        border-radius: 50%;
+    }
+
+    #topPhotoBox3 p, #topPhotoBox4 p {
+        /* Self Layout Properties */
+        margin: 0;
+
+        /* UI Properites */
+        font-size: 2.25rem;
+    }
+
+    #topPhotoBox3 {
+        /* UI Properties */
+        background: transparent url('../icons/desktop/Layer_16_copy_2.png') 0% 0% no-repeat padding-box;
+    }
+
+    #topPhotoBox4 {
+        /* UI Properties */
+        background: transparent url('../icons/desktop/Layer_16_copy_3.png') 0% 0% no-repeat padding-box;
+    }
+
+    .topPhotoPhone, .topPhotoDesktop {
+        display: none;
+    }
+
+    #bottomItemContainer {
+        /* Self Layout Properties */
+        width: 100%;
+
+        /* Content Layout Properties */
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #bottomPhotoContainer {
+        /* Self Layout Properties */
+        width: 59.65%;
+
+        /* Content Layout Properties */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #bottomPhotoBox1 {
+        /* Self Layout Properties */
+        padding: 19rem 10.3rem;
+
+        /* UI Properties */
+        background: transparent url('../icons/tablet/Clip_.png') 0% 0% no-repeat padding-box;
+    }
+
+    #bottomPhotoBox2 {
+        /* Self Layout Properties */
+        padding: 19rem 10.5rem;
+        
+        /* UI Properties */
+        background: transparent url('../icons/tablet/Clip.png') 0% 0% no-repeat padding-box;
+    }
+
+    .bottomPhotoOverlay {
+        /* Self Layout Properties */
+        top: 0;
+
+        /* UI Properties */
+        opacity: 0.8;
+    }
+
+    .bottomPhotoOverlay p {
+        /* Self Layout Properties */
+        width: 30%;
+        top: 22.5rem;
+
+        /* UI Properties */
+        font-size: 12.5rem;
+    }
+
+    #bottomPhotoOverlay1 {
+        /* UI Properties */
+        background: transparent url('../icons/tablet/Polygon_1.png') 0% 0% no-repeat padding-box;
+    }
+
+    #bottomPhotoOverlay1 p {
+        /* Self Layout Properties */
+        right: 4.5%;
+    }
+
+    #bottomPhotoOverlay2 {
+        /* UI Properties */
+        background: transparent url('../icons/tablet/Layer_34.png') 0% 0% no-repeat padding-box;
+    }
+
+    #bottomPhotoOverlay2 p {
+        /* Self Layout Properties */
+        left: 4.5%;;
     }
 }
 
@@ -292,7 +459,7 @@
         background: transparent url('../icons/desktop/Layer_16_copy_3.png') 0% 0% no-repeat padding-box;
     }
 
-    .topPhotoPhone {
+    .topPhotoPhone, .topPhotoTablet {
         display: none;
     }
 
