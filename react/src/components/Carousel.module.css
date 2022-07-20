@@ -9,7 +9,7 @@
     justify-content: space-between;
 }
 
-#topPhotobox3 p, #topPhotoBox4 p {
+#topPhotoBox3 p, #topPhotoBox4 p {
     /* UI Properties */
     font-family: 'Lato Light', sans-serif;
 }
@@ -101,6 +101,9 @@
     }
 
     #topPhotoBox3 p, #topPhotoBox4 p {
+        /* Self Layout Properties */
+        width: min-content;         /* Each caption word in new line */
+
         /* UI Properties */
         font-size: 1.1rem;
         line-height: 2;
@@ -218,8 +221,7 @@
 
     #container {
         /* Self Layout Properties */
-        /* padding: 8.8rem 11.25rem 4.5rem 11.25rem; */
-        /* height: 85.8rem; */
+        padding: 2.5rem 0;
         width: 94.8%;
 
         /* Content Layout Properties */
@@ -230,7 +232,7 @@
 
     #topPhotoContainer {
         /* Self Layout Properties */
-        margin-bottom: 2.5rem;
+        margin-bottom: 3.75rem;
 
         /* Content Layout Properties */
         flex-wrap: wrap;
@@ -239,61 +241,73 @@
 
     .topPhotoBox {
         /* Self Layout Properties */
-        padding: 1.2rem 0.6rem 0.6rem 0.6rem;
+        padding: 1.45rem 0.85rem 0.85rem 0.85rem;
     }
 
     #topPhotoBox1 {
+        /* Self Layout Properties */
+        order: 1;
+        
         /* UI Properties */
         background: transparent url('../icons/tablet/Layer_16.png') 0% 0% no-repeat padding-box;
     }
 
-    #topPhotoBox1 .topPhotoDesktop, #topPhotoBox2 .topPhotoDesktop {
+    .topPhotoTablet {
         /* Self Layout Properties */
         display: block;
-        width: 14.5rem;
+        width: 20.4rem;
+    }
+
+    .topPhotoPhone, .topPhotoDesktop {
+        /* Self Layout Properties */
+        display: none;
     }
 
     #topPhotoBox2 {
+        order: 3;
         /* UI Properties */
         background: transparent url('../icons/tablet/Layer_16_copy.png') 0% 0% no-repeat padding-box;
     }
 
     #topPhotoBox3, #topPhotoBox4 {
+        /* Self Layout Properties */
+        padding: 2.625rem 0.6rem 2.188rem 0.6rem;
+
         /* Content Layout Properties */
         display: flex;
-        flex-wrap: wrap;
-        flex-basis: 0;
-        align-content: space-evenly;
+        flex-wrap: nowrap;
+        align-items: center;
     }
 
     #topPhotoBox3 img, #topPhotoBox4 img {
         /* Self Layout Properites */
-        width: 14.4rem;
-
-        /* UI Properties */
-        border-radius: 50%;
+        width: 9.5rem;
     }
 
     #topPhotoBox3 p, #topPhotoBox4 p {
         /* Self Layout Properties */
+        width: min-content;
+        padding: 0 2rem 0 2.85rem;
         margin: 0;
 
         /* UI Properites */
-        font-size: 2.25rem;
+        font-size: 1.5rem;
     }
 
     #topPhotoBox3 {
+        /* Self Layout Properties */
+        order: 2;
+
         /* UI Properties */
-        background: transparent url('../icons/desktop/Layer_16_copy_2.png') 0% 0% no-repeat padding-box;
+        background: transparent url('../icons/tablet/Layer_30.png') 0% 0% no-repeat padding-box;
     }
 
     #topPhotoBox4 {
-        /* UI Properties */
-        background: transparent url('../icons/desktop/Layer_16_copy_3.png') 0% 0% no-repeat padding-box;
-    }
+        /* Self Layout Properties */
+        order: 4;
 
-    .topPhotoPhone, .topPhotoDesktop {
-        display: none;
+        /* UI Properties */
+        background: transparent url('../icons/tablet/Layer_16_copy_4.png') 0% 0% no-repeat padding-box;
     }
 
     #bottomItemContainer {
@@ -411,7 +425,7 @@
         background: transparent url('../icons/desktop/Layer_16.png') 0% 0% no-repeat padding-box;
     }
 
-    #topPhotoBox1 .topPhotoDesktop, #topPhotoBox2 .topPhotoDesktop {
+    .topPhotoDesktop {
         /* Self Layout Properties */
         display: block;
         width: 14.5rem;
