@@ -239,11 +239,6 @@
         background-size: cover;
     }
 
-    .bottomPhotoOverlay {
-        /* Self Layout Properties */
-        right: 0;
-    }
-
     .bottomPhotoOverlay p {
         /* Self Layout Properties */
         width: 33%;
@@ -283,7 +278,7 @@
 }
 
 /* Center topPhoto boxes if only one is displayed per row */
-@media only screen and (max-width: 18.75rem) {
+@media only screen and (max-width: 18.75rem), (min-width: 37.5rem) and (max-width: 46.625rem) {
     #topPhotoContainer {
         /* Content Layout Properties */
         justify-content: center;
