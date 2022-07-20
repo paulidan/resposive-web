@@ -64,6 +64,110 @@
     }
 }
 
+@media only screen and (min-width: 37.51rem) and (max-width: 59.99rem) {
+    #textBox {
+        /* Self Layout Properties */
+        width: 100%;
+        padding-bottom: 4rem;
+    
+        /* UI Properties */
+        background-color: #fff;
+    }
+    
+    #textBoxHeader {
+        /* Self Layout Properties */
+        padding: 0.9rem 1.3rem;
+        height: 12.4%;
+        width: 100%;
+    
+        /* Content Layout Properties */
+        display: flex;
+        align-items: center;
+    
+        /* UI Properties */
+        background-color: #7ec8ea;
+    }
+    
+    #textBoxHeader p {
+        /* Self Layout Properties */
+        margin: 0;
+        padding-left: 1.9%;
+        text-align: left;
+    
+        /* UI Properties */
+        font-family: 'Lato', sans-serif;
+        font-style: italic;
+        font-size: 3rem;
+        letter-spacing: 0.9rem;
+        line-height: 1;
+    }
+    
+    #textBoxContent {
+        /* Self Layout Properties */
+        margin: 0;
+        height: 87.6%;
+    
+        /* Content Layout Properties */
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-evenly;
+
+        /* UI Properties */
+        list-style-type: none;
+        padding-left: 0;
+    }
+    
+    .textBoxItem {
+        /* Content Layout Properties */
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-evenly;
+    }
+    
+    .textBoxItem {
+        /* Self Layout Properties */
+        padding-top: 1.75rem;
+    }
+    
+    .textBoxItemNumber {
+        /* Self Layout Properties */
+        height: 100%;
+        width: 8%;
+    }
+    
+    .textBoxItemNumber p {
+        /* Self Layout Properties */
+        margin: 0;
+        padding-bottom: 0.5rem;
+        
+        /* UI Properites */
+        color: #333;
+        font-family: 'Lato', sans-serif;
+        font-size: 2.2rem;
+        font-weight: 600;
+    }
+    
+    .textBoxItemNumber div {
+        /* Self Layout Properties */
+        padding-bottom: 0.5rem;
+        width: 100%;
+    
+        /* UI Properties */
+        background-color: #1883b4;
+    }
+    
+    .textBoxItemText {
+        /* Self Layout Properties */
+        margin: 0;
+        width: 83%;
+    
+        /* UI Properties */
+        font-family: 'Lato', sans-serif;
+        font-size: 0.9rem;
+        text-align: left;
+    }
+}
+
 @media only screen and (min-width: 60rem) {
     #textBox {
         /* Self Layout Properties */
