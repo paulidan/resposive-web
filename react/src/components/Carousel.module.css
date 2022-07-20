@@ -208,7 +208,7 @@
 }
 
 /* Tablet Layout */
-@media only screen and (min-width: 37.5rem) and (max-width: 62rem) {
+@media only screen and (min-width: 37.51rem) and (max-width: 61.99rem) {
     #mainBox {
         /* Self Layout Properties */
         margin: 0 auto;
@@ -247,7 +247,7 @@
     #topPhotoBox1 {
         /* Self Layout Properties */
         order: 1;
-        
+
         /* UI Properties */
         background: transparent url('../icons/tablet/Layer_16.png') 0% 0% no-repeat padding-box;
     }
@@ -264,7 +264,9 @@
     }
 
     #topPhotoBox2 {
+        /* Self Layout Properties */
         order: 3;
+
         /* UI Properties */
         background: transparent url('../icons/tablet/Layer_16_copy.png') 0% 0% no-repeat padding-box;
     }
@@ -323,17 +325,17 @@
 
     #bottomPhotoContainer {
         /* Self Layout Properties */
-        width: 59.65%;
+        width: 100%;
+        margin-bottom: 3.75rem;
 
         /* Content Layout Properties */
         display: flex;
-        align-items: center;
         justify-content: space-between;
     }
 
     #bottomPhotoBox1 {
         /* Self Layout Properties */
-        padding: 19rem 10.3rem;
+        padding: 19rem 11.063rem;
 
         /* UI Properties */
         background: transparent url('../icons/tablet/Clip_.png') 0% 0% no-repeat padding-box;
@@ -341,7 +343,7 @@
 
     #bottomPhotoBox2 {
         /* Self Layout Properties */
-        padding: 19rem 10.5rem;
+        padding: 19rem 11.063rem;
         
         /* UI Properties */
         background: transparent url('../icons/tablet/Clip.png') 0% 0% no-repeat padding-box;
@@ -350,18 +352,15 @@
     .bottomPhotoOverlay {
         /* Self Layout Properties */
         top: 0;
-
-        /* UI Properties */
-        opacity: 0.8;
     }
 
     .bottomPhotoOverlay p {
         /* Self Layout Properties */
         width: 30%;
-        top: 22.5rem;
 
         /* UI Properties */
         font-size: 12.5rem;
+        line-height: 0.6;
     }
 
     #bottomPhotoOverlay1 {
