@@ -7,6 +7,7 @@
     --color-red: #c83434;
     --color-yellow: #dfbb42;
     --color-green: #508b61;
+    --color-darkGray: #333;
     --font-lato: 'Lato', sans-serif;
     --font-lato-light: 'Lato Light', sans-serif;
 
@@ -16,6 +17,7 @@
     --color-topRightBox: var(--color-red);
     --color-bottomLeftBox: var(--color-yellow);
     --color-bottomRightBox: var(--color-green);
+    --color-centerBoxText: var(--color-darkGray);
     --font-primary: var(--font-lato);
     --font-secondary: var(--font-lato-light);
 }
@@ -128,7 +130,7 @@
 #centerBoxText {
     /* UI Properties */
     font-family: var(--font-secondary);
-    color: #333;
+    color: var(--color-centerBoxText);
 }
 
 /* Smartphone & Tablet Layout */
@@ -365,24 +367,11 @@
         height: 5.75rem;
     }
 
-    #topLeftBoxOutline {
-        /* Self Layout Properties */
-        height: 100%;
-
-        /* UI Properties */
-        background-color: var(--color-topLeftBox);    
-    }
-
     #topLeftBox {
         /* Self Layout Properties */
         z-index: 2;
         width: calc(100% - 0.13rem);
         height: 100%;               /* Change to calc(100% - 0.06rem) when inactive */
-    }
-
-    #topLeftBox p {
-        /* UI Properties */
-        color: var(--color-topLeftBox);
     }
 
     #topRightBox {

@@ -5,8 +5,6 @@ import Boxes from '../components/Boxes';
 const HomePage = () => {
     return (
         <div className="App">
-            <Header />
-            <Navbar />
             <Boxes />
         </div>
     );
