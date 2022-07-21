@@ -35,11 +35,6 @@
     align-items: center;
 }
 
-.subBox {
-    /* UI Properties */
-    font-family: var(--font-primary);
-}
-
 #topLeftBoxOutline {
     /* Self Layout Properties */
     position: absolute;
@@ -134,9 +129,21 @@
     color: #333;
 }
 
-@media only screen and (max-width: 62rem) {
-    .pDesktopSubBox {
+/* Tablet & Desktop Layout */
+@media only screen and (min-width: 37.51rem) {
+    .subBox {
+        /* UI Properties */
+        font-family: var(--font-secondary);
+    }
+
+    .pMobileSubBox {
+        /* Self Layout Properties */
         display: none;
+    }
+
+    #topLeftBox p {
+        /* UI Properties */
+        font-family: var(--font-primary);
     }
 }
 
@@ -160,6 +167,16 @@
         /* Content Layout Properties */
         flex-wrap: wrap;
         justify-content: space-between;
+    }
+
+    .subBox {
+        /* UI Properties */
+        font-family: var(--font-primary);
+    }
+
+    .pDesktopSubBox {
+        /* Self Layout Properties */
+        display: none;
     }
 
     #centerBoxContainer {
@@ -263,7 +280,7 @@
 @media only screen and (min-width: 37.51rem) and (max-width: 61.99rem) {
     #mainBox {
         /* Self Layout Properties */
-        height: 30rem;
+        padding: 60px 0;
 
         /* Content Layout Properties */
         display: flex;
@@ -273,7 +290,6 @@
 
     #container {
         /* Self Layout Properties */
-        height: 24.9rem;
         width: 93.75%;
 
         /* Content Layout Properties */
@@ -283,7 +299,7 @@
 
     #centerBoxContainer {
         /* Self Layout Properties */
-        order: 0;
+        order: 2;
         width: 100%;
         height: 21.25rem;
     }
@@ -307,18 +323,21 @@
     #centerBoxInner {
         /* Self Layout Properties */
         height: 21.13rem;
+        padding: 1.42rem 0;
 
         /* UI Properties */
         background: transparent url('../icons/smartphone/Pattern.png') bottom no-repeat padding-box;
+        overflow: hidden;
     }
 
     #centerBoxInner p {
         /* Self Layout Properties */
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
+        height: 100%;
+        padding: 0 1rem 0 1rem;
 
         /* UI Properties */
         font-size: 0.75rem;
+        overflow: hidden;
     }
 
     #centerBoxHeader {
@@ -346,16 +365,16 @@
 
     #topRightBox, #bottomLeftBox, #bottomRightBox {
         /* Self Layout Properties */
-        width: 3.75rem;
-        height: 3.75rem;
+        width: 41.6%;
+        height: 5.75rem;
     }
 
     #topLeftBoxContainer {
         /* Self Layout Properties */
-        order: 1;
+        order: 0;
         position: relative;
-        width: 3.75rem;
-        height: 3.75rem;
+        width: 41.6%;
+        height: 5.75rem;
     }
 
     #topLeftBoxOutline {
@@ -363,35 +382,34 @@
         height: 100%;
 
         /* UI Properties */
-        background: transparent url('../icons/smartphone/Layer_14_copy_4.png') 0% 0% no-repeat padding-box;    
+        background-color: var(--color-topLeftBox);    
     }
 
     #topLeftBox {
         /* Self Layout Properties */
-        margin-top: -0.13rem;       /* Change to 0 when inactive */
-        position: absolute;
-        top: 0.06rem;
-        left: 0.06rem;
-        width: 3.6rem;
-        height: 3.75rem;            /* Change to 3.6rem when inactive */
+        z-index: 2;
+        width: calc(100% - 0.13rem);
+        height: 100%;               /* Change to calc(100% - 0.06rem) when inactive */
 
         /* UI Properties */
-        background-color: var(--color-bg);
+        background-color: var(--color-white);  
     }
 
     #topLeftBox p {
+        /* UI Properties */
         color: var(--color-topLeftBox);
     }
 
     #topRightBox {
         /* Self Layout Properties */
-        order: 2;
+        order: 1;
 
         /* UI Properties */
-        background: transparent url('../icons/smartphone/Layer_14_copy_6.png') 0% 0% no-repeat padding-box;    
+        background-color: var(--color-topRightBox);    
     }
 
     #topRightBox p, #bottomLeftBox p, #bottomRightBox p {
+        /* UI Properties */
         color: var(--color-white);
     }
 
@@ -400,7 +418,7 @@
         order: 3;
 
         /* UI Properties */
-        background: transparent url('../icons/smartphone/Layer_14_copy_7.png') 0% 0% no-repeat padding-box;    
+        background-color: var(--color-bottomLeftBox);    
     }
 
     #bottomRightBox {
@@ -408,7 +426,7 @@
         order: 4;
 
         /* UI Properties */
-        background: transparent url('../icons/smartphone/Layer_14_copy_8.png') 0% 0% no-repeat padding-box;    
+        background-color: var(--color-bottomRightBox);    
     }
 }
 
@@ -469,11 +487,6 @@
     #topLeftBox p, #topRightBox p, #bottomLeftBox p, #bottomRightBox p {
         /* UI Properties */
         font-size: 2.5rem;
-    }
-
-    #topLeftBox p {
-        /* UI Properties */
-        font-family: var(--font-primary);
     }
 
     #topRightBox {
