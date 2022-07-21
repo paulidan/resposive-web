@@ -1,61 +1,161 @@
-import React from 'react';
-import CurrentStyle from './CurrentW.module.css';
-import sun from '../../../icons/desktop/weathersun.png';
-import rain from '../../../icons/desktop/weatherrain.png';
-import cloud from '../../../icons/desktop/weathercloud.png';
-import { format } from 'date-fns';
-import { pl } from 'date-fns/locale'
+import React from "react";
+import { format } from "date-fns";
+import { pl } from "date-fns/locale";
+import {
+  DisplayPressure,
+  DisplayClouds,
+  DisplayFeelTemp,
+  DisplayWind,
+  DisplayTemp,
+  DisplayData,
+  DisplayHumidity,
+  DisplaySunrise,
+  DisplaySunset,
+} from "../APIValidation";
+import CurrentStyle from "./CurrentW.module.css";
+import sun from "../../../icons/desktop/weathersun.png";
+import rain from "../../../icons/desktop/weatherrain.png";
+import cloud from "../../../icons/desktop/weathercloud.png";
 
 const ICONS = {
     'Clear': sun,
     'Rain': rain,
     'Clouds': cloud
 };
-
 const dateFormatPurposueDescription = {
-    date: 'cccc, dd/MM/yy, h:mm'
+  date: "cccc, dd/MM/yy, h:mm",
 };
-
 const DisplayCity = ({ city }) => {
-    return (!!city) ?
-        (<div className={CurrentStyle.location}>{city}</div>) :
-        (<></>)
-}
-
+  return !!city ? (
+    <div className={CurrentStyle.location}>{city}</div>
+  ) : (
+    <>N/A</>
+  );
+};
 const CurrentWeather = ({ data }) => {
-    console.log("ala1", data)
-    if (!data) {
-        return (<></>)
-    }
-
-    return (
-        <div className={CurrentStyle.app}>
-            <div>
-                <div className={CurrentStyle.location_box}>
-                    <DisplayCity city={data.name} />
-                    <div className={CurrentStyle.date}>{format(new Date(), dateFormatPurposueDescription.date, { locale: pl })}</div>
-                </div>
-                <div className={CurrentStyle.weather_box}>
-                    <div className={CurrentStyle.temp}>
-                        {data.main.temp.toLocaleString(undefined, { maximumFractionDigits: 0 })} °C
-                        <div className={CurrentStyle.feels}>
-                            <p>Odczuwalna temperatura: {Math.round(data.main.feels_like)}°C</p>
-                            <p>Wschód słońca: {new Date(data.sys.sunrise * 1000).toLocaleTimeString('pl-IN')}</p>
-                            <p>Zachód słońca: {new Date(data.sys.sunset * 1000).toLocaleTimeString('pl-IN')}</p>
-                            <p>Wilgotność powietrza: {data.main.humidity} %</p>
-                            <p>Ciśnienie atmosferyczne: {data.main.pressure} hPa</p>
-                            <p>Prędkość wiatru: {(data.wind.speed * 3.6).toLocaleString(undefined, { maximumFractionDigits: 0 })} KM/h</p>
-                            <p>Zachmurzenie: {data.clouds.all} % </p>
-                            <p>Smog: </p>
-                        </div>
-                        <div className={CurrentStyle.weather}>
-                            {data.weather[0].main} <img src={ICONS[data.weather[0].main]} />
-                        </div>
-                    </div>
-                </div>
-            </div>
+  console.log("ala1", data);
+  if (!data) {
+    return <>N/A</>;
+  }
+  return (
+    <div className={CurrentStyle.app}>
+      <div className={CurrentStyle.weather_side}>
+        <div className={CurrentStyle.weather_gradient}>
+          <div className={CurrentStyle.location_box}>
+            <i className={CurrentStyle.location_icon}></i>
+            <span className={CurrentStyle.location}>
+              <DisplayCity city={data.name} />
+            </span>
+            <span className={CurrentStyle.date}>
+              {format(new Date(), dateFormatPurposueDescription.date, {
+                locale: pl,
+              })}
+            </span>
+          </div>
         </div>
-    );
-}
+        <div className={CurrentStyle.weather_box}>
+          <div className={CurrentStyle.temp}>
+            <div className={CurrentStyle.weather_description}>
+              {data.weather[0].main}{" "}
+            </div>
+            <div className={CurrentStyle.weather_temp}>
+              <DisplayTemp
+                temp={data.main.temp.toLocaleString(undefined, {
+                  maximumFractionDigits: 0,
+                })}
+              />
+              °C
+            </div>
+            <img
+              className={CurrentStyle.weather_icon}
+              src={ICONS[data.weather[0].main]}
+            />
+          </div>
+        </div>
+      </div>
+      <div className={CurrentStyle.feels_info}>
+        <div className={CurrentStyle.feels_info_container}>
+          <div className={CurrentStyle.feels}>
+            <div className={CurrentStyle.feels_temp}>
+              <span className={CurrentStyle.title}>
+                Odczuwalna temperatura:{" "}
+                <DisplayFeelTemp
+                  feelTemp={data.main.feels_like.toLocaleString(undefined, {
+                    maximumFractionDigits: 0,
+                  })}
+                />
+                °C
+              </span>
+              <br></br>
+            </div>
+            <div className={CurrentStyle.sunrise}>
+              <span className={CurrentStyle.title}>
+                Wschód słońca:{" "}
+                <DisplaySunrise
+                  sunrise={new Date(data.sys.sunrise * 1000).toLocaleTimeString(
+                    "pl-IN"
+                  )}
+                />
+              </span>
+              <br></br>
+            </div>
+            <div className={CurrentStyle.sunset}>
+              <span className={CurrentStyle.title}>
+                Zachód słońca:{" "}
+                <DisplaySunset
+                  sunset={new Date(data.sys.sunset * 1000).toLocaleTimeString(
+                    "pl-IN"
+                  )}
+                />
+              </span>
+              <br></br>
+            </div>
+            <div className={CurrentStyle.humidity}>
+              <span className={CurrentStyle.title}>
+                Wilgotność powietrza:{" "}
+                <DisplayHumidity humidity={data.main.humidity} /> %
+              </span>
+              <br></br>
+            </div>
+            <div className={CurrentStyle.pressure}>
+              <span className={CurrentStyle.title}>
+                Ciśnienie atmosferyczne:{" "}
+                <DisplayPressure pressure={data.main.pressure} /> hPa
+              </span>
+              <br></br>
+            </div>
+            <div className={CurrentStyle.wind}>
+              <span className={CurrentStyle.title}>
+                Prędkość wiatru:{" "}
+                <DisplayData
+                  wind={(data.wind.speed * 3.6).toLocaleString(undefined, {
+                    maximumFractionDigits: 0,
+                  })}
+                />{" "}
+                KM/h
+              </span>
+              <br></br>
+            </div>
+            <div className={CurrentStyle.clouds}>
+              <span className={CurrentStyle.title}>
+                Zachmurzenie: <DisplayData clouds={data.clouds.all} /> %{" "}
+              </span>
+              <br></br>
+            </div>
+            <div className={CurrentStyle.aqi}>
+              <span className={CurrentStyle.title}>
+                Smog: <DisplayData smog={data.aqi} />
+              </span>
+              <br></br>
+            </div>
+          </div>
+        </div>
+      </div>
+      {
+        //  </div><div className={CurrentStyle.weather}>
+      }
+    </div>
+  );
+};
 
 export default CurrentWeather;
