@@ -1,3 +1,17 @@
+:root {
+    /* Descriptive variables */
+    --color-blue: #428D9E;
+    --color-white: #FFF;
+    --color-lightGray: #f1f1f1;
+    --font-lato: 'Lato', sans-serif;
+    --font-lato-light: 'Lato Light', sans-serif;
+
+    /* Functional variables */
+    --color-bg: var(--color-lightGray);
+    --font-primary: var(--font-lato);
+    --font-secondary: var(--font-lato-light);
+}
+
 #mainBox {
     /* Self Layout Properties */
     margin: 0 auto;
