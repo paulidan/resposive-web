@@ -1,20 +1,13 @@
 import Navbar from '../components/Navbar';
 import Header from '../components/Header';
+import Boxes from '../components/Boxes';
 
-
-
-function HomePage() {
+const HomePage = () => {
     return (
         <div className="App">
-            <div id="header"> 
-                <Header />
-            </div>
-            <div id="menu">
-                <Navbar />
-            </div>
-            <div>
-                HOME
-            </div>
+            <Header />
+            <Navbar />
+            <Boxes />
         </div>
     );
 }
