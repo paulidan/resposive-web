@@ -1,4 +1,4 @@
-import styles from '@components/Boxes.module.css';
+import styles from './Boxes.module.css';
 
 const Boxes = () => {
     return (
