@@ -1,5 +1,5 @@
 :root {
-  --gradient: linear-gradient(135deg, #ffefba 10%, #ffffff 100%);
+  --gradient: linear-gradient(135deg, #EAD280 10%, #EAD280 100%);
 }
 
 * {
@@ -31,12 +31,14 @@ body {
   color: #858585;
   font-size: 4rem;
   text-align: center;
+  font-weight: 700;
 }
 
 .location_box {
   position: absolute;
   top: 25px;
   left: 25px;
+  font-weight: 700;
 }
 
 .weather_box .temp {
@@ -71,7 +73,7 @@ body {
   width: 100%;
   position: relative;
   margin: 0.6rem auto;
-  background-color: rgba(254, 254, 254, 0.652);
+  background-color: rgba(254, 254, 254, 0);
   padding: 1rem 1.5rem;
   color: #858585;
   font-size: 2rem;
@@ -79,6 +81,25 @@ body {
   border-radius: 1rem;
   height: 100%;
   float: left;
+}
+.feels_info {
+  position: relative;
+  border-radius: 25px;
+  -webkit-box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.2);
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  -o-transition: transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+  -webkit-transform: translateZ(0) scale(1.02) perspective(1000px);
+  transform: translateZ(0) scale(1.02) perspective(1000px);
+  float: center;
+}
+
+.feels_info:hover {
+  -webkit-transform: scale(1.1) perspective(1500px) rotateY(-10deg);
+  transform: scale(1.1) perspective(1500px) rotateY(-10deg);
 }
 
 .weather_box .weather {

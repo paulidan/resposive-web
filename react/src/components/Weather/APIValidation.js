@@ -8,9 +8,8 @@ const DisplayHumidity = ({ humidity }) => {
   return !!humidity ? <span>{humidity}</span> : <>N/A</>;
 };
 
-const DisplaySmog = ({ smog }) => {
-  return !!smog ? <span>{smog}</span> : <>N/A</>;
-};
+
+const DisplayData = ({ data }) => <span>{!!data ? data : 'N/A'}</span>
 
 const DisplayPressure = ({ pressure }) => {
   return !!pressure ? <span>{pressure}</span> : <>N/A</>;
@@ -40,7 +39,7 @@ export {
   DisplaySunset,
   DisplaySunrise,
   DisplayWind,
-  DisplaySmog,
+  DisplayData,
   DisplayClouds,
   DisplayPressure,
   DisplayFeelTemp,

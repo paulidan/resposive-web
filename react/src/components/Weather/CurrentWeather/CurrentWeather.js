@@ -7,7 +7,7 @@ import {
   DisplayFeelTemp,
   DisplayWind,
   DisplayTemp,
-  DisplaySmog,
+  DisplayData,
   DisplayHumidity,
   DisplaySunrise,
   DisplaySunset,
@@ -128,7 +128,7 @@ const CurrentWeather = ({ data }) => {
             <div className={CurrentStyle.wind}>
               <span className={CurrentStyle.title}>
                 Prędkość wiatru:{" "}
-                <DisplayWind
+                <DisplayData
                   wind={(data.wind.speed * 3.6).toLocaleString(undefined, {
                     maximumFractionDigits: 0,
                   })}
@@ -139,13 +139,13 @@ const CurrentWeather = ({ data }) => {
             </div>
             <div className={CurrentStyle.clouds}>
               <span className={CurrentStyle.title}>
-                Zachmurzenie: <DisplayClouds clouds={data.clouds.all} /> %{" "}
+                Zachmurzenie: <DisplayData clouds={data.clouds.all} /> %{" "}
               </span>
               <br></br>
             </div>
             <div className={CurrentStyle.aqi}>
               <span className={CurrentStyle.title}>
-                Smog: <DisplaySmog smog={data.aqi} />
+                Smog: <DisplayData smog={data.aqi} />
               </span>
               <br></br>
             </div>
