@@ -103,6 +103,8 @@
 #centerBox {
     /* Self Layout Properties */
     position: absolute;
+    width: calc(100% - 0.13rem);
+    height: calc(100% - 0.13rem);
     top: 0.06rem;
     left: 0.06rem;      
 
@@ -129,6 +131,80 @@
     color: #333;
 }
 
+/* Smartphone & Tablet Layout */
+@media only screen and (max-width: 61.99rem) {
+    #mainBox {
+        /* Content Layout Properties */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #container {
+        /* Self Layout Properties */
+        width: 93.75%;
+
+        /* Content Layout Properties */
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #centerBoxContainer {
+        /* Self Layout Properties */
+        width: 100%;
+    }
+
+    #centerBoxOutline {
+        /* Self Layout Properties */
+        position: absolute;
+    }
+
+    #centerBox {
+        /* Self Layout Properties */    
+        z-index: 1;
+    }
+
+    #centerBoxText {
+        /* UI Properties */
+        line-height: 3;
+    }
+
+    #centerBoxHeader {
+        /* UI Properties */
+        line-height: 1.5;
+    }
+
+    #centerBoxInner p {
+        /* UI Properties */
+        font-size: 0.75rem;
+    }
+    
+    #topLeftBox, #topRightBox, #bottomLeftBox, #bottomRightBox {
+        /* Content Layout Properties */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #topLeftBox p, #topRightBox p, #bottomLeftBox p, #bottomRightBox p {
+        /* UI Properties */
+        font-size: 1.9rem;
+    }
+
+    #topLeftBoxContainer {
+        /* Self Layout Properties */
+        position: relative;
+    }
+}
+
+/* Smartphone & Desktop Layout */
+@media only screen and (max-width: 37.5rem), (min-width: 62rem) {
+    #centerBoxInner {
+        /* Self Layout Properties */
+        height: 100%;
+    }
+}
+
 /* Tablet & Desktop Layout */
 @media only screen and (min-width: 37.51rem) {
     .subBox {
@@ -145,6 +221,15 @@
         /* UI Properties */
         font-family: var(--font-primary);
     }
+
+    #centerBoxText {
+        /* UI Properties */
+        font-size: 1rem;
+    }
+
+    #topLeftBox {
+        /* UI Properties */
+        background-color: var(--color-white);}
 }
 
 /* Smartphone Layout */
@@ -152,21 +237,6 @@
     #mainBox {
         /* Self Layout Properties */
         padding: 2.5rem 0;
-
-        /* Content Layout Properties */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #container {
-        /* Self Layout Properties */
-        width: 93.75%;
-        height: 75%;
-
-        /* Content Layout Properties */
-        flex-wrap: wrap;
-        justify-content: space-between;
     }
 
     .subBox {
@@ -181,27 +251,17 @@
 
     #centerBoxContainer {
         /* Self Layout Properties */
-        width: 100%;
         padding: 10rem 0;
         order: 0;
     }
 
     #centerBoxOutline {
         /* Self Layout Properties */
-        position: absolute;
         padding: 10rem 0;
-    }
-
-    #centerBox {
-        /* Self Layout Properties */    
-        width: calc(100% - 0.12rem);
-        height: calc(100% - 0.12rem);
-        z-index: 1;
     }
 
     #centerBoxInner {
         /* Self Layout Properties */
-        height: 100%;
         width: 100%;
 
         /* UI Properties */
@@ -211,32 +271,11 @@
     #centerBoxInner p {
         /* Self Layout Properties */
         padding: 0 0.6rem;
-
-        /* UI Properties */
-        font-size: 0.75rem;
-    }
-
-    #centerBoxHeader {
-        /* UI Properties */
-        line-height: 1.5;
-    }
-
-    #centerBoxText {
-        /* UI Properties */
-        line-height: 3;
     }
 
     #topLeftBox, #topRightBox, #bottomLeftBox, #bottomRightBox {
         /* Content Layout Properties */
         align-self: flex-start;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #topLeftBox p, #topRightBox p, #bottomLeftBox p, #bottomRightBox p {
-        /* UI Properties */
-        font-size: 1.9rem;
     }
 
     #topRightBox, #bottomLeftBox, #bottomRightBox {
@@ -247,7 +286,6 @@
     #topLeftBoxContainer {
         /* Self Layout Properties */
         order: 1;
-        position: relative;
         padding: 1.9rem 1.9rem;
     }
 
@@ -280,44 +318,19 @@
 @media only screen and (min-width: 37.51rem) and (max-width: 61.99rem) {
     #mainBox {
         /* Self Layout Properties */
-        padding: 60px 0;
-
-        /* Content Layout Properties */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #container {
-        /* Self Layout Properties */
-        width: 93.75%;
-
-        /* Content Layout Properties */
-        flex-wrap: wrap;
-        justify-content: space-between;
+        padding: 3.75rem 0;
     }
 
     #centerBoxContainer {
         /* Self Layout Properties */
         order: 2;
-        width: 100%;
         height: 21.25rem;
     }
 
     #centerBoxOutline {
-        /* Self Layout Properties */
-        position: absolute;
-
         /* UI Properties */
         background: transparent url('../icons/smartphone/Layer_14_copy_4.png') 0% 0% no-repeat padding-box;
         background-size: cover;
-    }
-
-    #centerBox {
-        /* Self Layout Properties */    
-        width: calc(100% - 0.13rem);
-        height: calc(100% - 0.13rem);
-        z-index: 1;
     }
 
     #centerBoxInner {
@@ -326,7 +339,7 @@
         padding: 1.42rem 0;
 
         /* UI Properties */
-        background: transparent url('../icons/smartphone/Pattern.png') bottom no-repeat padding-box;
+        background: transparent url('../icons/tablet/Pattern.png') bottom no-repeat padding-box;
         overflow: hidden;
     }
 
@@ -336,31 +349,7 @@
         padding: 0 1rem 0 1rem;
 
         /* UI Properties */
-        font-size: 0.75rem;
         overflow: hidden;
-    }
-
-    #centerBoxHeader {
-        /* UI Properties */
-        line-height: 1.5;
-    }
-
-    #centerBoxText {
-        /* UI Properties */
-        line-height: 3;
-        font-size: 1rem;
-    }
-
-    #topLeftBox, #topRightBox, #bottomLeftBox, #bottomRightBox {
-        /* Content Layout Properties */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #topLeftBox p, #topRightBox p, #bottomLeftBox p, #bottomRightBox p {
-        /* UI Properties */
-        font-size: 1.9rem;
     }
 
     #topRightBox, #bottomLeftBox, #bottomRightBox {
@@ -372,7 +361,6 @@
     #topLeftBoxContainer {
         /* Self Layout Properties */
         order: 0;
-        position: relative;
         width: 41.6%;
         height: 5.75rem;
     }
@@ -390,9 +378,6 @@
         z-index: 2;
         width: calc(100% - 0.13rem);
         height: 100%;               /* Change to calc(100% - 0.06rem) when inactive */
-
-        /* UI Properties */
-        background-color: var(--color-white);  
     }
 
     #topLeftBox p {
@@ -402,31 +387,17 @@
 
     #topRightBox {
         /* Self Layout Properties */
-        order: 1;
-
-        /* UI Properties */
-        background-color: var(--color-topRightBox);    
-    }
-
-    #topRightBox p, #bottomLeftBox p, #bottomRightBox p {
-        /* UI Properties */
-        color: var(--color-white);
+        order: 1; 
     }
 
     #bottomLeftBox {
         /* Self Layout Properties */
-        order: 3;
-
-        /* UI Properties */
-        background-color: var(--color-bottomLeftBox);    
+        order: 3;  
     }
 
     #bottomRightBox {
         /* Self Layout Properties */
-        order: 4;
-
-        /* UI Properties */
-        background-color: var(--color-bottomRightBox);    
+        order: 4;   
     }
 }
 
@@ -458,11 +429,6 @@
         text-align: center;
     }
 
-    .pMobileSubBox {
-        /* Self Layout Properties */
-        display: none;
-    }
-
     #mainBox, .subBox {
         /* UI Properties */
         opacity: 1;
@@ -479,9 +445,6 @@
     #topLeftBox {
         /* Self Layout Properties */
         padding: 2.28rem 1.95rem;
-
-        /* UI Properties */
-        background-color: var(--color-white);
     }
 
     #topLeftBox p, #topRightBox p, #bottomLeftBox p, #bottomRightBox p {
@@ -514,8 +477,6 @@
 
     #centerBox {
         /* Self Layout Properties */
-        width: calc(100% - 0.13rem);
-        height: calc(100% - 0.13rem);
         padding: 0;
         z-index: 3;
     }
@@ -523,8 +484,7 @@
     #centerBoxInner {
         /* Self Layout Properties */
         padding: 1.15rem 1.25rem 0 1.15rem;
-        height: 100%;
-
+        
         /* UI Properties */
         background: transparent url('../icons/desktop/Pattern.png') bottom no-repeat padding-box;
     }
@@ -532,10 +492,5 @@
     #centerBoxInner p {
         /* UI Properties */
         line-height: 2;
-    }
-
-    #centerBoxText {
-        /* UI Properties */
-        font-size: 1rem;
     }
 }
