@@ -261,7 +261,7 @@
         width: 100%;
 
         /* UI Properties */
-        background: transparent url('../icons/smartphone/Pattern.png') bottom no-repeat padding-box;
+        background: transparent url('@iconsSmartphone/Pattern.png') bottom no-repeat padding-box;
     }
 
     #centerBoxInner p {
@@ -325,7 +325,7 @@
 
     #centerBoxOutline {
         /* UI Properties */
-        background: transparent url('../icons/smartphone/Layer_14_copy_4.png') 0% 0% no-repeat padding-box;
+        background: transparent url('@iconsSmartphone/Layer_14_copy_4.png') 0% 0% no-repeat padding-box;
         background-size: cover;
     }
 
@@ -335,7 +335,7 @@
         padding: 1.42rem 0;
 
         /* UI Properties */
-        background: transparent url('../icons/tablet/Pattern.png') bottom no-repeat padding-box;
+        background: transparent url('@iconsTablet/Pattern.png') bottom no-repeat padding-box;
         overflow: hidden;
     }
 
@@ -469,7 +469,7 @@
         padding: 1.15rem 1.25rem 0 1.15rem;
         
         /* UI Properties */
-        background: transparent url('../icons/desktop/Pattern.png') bottom no-repeat padding-box;
+        background: transparent url('@iconsDesktop/Pattern.png') bottom no-repeat padding-box;
     }
 
     #centerBoxInner p {
