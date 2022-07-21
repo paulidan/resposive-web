@@ -1,5 +1,4 @@
-import { useState, useEffect } from 'react';
-import styles from './Boxes.module.css';
+import styles from '@components/Boxes.module.css';
 
 const Boxes = () => {
     return (
