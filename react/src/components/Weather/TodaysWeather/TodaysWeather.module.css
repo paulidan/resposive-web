@@ -26,14 +26,14 @@ p {
     text-shadow: 0.1rem 0.1rem rgba(255, 255, 255, 0.5);
 }
 
-.weather2{
+.weather2 {
     text-align: center;
     color: #EAD280;
     font-size: 3rem;
     text-shadow: 0.1rem 0.1rem rgba(255, 255, 255, 0.5);
 }
 
-.day{
+.day {
     padding: 1rem;
     color: black;
     font-family: Lato-Black, Lato, sans-serif;
@@ -41,21 +41,21 @@ p {
     font-weight: 600;
 }
 
-.temp{
+.temp {
     padding: 1rem;
     color: black;
     font-family: Lato-Black, Lato, sans-serif;
     font-size: 1.2rem;
 }
 
-.sunrise-sunset{
+.sunrise-sunset {
     padding: 1rem;
     color: black;
     font-family: Lato-Black, Lato, sans-serif;
     font-size: 1rem;
 }
 
-.description{
+.description {
     padding: 1rem;
     color: black;
     font-family: Lato-Black, Lato, sans-serif;
@@ -63,7 +63,7 @@ p {
     font-weight: 600;
 }
 
-.button{
+.button {
     width: 2.2rem;
     height: 2.2rem;
     border: none;
@@ -71,14 +71,14 @@ p {
     color: #EAD280;
 }
 
-.Dimmerr{
+.Dimmerr {
     text-align: center;
     color:#5A5C5B;
     font-size: 1.5rem;
     text-shadow: 0.1rem 0.1rem rgba(255, 255, 255, 0.5);
 }
 
-.container{
+.container {
     position: relative;
     display: inline-block;
     margin: 1.25rem auto;
@@ -90,7 +90,7 @@ p {
     text-shadow: 0.1rem 0.3rem rgba(195, 195, 195, 0.35);
 }
 
-.temperatura{
+.temperatura {
     position: relative;
     margin: 0.6rem auto;
     background-color: rgba(195, 195, 195, 0.35);

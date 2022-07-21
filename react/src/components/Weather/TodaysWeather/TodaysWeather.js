@@ -3,7 +3,7 @@ import Weather from './TodaysWeather.module.css';
 import CurrentWeather from '../CurrentWeather/CurrentWeather';
 import { Dimmer, Loader } from 'semantic-ui-react';
 
-export default function Pogoda_na_dzis() {
+const TodaysWeather = () => {
 
   const [lat, setLat] = useState([]);
   const [long, setLong] = useState([]);
@@ -26,7 +26,7 @@ export default function Pogoda_na_dzis() {
       });
   }, [lat, long])
 
-  function handleResponse(response) {
+  const handleResponse = (response) => {
     if (response.ok) {
       return response.json();
     } else {
@@ -34,12 +34,11 @@ export default function Pogoda_na_dzis() {
     }
   }
 
-  function getWeather(lat, long) {
+  const getWeather = (lat, long) => {
     return fetch(
       `${process.env.REACT_APP_API_URL}/weather/?lat=${lat}&lon=${long}&lang={pl}&units=metric&APPID=${process.env.REACT_APP_API_KEY}`
     )
       .then(res => handleResponse(res))
-
   }
 
   return (
@@ -58,3 +57,4 @@ export default function Pogoda_na_dzis() {
     </div>
   );
 }
+export default TodaysWeather

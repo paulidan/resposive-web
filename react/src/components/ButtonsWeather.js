@@ -2,7 +2,7 @@ import ButtonsWeatherStyle from "./ButtonsWeather.module.css";
 import React from 'react';
 import { Link } from "react-router-dom";
 
-function ButtonsWeather() {
+const ButtonsWeather = () => {
     return (
         <div className={ButtonsWeatherStyle.ButtonsMenu}>
             <Link to={"/pogoda/szukaj"}>
