@@ -1,27 +1,4 @@
 /* Universal Layout */
-:root {
-    /* Descriptive variables */
-    --color-white: #FFF;
-    --color-lightGray: #f1f1f1;
-    --color-blue: #428D9E;
-    --color-red: #c83434;
-    --color-yellow: #dfbb42;
-    --color-green: #508b61;
-    --color-darkGray: #333;
-    --font-lato: 'Lato', sans-serif;
-    --font-lato-light: 'Lato Light', sans-serif;
-
-    /* Functional variables */
-    --color-bg: var(--color-lightGray);
-    --color-topLeftBox: var(--color-blue);
-    --color-topRightBox: var(--color-red);
-    --color-bottomLeftBox: var(--color-yellow);
-    --color-bottomRightBox: var(--color-green);
-    --color-centerBoxText: var(--color-darkGray);
-    --font-primary: var(--font-lato);
-    --font-secondary: var(--font-lato-light);
-}
-
 #mainBox {
     /* Self Layout Properties */
     margin: 0 auto;
