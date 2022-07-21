@@ -1,14 +1,21 @@
 /* Universal Layout */
 :root {
     /* Descriptive variables */
-    --color-blue: #428D9E;
     --color-white: #FFF;
     --color-lightGray: #f1f1f1;
+    --color-blue: #428D9E;
+    --color-red: #c83434;
+    --color-yellow: #dfbb42;
+    --color-green: #508b61;
     --font-lato: 'Lato', sans-serif;
     --font-lato-light: 'Lato Light', sans-serif;
 
     /* Functional variables */
     --color-bg: var(--color-lightGray);
+    --color-topLeftBox: var(--color-blue);
+    --color-topRightBox: var(--color-red);
+    --color-bottomLeftBox: var(--color-yellow);
+    --color-bottomRightBox: var(--color-green);
     --font-primary: var(--font-lato);
     --font-secondary: var(--font-lato-light);
 }
@@ -42,7 +49,7 @@
     height: 100%;
 
     /* UI Properties */
-    background-color: #428e9e;
+    background-color: var(--color-topLeftBox);
 }
 
 #topLeftBox {
@@ -54,12 +61,12 @@
 
 #topLeftBox p {
     /* UI Properties */
-    color: #428D9E;
+    color: var(--color-topLeftBox);
 }
 
 #topRightBox {
     /* UI Properties */
-    background-color: #c83434;
+    background-color: var(--color-topRightBox);
 }
 
 #topLeftBox p, #topRightBox p, #bottomLeftBox p, #bottomRightBox p {
@@ -69,17 +76,17 @@
 
 #topRightBox p, #bottomLeftBox p, #bottomRightBox p {
     /* UI Properties */
-    color: #FFF;
+    color: var(--color-white);
 }
 
 #bottomLeftBox {
     /* UI Properties */
-    background-color: #dfbb42; 
+    background-color: var(--color-bottomLeftBox); 
 }
 
 #bottomRightBox {
     /* UI Properties */
-    background-color: #508b61;  
+    background-color: var(--color-bottomRightBox);  
 }
 
 #centerBoxContainer {
@@ -95,7 +102,7 @@
     height: 100%;
 
     /* UI Properties */
-    background-color: var(--color-blue);
+    background-color: var(--color-topLeftBox);
 }
 
 #centerBox {
@@ -118,12 +125,12 @@
     /* UI Properties */
     font-size: 1.5rem;
     font-family: var(--font-primary);
-    font-weight: 400;
-    color: var(--color-blue);
+    color: var(--color-topLeftBox);
 }
 
 #centerBoxText {
     /* UI Properties */
+    font-family: var(--font-secondary);
     color: #333;
 }
 
@@ -153,11 +160,6 @@
         /* Content Layout Properties */
         flex-wrap: wrap;
         justify-content: space-between;
-    }
-
-    .subBox {
-        /* UI Properties */
-        font-weight: 400;
     }
 
     #centerBoxContainer {
@@ -203,9 +205,8 @@
     }
 
     #centerBoxText {
+        /* UI Properties */
         line-height: 3;
-        font-family: var(--font-primary);
-        font-weight: 300;
     }
 
     #topLeftBox, #topRightBox, #bottomLeftBox, #bottomRightBox {
@@ -236,7 +237,7 @@
     #topLeftBox {
         /* Self Layout Properties */
         margin-top: -0.13rem;      /* Change to 0 when inactive */
-        padding: 0.78rem 1.28rem;  /* Change to 0.6875rem 1.29rem when inactive */
+        padding: 0.78rem 1.29rem;  /* Change to 0.6875rem 1.29rem when inactive */
 
         /* UI Properties */
         background-color: var(--color-bg);
@@ -259,7 +260,7 @@
 }
 
 /* Tablet Layout */
-@media only screen and (min-width: 601px) and (max-width: 991px) {
+@media only screen and (min-width: 37.51rem) and (max-width: 61.99rem) {
     #mainBox {
         /* Self Layout Properties */
         height: 480px;
@@ -326,6 +327,7 @@
     }
 
     #centerBoxText {
+        /* UI Properties */
         line-height: 3;
         font-size: 16px;
     }
@@ -378,7 +380,7 @@
     }
 
     #topLeftBox p {
-        color: var(--color-blue);
+        color: var(--color-topLeftBox);
     }
 
     #topRightBox {
@@ -436,7 +438,6 @@
         /* UI Properties */
         letter-spacing: 0;
         text-align: center;
-        font-weight: 300;
     }
 
     .pMobileSubBox {
@@ -472,8 +473,7 @@
 
     #topLeftBox p {
         /* UI Properties */
-        font-family: 'gLato', sans-serif;
-        font-weight: 400;
+        font-family: var(--font-primary);
     }
 
     #topRightBox {
