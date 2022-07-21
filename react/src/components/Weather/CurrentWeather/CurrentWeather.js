@@ -18,10 +18,10 @@ import rain from "../../../icons/desktop/weatherrain.png";
 import cloud from "../../../icons/desktop/weathercloud.png";
 
 
-const icons = {
-  Clear: sun,
-  Rain: rain,
-  Clouds: cloud,
+const ICONS = {
+    'Clear': sun,
+    'Rain': rain,
+    'Clouds': cloud
 };
 const dateFormatPurposueDescription = {
   date: "cccc, dd/MM/yy, h:mm",
@@ -69,7 +69,7 @@ const CurrentWeather = ({ data }) => {
             </div>
             <img
               className={CurrentStyle.weather_icon}
-              src={icons[data.weather[0].main]}
+              src={ICONS[data.weather[0].main]}
             />
           </div>
         </div>

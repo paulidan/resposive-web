@@ -41,6 +41,7 @@ export default function Pogoda_na_dzis() {
       .then(res => handleResponse(res))
 
   }
+  
 
   return (
     <div className={Weather.TodaysWeather}> {console.log("ala 0", weatherData)}
