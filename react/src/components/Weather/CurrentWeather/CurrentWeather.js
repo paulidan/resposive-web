@@ -6,7 +6,7 @@ import cloud from '../../../icons/desktop/weathercloud.png';
 import { format } from 'date-fns';
 import { pl } from 'date-fns/locale'
 
-const icons = {
+const ICONS = {
     'Clear': sun,
     'Rain': rain,
     'Clouds': cloud
@@ -49,7 +49,7 @@ const CurrentWeather = ({ data }) => {
                             <p>Smog: </p>
                         </div>
                         <div className={CurrentStyle.weather}>
-                            {data.weather[0].main} <img src={icons[data.weather[0].main]} />
+                            {data.weather[0].main} <img src={ICONS[data.weather[0].main]} />
                         </div>
                     </div>
                 </div>
