@@ -1,7 +1,6 @@
+import { Link } from 'react-router-dom';
 import Styles from './Navbar.module.css';
 import logo from '@/icons/desktop/Logo.png';
-import { Link } from 'react-router-dom';
-
 
 function Navbar(){
     return(
@@ -34,7 +33,6 @@ function Navbar(){
                 </ul>
             </div>
         </div>
-
     );
 }
 
