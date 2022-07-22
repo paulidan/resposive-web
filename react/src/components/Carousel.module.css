@@ -3,10 +3,12 @@
     /* Descriptive variables */
     --color-green: #62A559;
     --color-purple: #BF79C3;
+    --color-translucent-white: rgba(255,255,255,0.8);
 
     /* Functional variables */
     --color-boxCaption1: var(--color-green);
     --color-boxCaption2: var(--color-purple);
+    --color-boxCaptionBg: var(--color-translucent-white);
 }
 
 #container {
@@ -22,7 +24,7 @@
 
 #topPhotoBox3 p, #topPhotoBox4 p {
     /* UI Properties */
-    font-family: var(--font-secondary);
+    font: var(--font-secondary);
 }
 
 #topPhotoBox3 p {
@@ -55,7 +57,7 @@
     
     /* UI Properties */
     color: var(--color-darkGray);
-    font-family: var(--font-secondary);   
+    font: var(--font-secondary);   
 }
 
 /* Smartphone & Tablet Layout */
@@ -213,7 +215,7 @@
         padding: 0 0.1rem;
 
         /* UI Properties */
-        background-color: rgba(255,255,255,0.8);
+        background-color: var(--color-boxCaptionBg);
     }
 
     #topPhotoBox3 {
@@ -442,7 +444,7 @@
 @media only screen and (min-width: 62rem) {
     #mainBox {
         /* UI Properties */
-        background-color: #f1f1f1;
+        background-color: var(--color-lightGray);
     }
 
     #container {
