@@ -5,15 +5,17 @@
   max-width: 93.75rem;
 
   /* UI Properties */
-  background: transparent url('../icons/desktop/Layer_37.png') center -358px no-repeat padding-box;
+  background: transparent url('../icons/desktop/Layer_37.png') 61% bottom no-repeat padding-box;
+  background-size: 101% auto;
 }
 
 #container {
   /* Self Layout Properties */
-  height: 75.38%;
-  padding: 98px 0;
+  height: 77.22%;
+  padding: 6.5rem 0 7rem 0;
   
   /* Content Layout Properties */
+  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -28,8 +30,8 @@
   opacity: 1;
   color: #FFF;
   line-height: 1;
-  font-size: 68px;
-  letter-spacing: 0px;
+  font-size: 4.25rem;
+  letter-spacing: 0;
   font-family: 'Lato Black', Lato, sans-serif;
 }
   
@@ -46,11 +48,6 @@
   /* Content Layout Properties */
   display: flex;
   align-items: center;
-}
-
-.iconBox {
-  /* Self Layout Properties */
-  height: 81px;
 }
 
 .blueBoxes, .greenBoxes {

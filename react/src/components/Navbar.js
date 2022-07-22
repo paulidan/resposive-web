@@ -5,36 +5,23 @@ import { Link } from 'react-router-dom';
 
 function Navbar(){
     return(
-        <div id={Styles.menu}>
-            <div className={Styles.navbar}>
-                <div id={Styles.logo}>
-                  <img src={logo} alt="logo" />
-                </div>    
-                <ul className={Styles.main_nav}>
-                <li className={Styles.nav_link} active>
-                  <div className={Styles.nav_item}>
-                    <Link className={Styles.nav_item} to="/">Home</Link>
-                  </div>
-                </li>
-                <li className={Styles.nav_link}>
-                  <div className={Styles.nav_item}>
-                    <Link className={Styles.nav_item} to="/menu2">Menu2</Link>
-                  </div>
-                </li>
-                <li className={Styles.nav_link}>
-                  <div className={Styles.nav_item}>
-                   <Link className={Styles.nav_item} to="/menu3">Menu3</Link>
-                  </div>
-                </li>
-                <li className={Styles.nav_link }>
-                 <div className={Styles.nav_item}>
-                   <Link className={Styles.nav_item} to="/pogoda">Pogoda</Link>
-                  </div>
-                </li>
-                </ul>
-            </div>
-        </div>
-
+      <div id={Styles.navbar}>
+          <img src={logo} alt="logo" id={Styles.logo} />
+          <ul id={Styles.mainNav}>
+            <li className={Styles.navLink} active>
+              <Link className={Styles.navItem} to="/">HOME</Link>
+            </li>
+            <li className={Styles.navLink}>
+              <Link className={Styles.navItem} to="/menu2">MENU 2</Link>
+            </li>
+            <li className={Styles.navLink}>
+              <Link className={Styles.navItem} to="/menu3">MENU 3</Link>
+            </li>
+            <li className={Styles.navLink }>
+              <Link className={Styles.navItem} to="/pogoda">POGODA</Link>
+            </li>
+          </ul>
+      </div>
     );
 }
 
