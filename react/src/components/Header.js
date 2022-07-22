@@ -1,32 +1,33 @@
-import HeaderStyle from "./Header.module.css";
 import layer_7_c from '../icons/desktop/Layer_7_c.png';
 import layer_11_c from '../icons/desktop/Layer_11_c.png';
-import layer_8_cr from '../icons/desktop/Layer_8_cr.png';
-import layer_12_cq from '../icons/desktop/Layer_12_cq.png';
-import layer_9 from '../icons/desktop/Layer_9.png';
-import layer_10 from '../icons/desktop/Layer_10.png';
-import layer_37 from '../icons/desktop/Layer_37.png';
+import layer_8_c from '../icons/desktop/Layer_8_c.png';
+import layer_12 from '../icons/desktop/Layer_12.png';
+import layer_9_cp from '../icons/desktop/Layer_9_cp.png';
+import layer_10_co from '../icons/desktop/Layer_10_co.png';
+import Navbar from '../components/Navbar';
+import Styles from "./Header.module.css";
 
 function Header(){
     return(
-      <div id={HeaderStyle.background}>
-        <div id={HeaderStyle.heading}>
-          <p>Feel the Power of Typography</p>
+      <div id={Styles.mainBox}>
+        <div id={Styles.container}>
+          <p id={Styles.heading}>Feel the Power of Typography</p>
+          <div id={Styles.boxes}>
+            <div id={Styles.redBoxes}>
+              <img src={layer_7_c} alt="typo box" className={Styles.iconBox} />
+              <img src={layer_11_c} alt="Typography" className={Styles.textBox} />
+            </div>
+            <div id={Styles.blueBoxes}>
+              <img src={layer_8_c} alt="resp box" className={Styles.iconBox} />
+              <img src={layer_12} alt="Responsive" className={Styles.textBox} />
+            </div>
+            <div id={Styles.greenBoxes}>
+              <img src={layer_9_cp} alt="ux box" className={Styles.iconBox} />
+              <img src={layer_10_co} alt="UX" className={Styles.textBox} />
+            </div>
+          </div>
         </div>
-        <div id={HeaderStyle.boxes}>
-          <div className={HeaderStyle.red_boxes}>
-            <img src={layer_7_c} alt="typo box" />
-            <img src={layer_11_c} alt="Typography" />
-          </div>
-          <div className={HeaderStyle.blue_boxes}>
-            <img src={layer_8_cr} alt="resp box" />
-            <img src={layer_12_cq} alt="Responsive" />
-          </div>
-          <div className={HeaderStyle.green_boxes}>
-            <img src={layer_9} alt="ux box" />
-            <img src={layer_10} alt="UX" />
-          </div>
-        </div>
+        <Navbar />
       </div>
     );
 }
