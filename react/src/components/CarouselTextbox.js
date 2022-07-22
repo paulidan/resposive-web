@@ -1,4 +1,4 @@
-import Icon from '../icons/desktop/Icon.png';
+import Icon from '@/icons/desktop/Icon.png';
 import Styles from './CarouselTextbox.module.css';
 
 function CarouselTextbox() {

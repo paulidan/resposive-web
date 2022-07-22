@@ -36,6 +36,8 @@
     transform: rotate(360deg);
   }
 }
-#page {
 
+:root {
+  /* Descriptive variables */
+  --font-lato-bold: 600 1rem 'gLato', sans-serif;
 }

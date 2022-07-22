@@ -1,7 +1,19 @@
 /* Universal Layout */
+:root {
+    /* Descriptive variables */
+    --color-lightBlue: #7ec8ea;
+    --color-darkBlue: #1883b4;
+    --color-translucent-white: rgba(255,255,255,0.8);
+
+    /* Functional variables */
+    --color-header: var(--color-lightBlue);
+    --color-itemNumberDiv: var(--color-darkBlue);
+    --color-boxCaptionBg: var(--color-translucent-white);
+}
+
 #textBox {
     /* UI Properties */
-    background-color: #fff;
+    background-color: var(--color-white);
 }
 
 #textBoxHeader {
@@ -13,7 +25,7 @@
     align-items: center;
     
     /* UI Properties */
-    background-color: #7ec8ea;
+    background-color: var(--color-header);
 }
 
 #textBoxHeader p {
@@ -22,7 +34,7 @@
 
     /* UI Properties */
     text-align: left;
-    font-family: 'Lato', sans-serif;
+    font: var(--font-primary);
     font-style: italic;
 }
 
@@ -48,7 +60,7 @@
 
     .textBoxItemText {
         /* UI Properties */
-        font-family: 'Lato', sans-serif;
+        font: var(--font-primary);
         font-size: 0.9rem;
     }
 }
@@ -90,10 +102,9 @@
         padding-bottom: 0.5rem;
         
         /* UI Properites */
-        color: #333;
-        font-family: 'Lato', sans-serif;
+        color: var(--color-darkGray);
+        font: var(--font-lato-bold);
         font-size: 2.2rem;
-        font-weight: 600;
     }
     
     .textBoxItemNumber div {
@@ -102,7 +113,7 @@
         width: 100%;
     
         /* UI Properties */
-        background-color: #1883b4;
+        background-color: var(--color-itemNumberDiv);
     }
 }
 
@@ -229,7 +240,7 @@
         width: 65%;
     
         /* UI Properties */
-        font-family: 'Lato', sans-serif;
+        font: var(--font-primary);
         font-size: 0.9rem;
     }
 }
