@@ -110,10 +110,13 @@
 :root {
     /* Descriptive variables */
     --color-white: #FFF;
-    --font-lato: 'Lato', sans-serif;
-    --font-lato-light: 'Lato Light', sans-serif;
+    --color-lightGray: #f1f1f1;
+    --color-darkGray: #333;
+    --font-lato: 400 1rem 'gLato', sans-serif;
+    --font-lato-light: 300 1rem 'gLato', sans-serif;
 
     /* Functional variables */
+    --color-bg: var(--color-lightGray);
     --font-primary: var(--font-lato);
     --font-secondary: var(--font-lato-light);
 }

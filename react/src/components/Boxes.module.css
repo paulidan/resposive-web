@@ -1,15 +1,12 @@
 /* Universal Layout */
 :root {
     /* Descriptive variables */
-    --color-lightGray: #f1f1f1;
     --color-blue: #428D9E;
     --color-red: #c83434;
     --color-yellow: #dfbb42;
     --color-green: #508b61;
-    --color-darkGray: #333;
 
     /* Functional variables */
-    --color-bg: var(--color-lightGray);
     --color-topLeftBox: var(--color-blue);
     --color-topRightBox: var(--color-red);
     --color-bottomLeftBox: var(--color-yellow);
@@ -116,14 +113,14 @@
 
 #centerBoxHeader {
     /* UI Properties */
+    font: var(--font-primary);
     font-size: 1.5rem;
-    font-family: var(--font-primary);
     color: var(--color-topLeftBox);
 }
 
 #centerBoxText {
     /* UI Properties */
-    font-family: var(--font-secondary);
+    font: var(--font-secondary);
     color: var(--color-centerBoxText);
 }
 
@@ -205,7 +202,7 @@
 @media only screen and (min-width: 37.51rem) {
     .subBox {
         /* UI Properties */
-        font-family: var(--font-secondary);
+        font: var(--font-secondary);
     }
 
     .pMobileSubBox {
@@ -215,7 +212,8 @@
 
     #topLeftBox p {
         /* UI Properties */
-        font-family: var(--font-primary);
+        font: var(--font-primary);
+        font-size: 1.9rem;
     }
 
     #centerBoxText {
@@ -237,7 +235,7 @@
 
     .subBox {
         /* UI Properties */
-        font-family: var(--font-primary);
+        font: var(--font-primary);
     }
 
     .pDesktopSubBox {
