@@ -1,0 +1,357 @@
+#mainBox {
+    /* Self Layout Properties */
+    margin: 0 auto;
+    width: 100%;
+    
+    /* UI Properties*/
+    background-color: #f1f1f1;
+}
+
+#container {
+    /* Content Layout Properties */
+    display: flex;
+    align-items: center;
+}
+
+#topLeftBoxOutline {
+    /* Self Layout Properties */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    /* UI Properties */
+    background-color: #428e9e;
+}
+
+#topLeftBox {
+    /* Self Layout Properties */
+    position: absolute;
+    top: 0.06rem;
+    left: 0.06rem;
+}
+
+#topLeftBox p {
+    /* UI Properties */
+    color: #428D9E;
+}
+
+#topRightBox {
+    /* UI Properties */
+    background-color: #c83434;
+}
+
+#topLeftBox p, #topRightBox p, #bottomLeftBox p, #bottomRightBox p {
+    /* Self Layout Properties */
+    margin: 0;
+}
+
+#topRightBox p, #bottomLeftBox p, #bottomRightBox p {
+    /* UI Properties */
+    color: #FFF;
+}
+
+#bottomLeftBox {
+    /* UI Properties */
+    background-color: #dfbb42; 
+}
+
+#bottomRightBox {
+    /* UI Properties */
+    background-color: #508b61;  
+}
+
+#centerBoxContainer {
+    /* Self Layout Properties */
+    position: relative;
+}
+
+#centerBoxOutline {
+    /* Self Layout Properties */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    /* UI Properties */
+    background-color: #428e9e;
+}
+
+#centerBox {
+    /* Self Layout Properties */
+    position: absolute;
+    top: 0.06rem;
+    left: 0.06rem;      
+
+    /* UI Properties */
+    background-color: #FFF;
+}
+
+#centerBoxInner p {
+    margin: 0;
+    text-align: left;
+    letter-spacing: 0;
+}
+
+#centerBoxHeader {
+    /* UI Properties */
+    font-size: 1.5rem;
+    font-family: 'gLato', sans-serif;
+    font-weight: 400;
+    color: #428E9E;
+}
+
+#centerBoxText {
+    /* UI Properties */
+    color: #333;
+}
+
+@media only screen and (max-width: 62rem) {
+    .pDesktopSubBox {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 37.5rem) {
+    #mainBox {
+        /* Self Layout Properties */
+        padding: 2.5rem 0;
+
+        /* Content Layout Properties */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #container {
+        /* Self Layout Properties */
+        width: 93.75%;
+        height: 75%;
+
+        /* Content Layout Properties */
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .subBox {
+        /* UI Properties */
+        font-family: 'gLato', sans-serif;
+        font-weight: 400;
+    }
+
+    #centerBoxContainer {
+        /* Self Layout Properties */
+        width: 100%;
+        padding: 10rem 0;
+        order: 0;
+    }
+
+    #centerBoxOutline {
+        /* Self Layout Properties */
+        position: absolute;
+        padding: 10rem 0;
+    }
+
+    #centerBox {
+        /* Self Layout Properties */    
+        width: calc(100% - 0.12rem);
+        height: calc(100% - 0.12rem);
+        z-index: 1;
+    }
+
+    #centerBoxInner {
+        /* Self Layout Properties */
+        height: 100%;
+        width: 100%;
+
+        /* UI Properties */
+        background: transparent url('../icons/smartphone/Pattern.png') bottom no-repeat padding-box;
+    }
+
+    #centerBoxInner p {
+        /* Self Layout Properties */
+        padding: 0 0.6rem;
+
+        /* UI Properties */
+        font-size: 0.75rem;
+    }
+
+    #centerBoxHeader {
+        /* UI Properties */
+        line-height: 1.5;
+    }
+
+    #centerBoxText {
+        line-height: 3;
+        font-family: 'gLato', sans-serif;
+        font-weight: 300;
+    }
+
+    #topLeftBox, #topRightBox, #bottomLeftBox, #bottomRightBox {
+        /* Content Layout Properties */
+        align-self: flex-start;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #topLeftBox p, #topRightBox p, #bottomLeftBox p, #bottomRightBox p {
+        /* UI Properties */
+        font-size: 1.9rem;
+    }
+
+    #topRightBox, #bottomLeftBox, #bottomRightBox {
+        /* Self Layout Properties */
+        padding: 0.75rem 1.3rem;
+    }
+
+    #topLeftBoxContainer {
+        /* Self Layout Properties */
+        order: 1;
+        position: relative;
+        padding: 1.9rem 1.9rem;
+    }
+
+    #topLeftBox {
+        /* Self Layout Properties */
+        margin-top: -0.13rem;      /* Change to 0 when inactive */
+        padding: 0.78rem 1.28rem;  /* Change to 0.6875rem 1.29rem when inactive */
+
+        /* UI Properties */
+        background-color: #f1f1f1;
+    }
+
+    #topRightBox {
+        /* Self Layout Properties */
+        order: 2;
+    }
+
+    #bottomLeftBox {
+        /* Self Layout Properties */
+        order: 3;  
+    }
+
+    #bottomRightBox {
+        /* Self Layout Properties */
+        order: 4;
+    }
+}
+
+@media only screen and (min-width: 62rem) {
+
+    #container {
+        /* Self Layout Properties */
+        width: 93.75rem;
+        padding: 8.15rem 27.9rem;
+        margin: auto;
+        position: relative;
+
+        /* Content Layout Properties */
+        justify-content: center;
+    }
+
+    .subBox {
+        /* Self Layout Properties */
+        padding: 2.3rem 2.1rem;
+        position: absolute;
+
+        /* Content Layout Properties */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        /* UI Properties */
+        letter-spacing: 0;
+        text-align: center;
+        font-family: 'gLato', sans-serif;
+        font-weight: 300;
+    }
+
+    .pMobileSubBox {
+        /* Self Layout Properties */
+        display: none;
+    }
+
+    #mainBox, .subBox {
+        /* UI Properties */
+        opacity: 1;
+    }
+
+    #topLeftBoxContainer {
+        /* Self Layout Properties */
+        position: absolute;
+        top: 4.4rem;
+        left: 10.3rem;
+        padding: 3.85rem 9.5rem;
+    }
+
+    #topLeftBox {
+        /* Self Layout Properties */
+        padding: 2.28rem 1.95rem;
+
+        /* UI Properties */
+        background-color: #fff;
+    }
+
+    #topLeftBox p, #topRightBox p, #bottomLeftBox p, #bottomRightBox p {
+        /* UI Properties */
+        font-size: 2.5rem;
+    }
+
+    #topLeftBox p {
+        /* UI Properties */
+        font-family: 'gLato', sans-serif;
+        font-weight: 400;
+    }
+
+    #topRightBox {
+        /* Self Layout Properties */
+        top: 4.4rem;
+        right: 10.3rem;   
+    }
+
+    #bottomLeftBox {
+        /* Self Layout Properties */
+        top: 24.7rem;
+        left: 10.3rem;
+    }
+
+    #bottomRightBox {
+        /* Self Layout Properties */
+        top: 24.7rem;
+        right: 10.3rem;  
+    }
+
+    #centerBoxContainer {
+        /* Self Layout Properties */
+        padding: 10.3rem 19.2rem;
+    }
+
+    #centerBox {
+        /* Self Layout Properties */
+        width: calc(100% - 0.13rem);
+        height: calc(100% - 0.13rem);
+        padding: 0;
+        z-index: 3;
+    }
+
+    #centerBoxInner {
+        /* Self Layout Properties */
+        padding: 1.15rem 1.25rem 0 1.15rem;
+        height: 100%;
+
+        /* UI Properties */
+        background: transparent url('../icons/desktop/Pattern.png') bottom no-repeat padding-box;
+    }
+
+    #centerBoxInner p {
+        /* UI Properties */
+        line-height: 2;
+    }
+
+    #centerBoxText {
+        /* UI Properties */
+        font-size: 1rem;
+    }
+}
