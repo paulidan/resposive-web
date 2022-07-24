@@ -1,7 +1,7 @@
 import Icon from '@/icons/desktop/Icon.png';
 import Styles from './CarouselTextbox.module.css';
 
-function CarouselTextbox() {
+const CarouselTextbox = () => {
     return(
         <div id={Styles.textBox}>
             <div id={Styles.textBoxHeader}>

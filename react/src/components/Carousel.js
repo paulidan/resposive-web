@@ -13,7 +13,7 @@ import img_tablet_topPhotoBox4 from '@/icons/tablet/Clip_bg.png';
 import CarouselTextbox from './CarouselTextbox';
 import Styles from './Carousel.module.css';
 
-function Carousel() {
+const Carousel = () => {
     return(
         <div id={Styles.mainBox}>
             <div id={Styles.container}>
