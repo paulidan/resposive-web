@@ -1,11 +1,11 @@
 import HeaderStyle from "./Header.module.css";
-import layer_7 from '../icons/desktop/Layer_7.png';
-import layer_11 from '../icons/desktop/Layer_11.png';
-import layer_8 from '../icons/desktop/Layer_8.png';
-import layer_12 from '../icons/desktop/Layer_12.png';
-import layer_9 from '../icons/desktop/Layer_9.png';
-import layer_10 from '../icons/desktop/Layer_10.png';
-import layer_37 from '../icons/desktop/Layer_37.png';
+import layer_7 from '@/icons/desktop/Layer_7.png';
+import layer_11 from '@/icons/desktop/Layer_11.png';
+import layer_8 from '@/icons/desktop/Layer_8.png';
+import layer_12 from '@/icons/desktop/Layer_12.png';
+import layer_9 from '@/icons/desktop/Layer_9.png';
+import layer_10 from '@/icons/desktop/Layer_10.png';
+import layer_37 from '@/icons/desktop/Layer_37.png';
 
 const Header = () => {
     return(
