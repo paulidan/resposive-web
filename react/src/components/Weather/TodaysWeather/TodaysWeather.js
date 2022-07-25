@@ -2,6 +2,7 @@ import React, { Component, useEffect, useState } from "react";
 import Weather from './TodaysWeather.module.css';
 import CurrentWeather from '../CurrentWeather/CurrentWeather';
 import { Dimmer, Loader } from 'semantic-ui-react';
+import {weatherApi} from '../Api';
 
 export default function Pogoda_na_dzis() {
 
@@ -36,7 +37,7 @@ export default function Pogoda_na_dzis() {
 
   function getWeather(lat, long) {
     return fetch(
-      `${process.env.REACT_APP_API_URL}/weather/?lat=${lat}&lon=${long}&lang={pl}&units=metric&APPID=${process.env.REACT_APP_API_KEY}`
+      `${weatherApi.base}/weather/?lat=${lat}&lon=${long}&lang={pl}&units=metric&APPID=${weatherApi.key}`
     )
       .then(res => handleResponse(res))
 

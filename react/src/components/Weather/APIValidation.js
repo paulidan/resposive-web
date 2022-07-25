@@ -9,8 +9,13 @@ const DisplayHumidity = ({ humidity }) => {
 };
 
 
-const DisplayData = ({ data }) => <span>{!!data ? data : 'N/A'}</span>
-
+const DisplayData = ({ data }) => {
+  if(!!data) {
+    return <span>{data}</span>;
+  }else{
+    return <>N/A</>;
+  }
+};
 const DisplayPressure = ({ pressure }) => {
   return !!pressure ? <span>{pressure}</span> : <>N/A</>;
 };

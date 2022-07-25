@@ -22,12 +22,13 @@ const WEEK_DAYS = ['Poniedziałek', 'Wtorek', 'Środa', 'Czwartek', 'Piątek', '
 const Forecast = ({ data }) => {
     const dayInAWeek = new Date().getDay();
     const forecastDays = WEEK_DAYS.slice(dayInAWeek, WEEK_DAYS.length).concat(WEEK_DAYS.slice(0, dayInAWeek));
+    console.log("Data", data)
+    if(!data) return null;
 
     return (
         <>
             <label className={ForecastStyle.title}>Pogoda długoterminowa</label>
-            <Accordion allowZeroExpanded className={ForecastStyle.container}>{
-                console.log("ala2", data)}
+            <Accordion allowZeroExpanded className={ForecastStyle.container}>
                 {data?.list.splice(0, 7).map((item, idx) => (
                     <AccordionItem key={idx}>
                         <AccordionItemHeading>

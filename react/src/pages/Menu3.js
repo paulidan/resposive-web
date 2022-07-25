@@ -1,7 +1,8 @@
+
 import Navbar from '../components/Navbar';
 import Header from '../components/Header';
 
-function Menu3Page() {
+const Menu3Page = () => {
   return (
     <div className="App">
       <Header />

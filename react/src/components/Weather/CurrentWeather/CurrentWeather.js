@@ -129,7 +129,7 @@ const CurrentWeather = ({ data }) => {
               <span className={CurrentStyle.title}>
                 Prędkość wiatru:{" "}
                 <DisplayData
-                  wind={(data.wind.speed * 3.6).toLocaleString(undefined, {
+                 data={(data.wind.speed * 3.6).toLocaleString(undefined, {
                     maximumFractionDigits: 0,
                   })}
                 />{" "}
@@ -139,13 +139,13 @@ const CurrentWeather = ({ data }) => {
             </div>
             <div className={CurrentStyle.clouds}>
               <span className={CurrentStyle.title}>
-                Zachmurzenie: <DisplayData clouds={data.clouds.all} /> %{" "}
+                Zachmurzenie: <DisplayData data={data.clouds.all} /> %{" "}
               </span>
               <br></br>
             </div>
             <div className={CurrentStyle.aqi}>
               <span className={CurrentStyle.title}>
-                Smog: <DisplayData smog={data.aqi} />
+                Smog: <DisplayData data={data.aqi} />
               </span>
               <br></br>
             </div>
