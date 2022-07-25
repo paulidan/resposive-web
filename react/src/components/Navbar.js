@@ -1,13 +1,13 @@
+import { Link } from 'react-router-dom';
 import Styles from './Navbar.module.css';
 import logo from '../icons/desktop/Logo.png';
-import { Link } from 'react-router-dom';
 
-function Navbar() {
+const Navbar = () => {
   return (
     <div id={Styles.menu}>
       <div className={Styles.navbar}>
         <div id={Styles.logo}>
-          <img src={logo} alt="logo" />
+          <img src={logo} alt="fireup.pro" />
         </div>
         <ul className={Styles.main_nav}>
           <li className={Styles.nav_link} active>

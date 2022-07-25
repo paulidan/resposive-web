@@ -8,7 +8,7 @@ import WeatherToday from './pages/WeatherToday';
 import WeatherTermPage from './pages/WeatherTermPage';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <Routes>
       <Route path='/' element={<HomePage />} />

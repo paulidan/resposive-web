@@ -5,7 +5,6 @@ import ButtonsWeather from '../components/ButtonsWeather';
 import Search from '../components/Weather/SearchBar/Search';
 import CurrentWeather from '../components/Weather/CurrentWeather/CurrentWeather';
 import { weatherApi } from '../components/Weather/Api';
-import Forecast from '../components/Weather/Forecast/Forecast';
 
 const WeatherSearchPage = () => {
   const [currentWeather, setCurrentWeather] = useState(null);
@@ -22,7 +21,6 @@ const WeatherSearchPage = () => {
         const weatherResponse = await response[0].json();
 
         setCurrentWeather({ city: searchData.label, ...weatherResponse });
-
       })
       .catch(console.log);
   }
@@ -34,7 +32,6 @@ const WeatherSearchPage = () => {
         <ButtonsWeather />
         <Search onSearchChange={handleSearch} />
         {currentWeather && <CurrentWeather data={currentWeather} />}
-
     </div>
   );
 }

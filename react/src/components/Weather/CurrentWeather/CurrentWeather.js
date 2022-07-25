@@ -17,7 +17,6 @@ import sun from "../../../icons/desktop/weathersun.png";
 import rain from "../../../icons/desktop/weatherrain.png";
 import cloud from "../../../icons/desktop/weathercloud.png";
 
-
 const ICONS = {
     'Clear': sun,
     'Rain': rain,
@@ -34,7 +33,6 @@ const DisplayCity = ({ city }) => {
   );
 };
 const CurrentWeather = ({ data }) => {
-  console.log("ala1", data);
   if (!data) {
     return <>N/A</>;
   }
