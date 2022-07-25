@@ -8,7 +8,7 @@ const HomePage = () => {
         <div className="App">
             <Header />
             <Navbar />
-            <Boxes />
+            {/* <Boxes /> */}
             <Carousel />
         </div>
     );

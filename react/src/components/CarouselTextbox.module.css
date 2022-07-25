@@ -39,30 +39,11 @@
     font-style: italic;
 }
 
-#textBoxContent {
-    /* Self Layout Properties */
-    margin: 0;
-}
-
-.textBoxItemText {
-    /* Self Layout Properties */
-    margin: 0;
-
-    /* UI Properties */
-    text-align: left;
-}
-
 /* Smartphone & Tablet Layout */
 @media only screen and (max-width: 992px) {
     #textBoxHeader p {
         /* Self Layout Properties */
         margin: 0;
-    }
-
-    .textBoxItemText {
-        /* UI Properties */
-        font: var(--font-primary);
-        font-size: 0.9rem;
     }
 }
 
@@ -72,49 +53,6 @@
         /* UI Properties */
         font-size: 3rem;
         letter-spacing: 0.9rem;
-    }
-
-    #textBoxContent {
-        /* Content Layout Properties */
-        display: flex;
-        flex-wrap: wrap;
-        align-content: space-evenly;
-
-        /* UI Properties */
-        list-style-type: none;
-        padding-left: 0;
-    }
-    
-    .textBoxItem {
-        /* Content Layout Properties */
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-evenly;
-    }
-
-    .textBoxItemNumber {
-        /* Self Layout Properties */
-        height: 100%;
-    }
-    
-    .textBoxItemNumber p {
-        /* Self Layout Properties */
-        margin: 0;
-        padding-bottom: 0.5rem;
-        
-        /* UI Properites */
-        color: var(--color-darkGray);
-        font: var(--font-lato-bold);
-        font-size: 2.2rem;
-    }
-    
-    .textBoxItemNumber div {
-        /* Self Layout Properties */
-        padding-bottom: 0.5rem;
-        width: 100%;
-    
-        /* UI Properties */
-        background-color: var(--color-itemNumberDiv);
     }
 }
 
@@ -130,30 +68,6 @@
         /* UI Properties */
         font-size: 2.4rem;
         letter-spacing: 0.7rem;
-    }
-
-    #textBoxContent {
-        /* Self Layout Properties */
-        padding: 0 0.6rem 0.6rem 0.6rem;
-
-        /* UI Properties */
-        list-style-position: inside;
-        text-align: left;
-    }
-    
-    .textBoxItem {
-        /* Self Layout Properties */
-        padding-top: 0.5rem;
-    }
-
-    .textBoxItemNumber {
-        /* Content Layout Properties */
-        display: none;
-    }
-
-    .textBoxItemText {
-        /* Content Layout Properties */
-        display: inline;
     }
 }
 
@@ -175,26 +89,6 @@
         /* UI Properties */
         line-height: 1;
     }
-    
-    #textBoxContent {
-        /* Self Layout Properties */
-        height: 87.6%;
-    }
-    
-    .textBoxItem {
-        /* Self Layout Properties */
-        padding-top: 1.75rem;
-    }
-    
-    .textBoxItemNumber {
-        /* Self Layout Properties */
-        width: 8%;
-    }
-    
-    .textBoxItemText {
-        /* Self Layout Properties */
-        width: 83%;
-    }
 }
 
 /* Desktop Layout */
@@ -215,26 +109,6 @@
         /* UI Properties */
         line-height: 0.6;
     }
-
-    .textBoxItem {
-        /* Self Layout Properties */
-        width: 100%;
-        padding-top: 1.5rem;
-    }
-    
-    .textBoxItemNumber {
-        /* Self Layout Properties */
-        width: 3.75rem;
-    }
-    
-    .textBoxItemText {
-        /* Self Layout Properties */
-        width: 65%;
-    
-        /* UI Properties */
-        font: var(--font-primary);
-        font-size: 0.9rem;
-    }
 }
 
 /* Stretch Textbox if wrapped */
@@ -242,10 +116,5 @@
     #textBox {
         /* Self Layout Properties */
         width: 100%;
-    }
-
-    .textBoxItemText {
-        /* Self Layout Properties */
-        width: 70%;
     }
 }
