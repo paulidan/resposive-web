@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { useState } from 'react';
 import { AsyncPaginate } from 'react-select-async-paginate';
 import { geoApiOptions, GEO_API_URL } from '../Api';
@@ -7,11 +8,9 @@ const Search = ({ onSearchChange }) => {
     const [search, setSearch] = useState(null);
 
     const loadOptions = (inputValue) => {
-        return fetch(
-            `${GEO_API_URL}/cities?minPopulation=10000&namePrefix=${inputValue}`,
-            geoApiOptions
-        )
-            .then((response) => response.json())
+        axios.request(geoApiOptions).then(function(response){
+            console.log(response.data);
+        })
             .then((response) => {
                 return {
                     options: response.data.map((city) => {
@@ -33,7 +32,7 @@ const Search = ({ onSearchChange }) => {
         <div className={SearchStyle.search_box}>
             <AsyncPaginate
                 className={SearchStyle.search_bar}
-                placeholder="Wyszukaj miasta..."
+                placeholder="Wyszukaj miasto..."
                 debounceTimeout={600}
                 value={search}
                 onChange={handleOnChange}

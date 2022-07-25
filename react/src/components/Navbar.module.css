@@ -86,27 +86,3 @@ a:active {
 a:hover {
   text-decoration: goldenrod;
 }
-
-@media (min-width: 1100px) {
-
-  /* style dla 1050px */
-}
-
-@media (max-width: 1100px) and (min-width: 1000px) {
-
-  /* style dla 950px */
-
-}
-
-@media (max-width: 1000px) and (min-width: 800px) {
-  /* style dla 750px */
-
-}
-
-@media (max-width: 800px) and (min-width: 500px) {
-  /* style dla 450px */
-}
-
-@media (max-width: 500px) {
-  /* style dla 300px */
-}

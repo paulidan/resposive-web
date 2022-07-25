@@ -5,17 +5,15 @@ import { Dimmer, Loader } from 'semantic-ui-react';
 import { weatherApi } from '../Api';
 
 const TodaysWeather = () => {
-
-  const [lat, setLat] = useState([]);
-  const [long, setLong] = useState([]);
   const [weatherData, setWeatherData] = useState([]);
   const [Error, setError] = useState(null);
 
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(function (position) {
-      setLat(position.coords.latitude);
-      setLong(position.coords.longitude);
-      getWeather(lat, long)
+      const lat = position.coords.latitude;
+      const lon = position.coords.longitude;
+
+      getWeather(lat, lon)
         .then(weather => {
           setWeatherData(weather);
           setError(null);
@@ -23,9 +21,8 @@ const TodaysWeather = () => {
         .catch(err => {
           setError(err.message);
         });
-    }, [])
-  });
-
+    })
+  }, [])
 
 
   const handleResponse = (response) => {
@@ -36,9 +33,9 @@ const TodaysWeather = () => {
     }
   }
 
-  const getWeather = (lat, long) => {
+  const getWeather = (lat, lon) => {
     return fetch(
-      `${weatherApi.base}/weather/?lat=${lat}&lon=${long}&units=metric&APPID=${weatherApi.key}`
+      `${weatherApi.base}/weather/?lat=${lat}&lon=${lon}&units=metric&APPID=${weatherApi.key}`
     )
       .then(res => handleResponse(res))
   }
