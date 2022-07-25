@@ -19,31 +19,23 @@ const CarouselTopSection = () => {
             <CarouselTopPhoto 
                 id={Styles.topPhotoBox1}
                 alt="Top Photo 1"
-                srcDesktop={img_desk_topPhotoBox1}
-                srcTablet={img_tablet_topPhotoBox1}
-                srcSmartphone={img_phone_topPhotoBox1}
+                src={{desktop: img_desk_topPhotoBox1, tablet: img_tablet_topPhotoBox1, phone: img_phone_topPhotoBox1}}
             />
             <CarouselTopPhoto 
                 id={Styles.topPhotoBox2}
                 alt="Top Photo 2"
-                srcDesktop={img_desk_topPhotoBox2}
-                srcTablet={img_tablet_topPhotoBox2}
-                srcSmartphone={img_phone_topPhotoBox2}
+                src={{desktop: img_desk_topPhotoBox2, tablet: img_tablet_topPhotoBox2, phone: img_phone_topPhotoBox2}}
             />
             <CarouselTopPhoto 
                 id={Styles.topPhotoBox3}
                 alt="Top Photo 3"
-                srcDesktop={img_desk_topPhotoBox3}
-                srcTablet={img_tablet_topPhotoBox3}
-                srcSmartphone={img_phone_topPhotoBox3}
+                src={{desktop: img_desk_topPhotoBox3, tablet: img_tablet_topPhotoBox3, phone: img_phone_topPhotoBox3}}
                 captioned={true}
             />
             <CarouselTopPhoto 
                 id={Styles.topPhotoBox4}
                 alt="Top Photo 4"
-                srcDesktop={img_desk_topPhotoBox4}
-                srcTablet={img_tablet_topPhotoBox4}
-                srcSmartphone={img_phone_topPhotoBox4}
+                src={{desktop: img_desk_topPhotoBox4, tablet: img_tablet_topPhotoBox4, phone: img_phone_topPhotoBox4}}
                 captioned={true}
             />
         </div>
