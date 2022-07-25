@@ -2,7 +2,7 @@ import React, { Component, useEffect, useState } from "react";
 import Weather from './TodaysWeather.module.css';
 import CurrentWeather from '../CurrentWeather/CurrentWeather';
 import { Dimmer, Loader } from 'semantic-ui-react';
-import {weatherApi} from '../Api';
+import { weatherApi } from '../Api';
 
 const TodaysWeather = () => {
 
@@ -15,17 +15,18 @@ const TodaysWeather = () => {
     navigator.geolocation.getCurrentPosition(function (position) {
       setLat(position.coords.latitude);
       setLong(position.coords.longitude);
-    });
+      getWeather(lat, long)
+        .then(weather => {
+          setWeatherData(weather);
+          setError(null);
+        })
+        .catch(err => {
+          setError(err.message);
+        });
+    }, [])
+  });
 
-    getWeather(lat, long)
-      .then(weather => {
-        setWeatherData(weather);
-        setError(null);
-      })
-      .catch(err => {
-        setError(err.message);
-      });
-  }, [lat, long])
+
 
   const handleResponse = (response) => {
     if (response.ok) {
@@ -41,6 +42,7 @@ const TodaysWeather = () => {
     )
       .then(res => handleResponse(res))
   }
+
 
   return (
     <div className={Weather.TodaysWeather}>

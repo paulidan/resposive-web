@@ -8,7 +8,7 @@
   position: relative;
 }
 
-#header .background>img {
+#header .background > img {
   top: -22.4rem;
   left: -0.7rem;
   max-width: 80rem;
@@ -34,7 +34,7 @@
   width: 20rem;
 }
 
-#header .red_boxes img>* {
+#header .red_boxes img > * {
   display: flex;
   opacity: 1;
 }
@@ -44,7 +44,7 @@
   width: 20rem;
 }
 
-#header .blue_boxes img>* {
+#header .blue_boxes img > * {
   display: flex;
   opacity: 1;
 }
@@ -54,7 +54,7 @@
   width: 20rem;
 }
 
-#header .green_boxes img>* {
+#header .green_boxes img > * {
   display: flex;
   opacity: 1;
 }

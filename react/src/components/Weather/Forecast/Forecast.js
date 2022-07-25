@@ -10,6 +10,16 @@ import ForecastStyle from './Forecast.module.css';
 import sun from '../../../icons/desktop/weathersun.png';
 import rain from '../../../icons/desktop/weatherrain.png';
 import cloud from '../../../icons/desktop/weathercloud.png';
+import {
+    DisplayPressure,
+    DisplayClouds,
+    DisplayFeelTemp,
+    DisplayWind,
+    DisplayTemp,
+    DisplayData,
+    DisplayHumidity,
+} from "../APIValidation";
+
 
 const ICONS = {
     'Clear': sun,
@@ -23,11 +33,11 @@ const Forecast = ({ data }) => {
     const dayInAWeek = new Date().getDay();
     const forecastDays = WEEK_DAYS.slice(dayInAWeek, WEEK_DAYS.length).concat(WEEK_DAYS.slice(0, dayInAWeek));
     console.log("data", data)
-    if(!data) return null;
+    if (!data) return null;
 
     return (
         <>
-            <label className={ForecastStyle.title}>Pogoda długoterminowa</label>
+            <div className={ForecastStyle.title}>Pogoda długoterminowa</div>
             <Accordion allowZeroExpanded className={ForecastStyle.container}>
                 {data.list.splice(0, 7).map((item, idx) => (
                     <AccordionItem key={idx}>
@@ -37,36 +47,48 @@ const Forecast = ({ data }) => {
                                     <div className={ForecastStyle.weather}>
                                         <img src={ICONS[item.weather[0].main]} />
                                     </div>
-                                    <label className={ForecastStyle.day}>{forecastDays[idx]}</label>
-                                    <label className={ForecastStyle.min_max}>{Math.round(item.main.temp)}°C</label>
+                                    <div className={ForecastStyle.day}>{forecastDays[idx]}</div>
+                                    <div className={ForecastStyle.min_max}>
+                                    <DisplayTemp 
+                                        temp={item.main.temp.toLocaleString(undefined, {
+                                            maximumFractionDigits: 0,
+                                        })}
+                                    />
+                                    °C  
+                                    </div>                              
                                 </div>
                             </AccordionItemButton>
                         </AccordionItemHeading>
                         <AccordionItemPanel className={ForecastStyle.wrapper}>
                             <div className={ForecastStyle.daily_details_grid}>
+                                <span className={ForecastStyle.daily_details_grid_item}>
+                                    Ciśnienie:{" "}
+                                    <DisplayPressure pressure={item.main.pressure} /> hPa
+                                </span>
                                 <div className={ForecastStyle.daily_details_grid_item}>
-                                    <label>Pressure:</label>
-                                    <label>{item.main.pressure}</label>
+                                    Wilgotność:{" "}
+                                    <DisplayHumidity humidity={item.main.humidity} /> %
                                 </div>
                                 <div className={ForecastStyle.daily_details_grid_item}>
-                                    <label>Humidity:</label>
-                                    <label>{item.main.humidity}</label>
+                                    Zachmurzenie: <DisplayData clouds={item.clouds.all} /> %{" "}
                                 </div>
                                 <div className={ForecastStyle.daily_details_grid_item}>
-                                    <label>Clouds:</label>
-                                    <label>{item.clouds.all}%</label>
+                                    Wiatr:{" "}
+                                    <DisplayData
+                                        wind={(item.wind.speed * 3.6).toLocaleString(undefined, {
+                                            maximumFractionDigits: 0,
+                                        })}
+                                    />{" "}
+                                    KM/h
                                 </div>
                                 <div className={ForecastStyle.daily_details_grid_item}>
-                                    <label>Wind speed:</label>
-                                    <label>{item.wind.speed} m/s</label>
-                                </div>
-                                <div className={ForecastStyle.daily_details_grid_item}>
-                                    <label>Sea level:</label>
-                                    <label>{item.main.sea_level}m</label>
-                                </div>
-                                <div className={ForecastStyle.daily_details_grid_item}>
-                                    <label>Feels like:</label>
-                                    <label>{item.main.feels_like}°C</label>
+                                    Odczuwalna temp:{" "}
+                                    <DisplayFeelTemp
+                                        feelTemp={item.main.feels_like.toLocaleString(undefined, {
+                                            maximumFractionDigits: 0,
+                                        })}
+                                    />
+                                    °C
                                 </div>
                             </div>
                         </AccordionItemPanel>
