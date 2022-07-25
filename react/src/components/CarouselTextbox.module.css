@@ -31,6 +31,7 @@
 #textBoxHeader p {
     /* Self Layout Properties */
     margin: 0;
+    padding-left: 0.75rem;
 
     /* UI Properties */
     text-align: left;
@@ -52,7 +53,7 @@
 }
 
 /* Smartphone & Tablet Layout */
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 992px) {
     #textBoxHeader p {
         /* Self Layout Properties */
         margin: 0;
@@ -118,7 +119,7 @@
 }
 
 /* Smartphone Layout */
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 600px) {
     #textBoxHeader {
         /* Self Layout Properties */
         padding: 0.88rem 1.3rem;
@@ -126,9 +127,6 @@
     }
     
     #textBoxHeader p {
-        /* Self Layout Properties */
-        padding-left: 4.6%;
-    
         /* UI Properties */
         font-size: 2.4rem;
         letter-spacing: 0.7rem;
@@ -160,7 +158,7 @@
 }
 
 /* Tablet Layout */
-@media only screen and (min-width: 600px) and (max-width: 991px) {
+@media only screen and (min-width: 600px) and (max-width: 992px) {
     #textBox {
         /* Self Layout Properties */
         width: 100%;
@@ -174,9 +172,6 @@
     }
     
     #textBoxHeader p {
-        /* Self Layout Properties */
-        padding-left: 1.9%;
-    
         /* UI Properties */
         line-height: 1;
     }
@@ -217,9 +212,6 @@
     }
     
     #textBoxHeader p {
-        /* Self Layout Properties */
-        padding-left: 3.5%;
-
         /* UI Properties */
         line-height: 0.6;
     }

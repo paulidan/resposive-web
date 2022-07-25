@@ -107,13 +107,13 @@
     color: #333;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 992px) {
     .pDesktopSubBox {
         display: none;
     }
 }
 
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 600px) {
     #mainBox {
         /* Self Layout Properties */
         padding: 2.5rem 0;
