@@ -1,17 +1,7 @@
 import React from "react";
 import { format } from "date-fns";
 import { pl } from "date-fns/locale";
-import {
-  DisplayPressure,
-  DisplayClouds,
-  DisplayFeelTemp,
-  DisplayWind,
-  DisplayTemp,
-  DisplayData,
-  DisplayHumidity,
-  DisplaySunrise,
-  DisplaySunset,
-} from "../APIValidation";
+import { DisplayData } from "../APIValidation";
 import CurrentStyle from "./CurrentW.module.css";
 import sun from "../../../icons/desktop/weathersun.png";
 import rain from "../../../icons/desktop/weatherrain.png";
@@ -43,7 +33,7 @@ const CurrentWeather = ({ data }) => {
           <div className={CurrentStyle.location_box}>
             <i className={CurrentStyle.location_icon}></i>
             <span className={CurrentStyle.location}>
-              <DisplayCity city={data.name} />
+              <DisplayData data={data.name} />
             </span>
             <span className={CurrentStyle.date}>
               {format(new Date(), dateFormatPurposueDescription.date, {
@@ -58,8 +48,7 @@ const CurrentWeather = ({ data }) => {
               {data.weather[0].main}{" "}
             </div>
             <div className={CurrentStyle.weather_temp}>
-              <DisplayTemp
-                temp={data.main.temp.toLocaleString(undefined, {
+              <DisplayData data={data.main.temp.toLocaleString(undefined, {
                   maximumFractionDigits: 0,
                 })}
               />
@@ -78,8 +67,7 @@ const CurrentWeather = ({ data }) => {
             <div className={CurrentStyle.feels_temp}>
               <span className={CurrentStyle.title}>
                 Odczuwalna temperatura:{" "}
-                <DisplayFeelTemp
-                  feelTemp={data.main.feels_like.toLocaleString(undefined, {
+                <DisplayData data={data.main.feels_like.toLocaleString(undefined, {
                     maximumFractionDigits: 0,
                   })}
                 />
@@ -90,8 +78,7 @@ const CurrentWeather = ({ data }) => {
             <div className={CurrentStyle.sunrise}>
               <span className={CurrentStyle.title}>
                 Wschód słońca:{" "}
-                <DisplaySunrise
-                  sunrise={new Date(data.sys.sunrise * 1000).toLocaleTimeString(
+                <DisplayData data={new Date(data.sys.sunrise * 1000).toLocaleTimeString(
                     "pl-IN"
                   )}
                 />
@@ -101,8 +88,7 @@ const CurrentWeather = ({ data }) => {
             <div className={CurrentStyle.sunset}>
               <span className={CurrentStyle.title}>
                 Zachód słońca:{" "}
-                <DisplaySunset
-                  sunset={new Date(data.sys.sunset * 1000).toLocaleTimeString(
+                <DisplayData data={new Date(data.sys.sunset * 1000).toLocaleTimeString(
                     "pl-IN"
                   )}
                 />
@@ -112,14 +98,14 @@ const CurrentWeather = ({ data }) => {
             <div className={CurrentStyle.humidity}>
               <span className={CurrentStyle.title}>
                 Wilgotność powietrza:{" "}
-                <DisplayHumidity humidity={data.main.humidity} /> %
+                <DisplayData data={data.main.humidity} /> %
               </span>
               <br></br>
             </div>
             <div className={CurrentStyle.pressure}>
               <span className={CurrentStyle.title}>
                 Ciśnienie atmosferyczne:{" "}
-                <DisplayPressure pressure={data.main.pressure} /> hPa
+                <DisplayData data={data.main.pressure} /> hPa
               </span>
               <br></br>
             </div>
