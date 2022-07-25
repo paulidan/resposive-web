@@ -30,6 +30,7 @@ const WeatherTermPage = () => {
 
   const getCurrentWeather = (lat, lon) => {
    console.log("getCurrentWeather", lat, lon)
+   console.log("data2", weatherApi)
     axios.get(`${weatherApi.base}/weather?lat=${lat}&lon=${lon}&appid=${weatherApi.key}&units=metric`)
       .then((response) => {
         console.log(response)
@@ -37,7 +38,6 @@ const WeatherTermPage = () => {
   }
   const getForecast = (lat, lon) => {
     console.log("getForecast", lat, lon)
-
     axios.get(`${weatherApi.base}/forecast?lat=${lat}&lon=${lon}&appid=${weatherApi.key}&units=metric`)
       .then((response) => {
         console.log(response);
