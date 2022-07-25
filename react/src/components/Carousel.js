@@ -45,12 +45,12 @@ const Carousel = () => {
                     <div id={Styles.bottomPhotoContainer}>
                         <div className={Styles.bottomPhotoBox} id={Styles.bottomPhotoBox1}>
                             <div className={Styles.bottomPhotoOverlay} id={Styles.bottomPhotoOverlay1}>
-                                <p>»</p>
+                                <span>»</span>
                             </div>
                         </div>
                         <div className={Styles.bottomPhotoBox} id={Styles.bottomPhotoBox2}>
                             <div className={Styles.bottomPhotoOverlay} id={Styles.bottomPhotoOverlay2}>
-                                <p>«</p>
+                                <span>«</span>
                             </div>
                         </div>
                     </div>

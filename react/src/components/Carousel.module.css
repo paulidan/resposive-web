@@ -50,18 +50,17 @@
     right: 0;
 }
 
-.bottomPhotoOverlay p {
+.bottomPhotoOverlay span {
     /* Self Layout Properties */
     position: absolute;
-    margin: 0;
     
     /* UI Properties */
     color: var(--color-darkGray);
-    font: var(--font-secondary);   
+    font-family: 'Lato Light'; 
 }
 
 /* Smartphone & Tablet Layout */
-@media only screen and (max-width: 61.99rem) {
+@media only screen and (max-width: 991px) {
     #container {
         /* Self Layout Properties */
         padding: 2.5rem 0;
@@ -85,7 +84,7 @@
 }
 
 /* Tablet & Desktop Layout */
-@media only screen and (min-width: 37.51rem) {
+@media only screen and (min-width: 601px) {
     #mainBox {
         /* Self Layout Properties */
         margin: 0 auto;
@@ -130,27 +129,24 @@
         top: 0;
     }
 
-    .bottomPhotoOverlay p {
-        /* Self Layout Properties */
-        width: 30%;
-
+    .bottomPhotoOverlay span {
         /* UI Properties */
         font-size: 12.5rem;
     }
 
-    #bottomPhotoOverlay1 p {
+    #bottomPhotoOverlay1 span {
         /* Self Layout Properties */
         right: 4.5%;
     }
 
-    #bottomPhotoOverlay2 p {
+    #bottomPhotoOverlay2 span {
         /* Self Layout Properties */
         left: 4.5%;;
     }
 }
 
 /* Smartphone Layout */
-@media only screen and (max-width: 37.5rem) {
+@media only screen and (max-width: 600px) {
     #mainBox {
         /* UI Properties */
         background: transparent url('@/icons/smartphone/BG.png') 0% 0% no-repeat padding-box;
@@ -252,13 +248,13 @@
         background-size: cover;
     }
 
-    .bottomPhotoOverlay p {
+    .bottomPhotoOverlay span {
         /* Self Layout Properties */
-        width: 33%;
+        left: 5%;
 
         /* UI Properties */
         font-size: 9.4rem;
-        line-height: 0.5;
+        line-height: 0.4;
     }
 
     #bottomPhotoOverlay1 {
@@ -270,9 +266,9 @@
         background-size: contain;
     }
 
-    #bottomPhotoOverlay1 p {
+    #bottomPhotoOverlay1 span {
         /* Self Layout Properties */
-        bottom: 18.5%;
+        bottom: 16%;
     }
 
     #bottomPhotoOverlay2 {
@@ -284,14 +280,15 @@
         background-size: contain;
     }
 
-    #bottomPhotoOverlay2 p {
+    #bottomPhotoOverlay2 span {
         /* Self Layout Properties */
-        top: 1.5%;
+        top: 2%;
+        left: 5%;
     }
 }
 
 /* Center topPhoto boxes if only one is displayed per row */
-@media only screen and (max-width: 18.75rem), (min-width: 37.5rem) and (max-width: 46.625rem) {
+@media only screen and (max-width: 300px), (min-width: 600px) and (max-width: 746px) {
     #topPhotoContainer {
         /* Content Layout Properties */
         justify-content: center;
@@ -299,7 +296,7 @@
 }
 
 /* Center bottomPhoto boxes if only one is displayed per row */
-@media only screen and (min-width: 37.5rem) and (max-width: 46.625rem) {
+@media only screen and (min-width: 600px) and (max-width: 746px) {
     #bottomPhotoContainer {
         /* Content Layout Properties */
         justify-content: center;
@@ -307,7 +304,7 @@
 }
 
 /* Tablet Layout */
-@media only screen and (min-width: 37.51rem) and (max-width: 61.99rem) {
+@media only screen and (min-width: 600) and (max-width: 991px) {
     #mainBox {
         /* UI Properties */
         background: transparent url('@/icons/tablet/BG.png') 0% 0% no-repeat padding-box;
@@ -424,7 +421,7 @@
         background: transparent url('@/icons/tablet/Clip.png') 0% 0% no-repeat padding-box;
     }
 
-    .bottomPhotoOverlay p {
+    .bottomPhotoOverlay span {
         /* UI Properties */
         line-height: 0.6;
     }
@@ -441,7 +438,7 @@
 }
 
 /* Desktop Layout */
-@media only screen and (min-width: 62rem) {
+@media only screen and (min-width: 992px) {
     #mainBox {
         /* UI Properties */
         background-color: var(--color-lightGray);
@@ -555,7 +552,7 @@
         background: transparent url('@/icons/desktop/Clip.png') 0% 0% no-repeat padding-box;
     }
 
-    .bottomPhotoOverlay p {
+    .bottomPhotoOverlay span {
         /* Self Layout Properties */
         top: 22.5rem;
     }
@@ -572,7 +569,7 @@
 }
 
 /* Stretch bottomPhotoContainer on bottomItem wrap */
-@media only screen and (min-width: 62rem) and (max-width: 93.75rem) {
+@media only screen and (min-width: 992px) and (max-width: 1500px) {
     #bottomPhotoContainer {
         /* Self Layout Properties */
         width: 100%;
