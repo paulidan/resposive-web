@@ -1,7 +1,7 @@
 import Styles from './TextboxItem.module.css';
 
 const TextboxItem = (props) => {
-    return(
+    return (
         <li className={Styles.textBoxItem}>
             <div className={Styles.textBoxItemNumber}>
                 <p>{props.itemNumber}</p>

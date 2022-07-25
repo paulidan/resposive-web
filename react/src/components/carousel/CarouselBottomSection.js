@@ -1,8 +1,8 @@
 import CarouselTextbox from './CarouselTextbox';
 import Styles from './CarouselBottomSection.module.css';
 
-const Carousel = () => {
-    return(
+const CarouselBottomSection = () => {
+    return (
         <div id={Styles.bottomItemContainer}>
             <div id={Styles.bottomPhotoContainer}>
                 <div className={Styles.bottomPhotoBox} id={Styles.bottomPhotoBox1}>
@@ -21,4 +21,4 @@ const Carousel = () => {
     );
 }
 
-export default Carousel;
+export default CarouselBottomSection;

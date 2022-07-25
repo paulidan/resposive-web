@@ -3,7 +3,7 @@ import CarouselBottomSection from './CarouselBottomSection';
 import Styles from './Carousel.module.css';
 
 const Carousel = () => {
-    return(
+    return (
         <div id={Styles.mainBox}>
             <div id={Styles.container}>
                 <CarouselTopSection />

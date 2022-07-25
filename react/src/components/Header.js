@@ -8,7 +8,7 @@ import layer_37 from '@/icons/desktop/Layer_37.png';
 import HeaderStyle from "./Header.module.css";
 
 const Header = () => {
-    return(
+    return (
       <div id={HeaderStyle.header}> 
         <div className={HeaderStyle.background}>
           <img src={layer_37} alt="background pic" />

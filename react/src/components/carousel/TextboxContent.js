@@ -8,7 +8,7 @@ for(let i = 1; i <=6; i++) {
 }
 
 const TextboxContent = () => {
-    return(
+    return (
         <ol id={Styles.textBoxContent}>
             {content}
         </ol>

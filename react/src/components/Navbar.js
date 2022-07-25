@@ -4,7 +4,7 @@ import logo from '@/icons/desktop/Logo.png';
 
 
 const Navbar = () => {
-    return(
+    return (
         <div id={Styles.menu}>
             <div className={Styles.navbar}>
                 <div id={Styles.logo}>
