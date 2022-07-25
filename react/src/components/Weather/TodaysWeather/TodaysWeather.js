@@ -2,6 +2,7 @@ import React, { Component, useEffect, useState } from "react";
 import Weather from './TodaysWeather.module.css';
 import CurrentWeather from '../CurrentWeather/CurrentWeather';
 import { Dimmer, Loader } from 'semantic-ui-react';
+import {weatherApi} from '../Api';
 
 const TodaysWeather = () => {
 
@@ -36,13 +37,13 @@ const TodaysWeather = () => {
 
   const getWeather = (lat, long) => {
     return fetch(
-      `${process.env.REACT_APP_API_URL}/weather/?lat=${lat}&lon=${long}&lang={pl}&units=metric&APPID=${process.env.REACT_APP_API_KEY}`
+      `${weatherApi.base}/weather/?lat=${lat}&lon=${long}&units=metric&APPID=${weatherApi.key}`
     )
       .then(res => handleResponse(res))
   }
 
   return (
-    <div className={Weather.TodaysWeather}> {console.log("ala 0", weatherData)}
+    <div className={Weather.TodaysWeather}>
       {(!!weatherData && !!weatherData?.main) ? (
         <div>
           <CurrentWeather data={weatherData} />

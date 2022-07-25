@@ -17,51 +17,53 @@ const WeatherSearchPage = () => {
   const handleSearch = (searchData) => {
     // const [lat, lon] = searchData.value.split(" ");
 
-   
+
   }
   const getCurrentWeather = (lat, lon) => {
     axios.get(`${weatherApi.base}/weather?lat=${lat}&lon=${lon}&appid=${weatherApi.key}&units=metric`)
-    .then((response) => {
-      console.log(setCurrentWeather)
-    })
+      .then((response) => {
+        console.log(setCurrentWeather)
+      })
   }
   const getForecast = (lat, lon) => {
     axios.get(`${weatherApi.base}/forecast?lat=${lat}&lon=${lon}&appid=${weatherApi.key}&units=metric`)
-    .then((response) => {
-      console.log(setForecast)
-    })
+      .then((response) => {
+        console.log(setForecast)
+      })
   }
   useEffect(() => {
-    getCurrentWeather(lat, lon);
-    getForecast(lat, lon);
-    navigator.geolocation.getCurrentPosition(function (position) {
-      setLat(position.coords.latitude);
-      setLon(position.coords.longitude);
-    
+    if (lat && lon) {
+      getCurrentWeather(lat, lon);
+      getForecast(lat, lon);
+      navigator.geolocation.getCurrentPosition(function (position) {
+        setLat(position.coords.latitude);
+        setLon(position.coords.longitude);
+      })
+    }
   }, [lat, lon])
-})
 
-  //   Promise.all([getCurrentWeather, getForecast])
-  //     .then(async (response) => {
-  //       const weatherResponse = await response[0].json();
-  //       const forcastResponse = await response[1].json();
 
-        
-  //       ;
-  //     })
-  //     .catch(console.log);
-  // }
+//   Promise.all([getCurrentWeather, getForecast])
+//     .then(async (response) => {
+//       const weatherResponse = await response[0].json();
+//       const forcastResponse = await response[1].json();
 
-  return (
-    <div className="App">
-      <Header />
-      <Navbar />
-      <ButtonsWeather />
-      <Search onSearchChange={handleSearch} />
-      {currentWeather && <CurrentWeather data={currentWeather} />}
-      {forecast && <Forecast data={forecast} />}
-    </div>
-  );
+
+//       ;
+//     })
+//     .catch(console.log);
+// }
+
+return (
+  <div className="App">
+    <Header />
+    <Navbar />
+    <ButtonsWeather />
+    <Search onSearchChange={handleSearch} />
+    {currentWeather && <CurrentWeather data={currentWeather} />}
+    {forecast && <Forecast data={forecast} />}
+  </div>
+);
   }
-  
+
 export default WeatherSearchPage;

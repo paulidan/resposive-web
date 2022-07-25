@@ -33,7 +33,6 @@ const DisplayCity = ({ city }) => {
   );
 };
 const CurrentWeather = ({ data }) => {
-  console.log("ala1", data);
   if (!data) {
     return <>N/A</>;
   }

@@ -1,6 +1,6 @@
 export const weatherApi = {
   key: process.env.REACT_APP_WEATHERAPIKEY,
-  base: 'https://api.openweathermap.org/data/2.5/'
+  base: 'https://api.openweathermap.org/data/2.5'
 }
 
 export const geoApiOptions = {
