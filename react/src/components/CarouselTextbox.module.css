@@ -52,7 +52,7 @@
 }
 
 /* Smartphone & Tablet Layout */
-@media only screen and (max-width: 61.99rem) {
+@media only screen and (max-width: 991px) {
     #textBoxHeader p {
         /* Self Layout Properties */
         margin: 0;
@@ -66,7 +66,7 @@
 }
 
 /* Tablet & Desktop Layout */
-@media only screen and (min-width: 37.51rem) {
+@media only screen and (min-width: 600px) {
     #textBoxHeader p {
         /* UI Properties */
         font-size: 3rem;
@@ -118,7 +118,7 @@
 }
 
 /* Smartphone Layout */
-@media only screen and (max-width: 37.5rem) {
+@media only screen and (max-width: 599px) {
     #textBoxHeader {
         /* Self Layout Properties */
         padding: 0.88rem 1.3rem;
@@ -160,7 +160,7 @@
 }
 
 /* Tablet Layout */
-@media only screen and (min-width: 37.51rem) and (max-width: 61.99rem) {
+@media only screen and (min-width: 600px) and (max-width: 991px) {
     #textBox {
         /* Self Layout Properties */
         width: 100%;
@@ -203,7 +203,7 @@
 }
 
 /* Desktop Layout */
-@media only screen and (min-width: 62rem) {
+@media only screen and (min-width: 992px) {
     #textBox {
         /* Self Layout Properties */
         max-height: 38rem;
@@ -246,7 +246,7 @@
 }
 
 /* Stretch Textbox if wrapped */
-@media only screen and (min-width: 62rem) and (max-width: 93.75rem) {
+@media only screen and (min-width: 992px) and (max-width: 1500px) {
     #textBox {
         /* Self Layout Properties */
         width: 100%;
