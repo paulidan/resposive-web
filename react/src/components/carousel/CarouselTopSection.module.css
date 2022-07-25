@@ -1,0 +1,285 @@
+/* Universal Layout */
+:root {
+    /* Descriptive variables */
+    --color-green: #62A559;
+    --color-purple: #BF79C3;
+    --color-translucent-white: rgba(255,255,255,0.8);
+
+    /* Functional variables */
+    --color-boxCaption1: var(--color-green);
+    --color-boxCaption2: var(--color-purple);
+    --color-boxCaptionBg: var(--color-translucent-white);
+}
+
+#topPhotoContainer {
+    /* Content Layout Properties */
+    display: flex;
+    justify-content: space-between;
+}
+
+#topPhotoBox3 p, #topPhotoBox4 p {
+    /* UI Properties */
+    font: var(--font-secondary);
+}
+
+#topPhotoBox3 p {
+    /* UI Properites */
+    color: var(--color-boxCaption1);
+}
+
+#topPhotoBox4 p {
+    /* UI Properties */
+    color: var(--color-boxCaption2);
+}
+
+/* Smartphone & Tablet Layout */
+@media only screen and (max-width: 992px) {
+    #topPhotoContainer {
+        /* Content Layout Properties */
+        flex-wrap: wrap;
+        row-gap: 1.25rem;
+    }
+
+    #topPhotoBox3 p, #topPhotoBox4 p {
+        /* Self Layout Properties */
+        width: min-content;         /* Each caption word in new line */
+    }
+}
+
+/* Tablet & Desktop Layout */
+@media only screen and (min-width: 600px) {
+    #topPhotoBox3, #topPhotoBox4 {
+        /* Content Layout Properties */
+        display: flex;
+    }
+
+    #topPhotoBox3 p, #topPhotoBox4 p {
+        /* Self Layout Properties */
+        margin: 0;
+    }
+}
+
+/* Smartphone Layout */
+@media only screen and (max-width: 600px) {
+    #topPhotoContainer {
+        /* Self Layout Properties */
+        margin-bottom: 2.5rem;
+    }
+
+    .topPhotoBox {
+        /* Self Layout Properties */
+        position: relative;
+        padding: 1.2rem 0.6rem 0.6rem 0.6rem;
+    }
+
+    .topPhotoDesktop, .topPhotoTablet {
+        /* Self Layout Properties */
+        display: none;
+    }
+
+    .topPhotoPhone {
+        /* Self Layout Properties */
+        display: block;
+        width: 7.5rem;
+    }
+
+    .topPhotoBox p {
+        /* Self Layout Properties */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+    }
+
+    #topPhotoBox1 {
+        /* UI Properties */
+        background: transparent url('@/icons/smartphone/Layer_16.png') 0% 0% no-repeat padding-box;
+    }
+
+    #topPhotoBox2 {
+        /* UI Properties */
+        background: transparent url('@/icons/smartphone/Layer_16_copy.png') 0% 0% no-repeat padding-box;
+    }
+
+    #topPhotoBox3 p, #topPhotoBox4 p {
+        /* UI Properties */
+        font-size: 1.1rem;
+        line-height: 2;
+    }
+
+    .boxCaptionLine {
+        /* Self Layout Properties */
+        padding: 0 0.1rem;
+
+        /* UI Properties */
+        background-color: var(--color-boxCaptionBg);
+    }
+
+    #topPhotoBox3 {
+        /* UI Properties */
+        background: transparent url('@/icons/smartphone/Layer_30.png') 0% 0% no-repeat padding-box;
+    }
+
+    #topPhotoBox4 {
+        /* UI Properties */
+        background: transparent url('@/icons/smartphone/Layer_16_copy_4.png') 0% 0% no-repeat padding-box;
+    }
+}
+
+/* Center topPhoto boxes if only one is displayed per row */
+@media only screen and (max-width: 300px), (min-width: 600px) and (max-width: 746px) {
+    #topPhotoContainer {
+        /* Content Layout Properties */
+        justify-content: center;
+    }
+}
+
+/* Tablet Layout */
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    #topPhotoContainer {
+        /* Self Layout Properties */
+        margin-bottom: 3.75rem;
+    }
+
+    .topPhotoBox {
+        /* Self Layout Properties */
+        padding: 1.45rem 0.85rem 0.85rem 0.85rem;
+    }
+
+    .topPhotoPhone, .topPhotoDesktop {
+        /* Self Layout Properties */
+        display: none;
+    }
+
+    .topPhotoTablet {
+        /* Self Layout Properties */
+        display: block;
+        width: 20.4rem;
+    }
+
+    #topPhotoBox1 {
+        /* Self Layout Properties */
+        order: 1;
+
+        /* UI Properties */
+        background: transparent url('@/icons/tablet/Layer_16.png') 0% 0% no-repeat padding-box;
+    }
+
+    #topPhotoBox2 {
+        /* Self Layout Properties */
+        order: 3;
+
+        /* UI Properties */
+        background: transparent url('@/icons/tablet/Layer_16_copy.png') 0% 0% no-repeat padding-box;
+    }
+
+    #topPhotoBox3, #topPhotoBox4 {
+        /* Self Layout Properties */
+        padding: 2.625rem 0.6rem 2.188rem 0.6rem;
+
+        /* Content Layout Properties */
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    #topPhotoBox3 img, #topPhotoBox4 img {
+        /* Self Layout Properites */
+        width: 9.5rem;
+    }
+
+    #topPhotoBox3 p, #topPhotoBox4 p {
+        /* Self Layout Properties */
+        padding: 0 2rem 0 2.85rem;
+
+        /* UI Properites */
+        font-size: 1.5rem;
+    }
+
+    #topPhotoBox3 {
+        /* Self Layout Properties */
+        order: 2;
+
+        /* UI Properties */
+        background: transparent url('@/icons/tablet/Layer_30.png') 0% 0% no-repeat padding-box;
+    }
+
+    #topPhotoBox4 {
+        /* Self Layout Properties */
+        order: 4;
+
+        /* UI Properties */
+        background: transparent url('@/icons/tablet/Layer_16_copy_4.png') 0% 0% no-repeat padding-box;
+    }
+}
+
+/* Desktop Layout */
+@media only screen and (min-width: 992px) {
+    #topPhotoContainer {
+        /* Self Layout Properties */
+        width: 100%;
+
+        /* Content Layout Properties */
+        flex-wrap: wrap;
+        row-gap: 1.9rem;
+    }
+
+    .topPhotoBox {
+        /* Self Layout Properties */
+        padding: 1.5rem 1rem 1rem 1rem;
+    }
+
+    #topPhotoBox1 {
+        /* UI Properties */
+        background: transparent url('@/icons/desktop/Layer_16.png') 0% 0% no-repeat padding-box;
+    }
+
+    .topPhotoPhone, .topPhotoTablet {
+        /* Self Layout Properties */
+        display: none;
+    }
+
+    .topPhotoDesktop {
+        /* Self Layout Properties */
+        display: block;
+        width: 14.5rem;
+
+        /* UI Properties */
+        mask: url('@/icons/desktop/Layer_17_bv.png');
+    }
+
+    #topPhotoBox2 {
+        /* UI Properties */
+        background: transparent url('@/icons/desktop/Layer_16_copy.png') 0% 0% no-repeat padding-box;
+    }
+
+    #topPhotoBox3, #topPhotoBox4 {
+        /* Content Layout Properties */
+        flex-wrap: wrap;
+        flex-basis: 0;
+        align-content: space-evenly;
+    }
+
+    #topPhotoBox3 img, #topPhotoBox4 img {
+        /* Self Layout Properites */
+        width: 14.4rem;
+
+        /* UI Properties */
+        border-radius: 50%;
+    }
+
+    #topPhotoBox3 p, #topPhotoBox4 p {
+        /* UI Properites */
+        font-size: 2.25rem;
+    }
+
+    #topPhotoBox3 {
+        /* UI Properties */
+        background: transparent url('@/icons/desktop/Layer_16_copy_2.png') 0% 0% no-repeat padding-box;
+    }
+
+    #topPhotoBox4 {
+        /* UI Properties */
+        background: transparent url('@/icons/desktop/Layer_16_copy_3.png') 0% 0% no-repeat padding-box;
+    }
+}

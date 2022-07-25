@@ -1,0 +1,243 @@
+/* Universal Layout */
+.bottomPhotoBox {
+    /* Self Layout Properties */
+    position: relative;
+}
+
+.bottomPhotoOverlay {
+    /* Self Layout Properties */
+    position: absolute;
+    height: 100%;
+    left: 0;
+    right: 0;
+}
+
+.bottomPhotoOverlay span {
+    /* Self Layout Properties */
+    position: absolute;
+    
+    /* UI Properties */
+    color: var(--color-darkGray);
+    font-family: 'Lato Light'; 
+}
+
+/* Smartphone & Tablet Layout */
+@media only screen and (max-width: 992px) {
+    #bottomPhotoContainer {
+        /* Self Layout Properties */
+        width: 100%;
+    }
+}
+
+/* Tablet & Desktop Layout */
+@media only screen and (min-width: 600px) {
+    #bottomItemContainer {
+        /* Self Layout Properties */
+        width: 100%;
+
+        /* Content Layout Properties */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #bottomPhotoContainer {
+        /* Content Layout Properties */
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .bottomPhotoOverlay {
+        /* Self Layout Properties */
+        top: 0;
+    }
+
+    .bottomPhotoOverlay span {
+        /* UI Properties */
+        font-size: 12.5rem;
+    }
+
+    #bottomPhotoOverlay1 span {
+        /* Self Layout Properties */
+        right: 4.5%;
+    }
+
+    #bottomPhotoOverlay2 span {
+        /* Self Layout Properties */
+        left: 4.5%;;
+    }
+}
+
+/* Smartphone Layout */
+@media only screen and (max-width: 600px) {
+    #bottomPhotoContainer {
+        /* Self Layout Properties */
+        margin-bottom: 2.5rem;
+    }
+
+    .bottomPhotoBox {
+        /* Self Layout Properties */
+        width: 100%;
+        margin-bottom: 2.5rem;
+        padding: 52.5% 0;
+    }
+
+    #bottomPhotoBox1 {
+        /* UI Properties */
+        background: transparent url('@/icons/smartphone/Clip_y.png') 0% 0% no-repeat padding-box;
+        background-size: cover;
+    }
+
+    #bottomPhotoBox2 {
+        /* UI Properties */
+        background: transparent url('@/icons/smartphone/Clip.png') 0% 0% no-repeat padding-box;
+        background-size: cover;
+    }
+
+    .bottomPhotoOverlay span {
+        /* Self Layout Properties */
+        left: 5%;
+
+        /* UI Properties */
+        font-size: 9.4rem;
+        line-height: 0.4;
+    }
+
+    #bottomPhotoOverlay1 {
+        /* Self Layout Properties */
+        bottom: 0;
+        
+        /* UI Properties */
+        background: transparent url('@/icons/smartphone/Polygon_1.png') 0% bottom no-repeat padding-box;
+        background-size: contain;
+    }
+
+    #bottomPhotoOverlay1 span {
+        /* Self Layout Properties */
+        bottom: 16%;
+    }
+
+    #bottomPhotoOverlay2 {
+        /* Self Layout Properties */
+        top: 0;
+
+        /* UI Properties */
+        background: transparent url('@/icons/smartphone/Polygon_1_copy.png') 0% top no-repeat padding-box;
+        background-size: contain;
+    }
+
+    #bottomPhotoOverlay2 span {
+        /* Self Layout Properties */
+        top: 2%;
+        left: 5%;
+    }
+}
+
+/* Center bottomPhoto boxes if only one is displayed per row */
+@media only screen and (min-width: 600px) and (max-width: 746px) {
+    #bottomPhotoContainer {
+        /* Content Layout Properties */
+        justify-content: center;
+    }
+}
+
+/* Tablet Layout */
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    #bottomItemContainer {
+        /* Content Layout Properties */
+        flex-wrap: wrap;
+    }
+
+    #bottomPhotoContainer {
+        /* Self Layout Properties */
+        margin-bottom: 3.75rem;
+
+        /* Content Layout Properties */
+        flex-wrap: wrap;
+        row-gap: 1.25rem;
+    }
+
+    .bottomPhotoBox {
+        /* Self Layout Properties */
+        padding: 19rem 11.063rem;
+    }
+
+    #bottomPhotoBox1 {
+        /* UI Properties */
+        background: transparent url('@/icons/tablet/Clip_.png') 0% 0% no-repeat padding-box;
+    }
+
+    #bottomPhotoBox2 {
+        /* UI Properties */
+        background: transparent url('@/icons/tablet/Clip.png') 0% 0% no-repeat padding-box;
+    }
+
+    .bottomPhotoOverlay span {
+        /* UI Properties */
+        line-height: 0.6;
+    }
+
+    #bottomPhotoOverlay1 {
+        /* UI Properties */
+        background: transparent url('@/icons/tablet/Polygon_1.png') 0% 0% no-repeat padding-box;
+    }
+
+    #bottomPhotoOverlay2 {
+        /* UI Properties */
+        background: transparent url('@/icons/tablet/Layer_34.png') 0% 0% no-repeat padding-box;
+    }
+}
+
+/* Desktop Layout */
+@media only screen and (min-width: 992px) {
+    #bottomItemContainer {
+        /* Content Layout Properties */
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 4.4rem;
+    }
+
+    #bottomPhotoContainer {
+        /* Self Layout Properties */
+        width: 59.65%;
+    }
+
+    #bottomPhotoBox1 {
+        /* Self Layout Properties */
+        padding: 19rem 10.3rem;
+
+        /* UI Properties */
+        background: transparent url('@/icons/desktop/Clip_.png') 0% 0% no-repeat padding-box;
+    }
+
+    #bottomPhotoBox2 {
+        /* Self Layout Properties */
+        padding: 19rem 10.5rem;
+        
+        /* UI Properties */
+        background: transparent url('@/icons/desktop/Clip.png') 0% 0% no-repeat padding-box;
+    }
+
+    .bottomPhotoOverlay span {
+        /* Self Layout Properties */
+        top: 22.5rem;
+    }
+
+    #bottomPhotoOverlay1 {
+        /* UI Properties */
+        background: transparent url('@/icons/desktop/Polygon_1_bb.png') 0% 0% no-repeat padding-box;
+    }
+
+    #bottomPhotoOverlay2 {
+        /* UI Properties */
+        background: transparent url('@/icons/desktop/Layer_24.png') 0% 0% no-repeat padding-box;
+    }
+}
+
+/* Stretch bottomPhotoContainer on bottomItem wrap */
+@media only screen and (min-width: 992px) and (max-width: 1500px) {
+    #bottomPhotoContainer {
+        /* Self Layout Properties */
+        width: 100%;
+    }
+}
