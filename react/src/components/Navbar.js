@@ -11,7 +11,7 @@ const Navbar = () => {
                   <img src={logo} alt="logo" />
                 </div>    
                 <ul className={Styles.main_nav}>
-                <li className={Styles.nav_link} active>
+                <li className={Styles.nav_link} active="true">
                   <div className={Styles.nav_item}>
                     <Link className={Styles.nav_item} to="/">Home</Link>
                   </div>
