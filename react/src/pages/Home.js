@@ -1,6 +1,6 @@
 import Header from '@/components/Header';
 
-function HomePage() {
+const HomePage = () => {
     return (
         <div className="App">
             <Header />

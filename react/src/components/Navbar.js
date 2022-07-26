@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import logo from '@/icons/desktop/Logo.png';
 import Styles from './Navbar.module.css';
 
-function Navbar(){
+const Navbar = () => {
     return(
       <div id={Styles.navbar}>
           <img src={logo} alt="logo" id={Styles.logo} />

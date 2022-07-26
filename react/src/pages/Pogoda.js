@@ -1,7 +1,7 @@
 import Navbar from '@/components/Navbar';
 import Header from '@/components/Header';
 
-function PogodaPage(){
+const PogodaPage = () => {
     return (
         <div className="App">
           <div id="header"> 

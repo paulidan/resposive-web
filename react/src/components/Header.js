@@ -7,7 +7,7 @@ import layer_10_co from '@/icons/desktop/Layer_10_co.png';
 import Navbar from '@/components/Navbar';
 import Styles from "./Header.module.css";
 
-function Header(){
+const Header = () => {
     return(
       <div id={Styles.mainBox}>
         <div id={Styles.container}>
@@ -32,4 +32,4 @@ function Header(){
     );
 }
 
-export default Header
+export default Header;
