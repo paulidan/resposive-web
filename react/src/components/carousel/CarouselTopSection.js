@@ -10,7 +10,7 @@ import img_tablet_topPhotoBox1 from '@/icons/tablet/Clip_bt.png';
 import img_tablet_topPhotoBox2 from '@/icons/tablet/Clip_bk.png';
 import img_tablet_topPhotoBox3 from '@/icons/tablet/Clip_bp.png';
 import img_tablet_topPhotoBox4 from '@/icons/tablet/Clip_bg.png';
-import CarouselTopPhoto from '@/components/carousel/CarouselTopPhoto';
+import CarouselTopPhoto from './CarouselTopPhoto';
 import Styles from './CarouselTopSection.module.css';
 
 const CarouselTopSection = () => {
