@@ -1,13 +1,11 @@
 /* Universal Layout */
-:root {
+.textBoxItemText {
     /* Descriptive variables */
     --color-darkBlue: #1883b4;
 
     /* Functional variables */
     --color-itemNumberDiv: var(--color-darkBlue);
-}
 
-.textBoxItemText {
     /* Self Layout Properties */
     margin: 0;
 

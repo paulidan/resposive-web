@@ -1,5 +1,5 @@
 /* Universal Layout */
-:root {
+#topPhotoContainer {
     /* Descriptive variables */
     --color-green: #62A559;
     --color-purple: #BF79C3;
@@ -9,9 +9,7 @@
     --color-boxCaption1: var(--color-green);
     --color-boxCaption2: var(--color-purple);
     --color-boxCaptionBg: var(--color-translucent-white);
-}
 
-#topPhotoContainer {
     /* Content Layout Properties */
     display: flex;
     justify-content: space-between;

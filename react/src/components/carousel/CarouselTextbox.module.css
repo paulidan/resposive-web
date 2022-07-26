@@ -1,13 +1,11 @@
 /* Universal Layout */
-:root {
+#textBox {
     /* Descriptive variables */
     --color-lightBlue: #7ec8ea;
 
     /* Functional variables */
     --color-header: var(--color-lightBlue);
-}
 
-#textBox {
     /* UI Properties */
     background-color: var(--color-white);
 }
