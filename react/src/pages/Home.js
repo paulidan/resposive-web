@@ -1,6 +1,4 @@
-import Header from '../components/Header';
-
-
+import Header from '@/components/Header';
 
 function HomePage() {
     return (

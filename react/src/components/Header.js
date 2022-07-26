@@ -1,10 +1,10 @@
-import layer_7_c from '../icons/desktop/Layer_7_c.png';
-import layer_11_c from '../icons/desktop/Layer_11_c.png';
-import layer_8_c from '../icons/desktop/Layer_8_c.png';
-import layer_12 from '../icons/desktop/Layer_12.png';
-import layer_9_cp from '../icons/desktop/Layer_9_cp.png';
-import layer_10_co from '../icons/desktop/Layer_10_co.png';
-import Navbar from '../components/Navbar';
+import layer_7_c from '@/icons/desktop/Layer_7_c.png';
+import layer_11_c from '@/icons/desktop/Layer_11_c.png';
+import layer_8_c from '@/icons/desktop/Layer_8_c.png';
+import layer_12 from '@/icons/desktop/Layer_12.png';
+import layer_9_cp from '@/icons/desktop/Layer_9_cp.png';
+import layer_10_co from '@/icons/desktop/Layer_10_co.png';
+import Navbar from '@/components/Navbar';
 import Styles from "./Header.module.css";
 
 function Header(){
