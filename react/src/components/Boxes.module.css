@@ -1,5 +1,5 @@
 /* Universal Layout */
-:root {
+#mainBox {
     /* Descriptive variables */
     --color-blue: #428D9E;
     --color-red: #c83434;
@@ -12,8 +12,7 @@
     --color-bottomLeftBox: var(--color-yellow);
     --color-bottomRightBox: var(--color-green);
     --color-centerBoxText: var(--color-darkGray);
-}
-#mainBox {
+
     /* Self Layout Properties */
     margin: 0 auto;
     width: 100%;
