@@ -19,6 +19,7 @@
 
 #topPhotoBox3 p, #topPhotoBox4 p {
     /* UI Properties */
+    visibility: hidden;
     font: var(--font-secondary);
 }
 
@@ -48,7 +49,7 @@
 
 /* Tablet & Desktop Layout */
 @media only screen and (min-width: 600px) {
-    #topPhotoBox3, #topPhotoBox4 {
+    #topPhotoBox3 .hoverContainer, #topPhotoBox4 .hoverContainer {
         /* Content Layout Properties */
         display: flex;
     }
@@ -56,6 +57,16 @@
     #topPhotoBox3 p, #topPhotoBox4 p {
         /* Self Layout Properties */
         margin: 0;
+    }
+
+    .hoverContainer img:hover {
+        /* UI Properties */
+        filter: brightness(90%);
+    }
+
+    #topPhotoBox3 img:hover ~ p, #topPhotoBox4 img:hover ~ p {
+        /* UI Properties */
+        visibility: visible;
     }
 }
 
@@ -83,7 +94,7 @@
         width: 7.5rem;
     }
 
-    .topPhotoBox p {
+    .hoverContainer p {
         /* Self Layout Properties */
         position: absolute;
         top: 50%;
@@ -100,6 +111,16 @@
     #topPhotoBox2 {
         /* UI Properties */
         background: transparent url('@/icons/smartphone/Layer_16_copy.png') 0% 0% no-repeat padding-box;
+    }
+
+    .hoverContainer:hover img {
+        /* UI Properties */
+        filter: brightness(90%);
+    }
+
+    #topPhotoBox3 .hoverContainer:hover p, #topPhotoBox4 .hoverContainer:hover p {
+        /* UI Properties */
+        visibility: visible;
     }
 
     #topPhotoBox3 p, #topPhotoBox4 p {
@@ -177,7 +198,9 @@
     #topPhotoBox3, #topPhotoBox4 {
         /* Self Layout Properties */
         padding: 2.625rem 0.6rem 2.188rem 0.6rem;
+    }
 
+    #topPhotoBox3 .hoverContainer, #topPhotoBox4 .hoverContainer {
         /* Content Layout Properties */
         flex-wrap: nowrap;
         align-items: center;
@@ -248,12 +271,17 @@
         mask: url('@/icons/desktop/Layer_17_bv.png');
     }
 
+    .hoverContainer {
+        /* Self Layout Properties */
+        height: 100%;
+    }
+
     #topPhotoBox2 {
         /* UI Properties */
         background: transparent url('@/icons/desktop/Layer_16_copy.png') 0% 0% no-repeat padding-box;
     }
 
-    #topPhotoBox3, #topPhotoBox4 {
+    #topPhotoBox3 .hoverContainer, #topPhotoBox4 .hoverContainer, #topPhotoBox3, #topPhotoBox4 {
         /* Content Layout Properties */
         flex-wrap: wrap;
         flex-basis: 0;
