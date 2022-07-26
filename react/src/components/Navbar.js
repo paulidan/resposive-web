@@ -7,7 +7,7 @@ const Navbar = () => {
       <div id={Styles.navbar}>
           <img src={logo} alt="logo" id={Styles.logo} />
           <ul id={Styles.mainNav}>
-            <li className={Styles.navLink} active>
+            <li className={Styles.navLink} active="true">
               <Link className={Styles.navItem} to="/">HOME</Link>
             </li>
             <li className={Styles.navLink}>
