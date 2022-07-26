@@ -24,35 +24,41 @@
   list-style: none;
   font-family: 'Roboto', sans-serif;
   font-size: 1.5rem;
+  overflow: visible;
 }
 
-#mainNav li {
+.navLink {
   /* Self Layout Properties */
   flex: auto;
-  height: 100%;
+  margin-top: -11px;
+  height: 118%;
 
   /* UI Properties */
   font-family: 'Lato', sans-serif;
   font-weight: 600;
+  overflow: visible;
 }
 
-.navLink.active, .navLink:hover {
+.navLink:active, .navLink:visited, .navLink:hover {
   /* UI Properties */
   background-color: #EAD280;
   border-top: 10px solid #DFBB42;
   border-bottom: 5px solid #B0B0B0;
 }
 
-.navLink.active, .navLink:visited {
+.navLink:hover .navItem {
   /* UI Properties */
-  background-color: #EAD280;
-  border-top: 10px solid #DFBB42;
-  border-bottom: 5px solid #B0B0B0;
+  color: white;
 }
 
 .navItem {
+  /* Self Layout Properties */
+  height: 100%;
+
   /* Content Layout Properties */
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   /* UI Properties */
   color:#5A5C5B;    

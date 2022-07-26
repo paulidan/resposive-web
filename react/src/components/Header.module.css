@@ -5,7 +5,7 @@
   max-width: 93.75rem;
 
   /* UI Properties */
-  background: transparent url('../icons/desktop/Layer_37.png') 61% bottom no-repeat padding-box;
+  background: transparent url('@/icons/desktop/Layer_37.png') 61% bottom no-repeat padding-box;
   background-size: 101% auto;
 }
 
@@ -30,8 +30,8 @@
   opacity: 1;
   color: #FFF;
   line-height: 1;
-  font-size: 4.25rem;
   letter-spacing: 0;
+  font-size: 4.25rem;
   font-family: 'Lato Black', Lato, sans-serif;
 }
   
