@@ -1,56 +1,179 @@
-#mainBox {
-  /* Self Layout Properties */
-  margin: 0 auto;
-  height: 53.5rem;
-  max-width: 93.75rem;
+/* Smartphone Layout */
+@media only screen and (max-width: 600px) {
+	#mainBox {
+		/* Self Layout Properties */
+		margin: 0 auto;
+		height: 53.5rem;
+		max-width: 93.75rem;
 
-  /* UI Properties */
-  background: transparent url('@/icons/desktop/Layer_37.png') 61% bottom no-repeat padding-box;
-  background-size: 101% auto;
+		/* UI Properties */
+		background: transparent url('@/icons/desktop/Layer_37.png') 61% bottom no-repeat padding-box;
+		background-size: 101% auto;
+	}
+
+	#container {
+		/* Self Layout Properties */
+		height: 77.22%;
+		padding: 6.5rem 0 7rem 0;
+
+		/* Content Layout Properties */
+		box-sizing: border-box;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: space-between;
+	}
+
+	#heading {
+		/* Self Layout Properties */
+		margin: 0;
+
+		/* UI Properties */
+		opacity: 1;
+		color: #FFF;
+		line-height: 1;
+		letter-spacing: 0;
+		font-size: 4.25rem;
+		font-family: 'Lato Black', Lato, sans-serif;
+	}
+	
+	#boxes {
+		/* Self Layout Properties */
+		width: 69.7%;
+
+		/* Content Layout Properties */
+		display: flex;
+		justify-content: space-between;
+	}
+
+	#redBoxes, #blueBoxes, #greenBoxes {
+		/* Content Layout Properties */
+		display: flex;
+		align-items: center;
+	}
+
+	.blueBoxes, .greenBoxes {
+		/* UI Properties */
+		opacity: 0.75;
+	}
 }
 
-#container {
-  /* Self Layout Properties */
-  height: 77.22%;
-  padding: 6.5rem 0 7rem 0;
-  
-  /* Content Layout Properties */
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: space-between;
+/* Tablet Layout */
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+	#mainBox {
+		/* Self Layout Properties */
+		margin: 0 auto;
+		height: 53.5rem;
+		max-width: 93.75rem;
+
+		/* UI Properties */
+		background: transparent url('@/icons/desktop/Layer_37.png') 61% bottom no-repeat padding-box;
+		background-size: 101% auto;
+	}
+
+	#container {
+		/* Self Layout Properties */
+		height: 77.22%;
+		padding: 6.5rem 0 7rem 0;
+
+		/* Content Layout Properties */
+		box-sizing: border-box;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: space-between;
+	}
+
+	#heading {
+		/* Self Layout Properties */
+		margin: 0;
+
+		/* UI Properties */
+		opacity: 1;
+		color: #FFF;
+		line-height: 1;
+		letter-spacing: 0;
+		font-size: 4.25rem;
+		font-family: 'Lato Black', Lato, sans-serif;
+	}
+	
+	#boxes {
+		/* Self Layout Properties */
+		width: 69.7%;
+
+		/* Content Layout Properties */
+		display: flex;
+		justify-content: space-between;
+	}
+
+	#redBoxes, #blueBoxes, #greenBoxes {
+		/* Content Layout Properties */
+		display: flex;
+		align-items: center;
+	}
+
+	.blueBoxes, .greenBoxes {
+		/* UI Properties */
+		opacity: 0.75;
+	}
 }
 
-#heading {
-  /* Self Layout Properties */
-  margin: 0;
+/* Desktop Layout */
+@media only screen and (min-width: 992px) {
+	#mainBox {
+		/* Self Layout Properties */
+		margin: 0 auto;
+		height: 53.5rem;
+		max-width: 93.75rem;
 
-  /* UI Properties */
-  opacity: 1;
-  color: #FFF;
-  line-height: 1;
-  letter-spacing: 0;
-  font-size: 4.25rem;
-  font-family: 'Lato Black', Lato, sans-serif;
-}
-  
-#boxes {
-  /* Self Layout Properties */
-  width: 69.7%;
-  
-  /* Content Layout Properties */
-  display: flex;
-  justify-content: space-between;
-}
+		/* UI Properties */
+		background: transparent url('@/icons/desktop/Layer_37.png') 61% bottom no-repeat padding-box;
+		background-size: 101% auto;
+	}
 
-#redBoxes, #blueBoxes, #greenBoxes {
-  /* Content Layout Properties */
-  display: flex;
-  align-items: center;
-}
+	#container {
+		/* Self Layout Properties */
+		height: 77.22%;
+		padding: 6.5rem 0 7rem 0;
 
-.blueBoxes, .greenBoxes {
-  /* UI Properties */
-  opacity: 0.75;
+		/* Content Layout Properties */
+		box-sizing: border-box;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: space-between;
+	}
+
+	#heading {
+		/* Self Layout Properties */
+		margin: 0;
+
+		/* UI Properties */
+		opacity: 1;
+		color: #FFF;
+		line-height: 1;
+		letter-spacing: 0;
+		font-size: 4.25rem;
+		font-family: 'Lato Black', Lato, sans-serif;
+	}
+	
+	#boxes {
+		/* Self Layout Properties */
+		width: 69.7%;
+
+		/* Content Layout Properties */
+		display: flex;
+		justify-content: space-between;
+	}
+
+	#redBoxes, #blueBoxes, #greenBoxes {
+		/* Content Layout Properties */
+		display: flex;
+		align-items: center;
+	}
+
+	.blueBoxes, .greenBoxes {
+		/* UI Properties */
+		opacity: 0.75;
+	}
 }

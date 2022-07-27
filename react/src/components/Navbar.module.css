@@ -1,80 +1,227 @@
 /* Universal Layout */
 #navbar {
-  /* Descriptive variables */
-  --color-silver: #B0B0B0;
-  --color-faintYellow: #EAD280;
-  --color-gray: #5A5C5B;
+	/* Descriptive variables */
+	--color-silver: #B0B0B0;
+	--color-faintYellow: #EAD280;
+	--color-gray: #5A5C5B;
 
-  /* Functional variables */
-  --color-navItemTopBorder: var(--color-yellow);
-  --color-navItemBottomBorder: var(--color-silver);
-  --color-navItemBg: var(--color-faintYellow);
-  --color-navItemTextInactive: var(--color-gray);
-  --color-navItemTextActive: var(--color-white);
-  
-  /* Self Layout Properties */
-  height: 11%;
-  margin: 0 auto;
-  
-  /* Content Layout Properties */
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+	/* Functional variables */
+	--color-navItemTopBorder: var(--color-yellow);
+	--color-navItemBottomBorder: var(--color-silver);
+	--color-navItemBg: var(--color-faintYellow);
+	--color-navItemTextInactive: var(--color-gray);
+	--color-navItemTextActive: var(--color-white);
 }
 
-#mainNav {
-  /* Self Layout Properties */
-  width: 38.45%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  
-  /* Content Layout Properties */
-  display: flex;
-  justify-content: center;
+/* Smartphone Layout */
+@media only screen and (max-width: 600px) {
+	#navBar {
+		/* Self Layout Properties */
+		height: 11%;
+		margin: 0 auto;
+		
+		/* Content Layout Properties */
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+	}
 
-  /* UI Properties */
-  list-style: none;
-  overflow: visible;
+	#mainNav {
+		/* Self Layout Properties */
+		width: 38.45%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		
+		/* Content Layout Properties */
+		display: flex;
+		justify-content: center;
+
+		/* UI Properties */
+		list-style: none;
+		overflow: visible;
+	}
+
+	.navItem {
+		/* Self Layout Properties */
+		flex: auto;
+		margin-top: -0.7rem;
+		height: 118%;
+
+		/* UI Properties */
+		font: var(--font-lato-bold);
+		font-size: 1.5rem;
+		overflow: visible;
+	}
+
+	.navItem:active, .navItem:visited, .navItem:hover {
+		/* Content Layout Properties */
+		box-sizing: border-box;
+
+		/* UI Properties */
+		background-color: var(--color-navItemBg);
+		border-top: 0.7rem solid var(--color-navItemTopBorder);
+		border-bottom: 0.3rem solid var(--color-navItemBottomBorder);
+	}
+
+	.navItem:hover .navLink {
+		/* UI Properties */
+		color: var(--color-navItemTextActive);
+	}
+
+	.navLink {
+		/* Self Layout Properties */
+		height: 100%;
+
+		/* Content Layout Properties */
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		/* UI Properties */
+		color: var(--color-navItemTextInactive);    
+		text-decoration: none;
+	}
 }
 
-.navItem {
-  /* Self Layout Properties */
-  flex: auto;
-  margin-top: -0.7rem;
-  height: 118%;
+/* Tablet Layout */
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+	#navBar {
+		/* Self Layout Properties */
+		height: 11%;
+		margin: 0 auto;
+		
+		/* Content Layout Properties */
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+	}
 
-  /* UI Properties */
-  font: var(--font-lato-bold);
-  font-size: 1.5rem;
-  overflow: visible;
+	#mainNav {
+		/* Self Layout Properties */
+		width: 38.45%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		
+		/* Content Layout Properties */
+		display: flex;
+		justify-content: center;
+
+		/* UI Properties */
+		list-style: none;
+		overflow: visible;
+	}
+
+	.navItem {
+		/* Self Layout Properties */
+		flex: auto;
+		margin-top: -0.7rem;
+		height: 118%;
+
+		/* UI Properties */
+		font: var(--font-lato-bold);
+		font-size: 1.5rem;
+		overflow: visible;
+	}
+
+	.navItem:active, .navItem:visited, .navItem:hover {
+		/* Content Layout Properties */
+		box-sizing: border-box;
+
+		/* UI Properties */
+		background-color: var(--color-navItemBg);
+		border-top: 0.7rem solid var(--color-navItemTopBorder);
+		border-bottom: 0.3rem solid var(--color-navItemBottomBorder);
+	}
+
+	.navItem:hover .navLink {
+		/* UI Properties */
+		color: var(--color-navItemTextActive);
+	}
+
+	.navLink {
+		/* Self Layout Properties */
+		height: 100%;
+
+		/* Content Layout Properties */
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		/* UI Properties */
+		color: var(--color-navItemTextInactive);    
+		text-decoration: none;
+	}
 }
 
-.navItem:active, .navItem:visited, .navItem:hover {
-  /* Content Layout Properties */
-  box-sizing: border-box;
+/* Desktop Layout */
+@media only screen and (min-width: 992px) {
+	#navBar {
+		/* Self Layout Properties */
+		height: 11%;
+		margin: 0 auto;
+		
+		/* Content Layout Properties */
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+	}
 
-  /* UI Properties */
-  background-color: var(--color-navItemBg);
-  border-top: 0.7rem solid var(--color-navItemTopBorder);
-  border-bottom: 0.3rem solid var(--color-navItemBottomBorder);
-}
+	#mainNav {
+		/* Self Layout Properties */
+		width: 38.45%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		
+		/* Content Layout Properties */
+		display: flex;
+		justify-content: center;
 
-.navItem:hover .navLink {
-  /* UI Properties */
-  color: var(--color-navItemTextActive);
-}
+		/* UI Properties */
+		list-style: none;
+		overflow: visible;
+	}
 
-.navLink {
-  /* Self Layout Properties */
-  height: 100%;
+	.navItem {
+		/* Self Layout Properties */
+		flex: auto;
+		margin-top: -0.7rem;
+		height: 118%;
 
-  /* Content Layout Properties */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+		/* UI Properties */
+		font: var(--font-lato-bold);
+		font-size: 1.5rem;
+		overflow: visible;
+	}
 
-  /* UI Properties */
-  color: var(--color-navItemTextInactive);    
-  text-decoration: none;
+	.navItem:active, .navItem:visited, .navItem:hover {
+		/* Content Layout Properties */
+		box-sizing: border-box;
+
+		/* UI Properties */
+		background-color: var(--color-navItemBg);
+		border-top: 0.7rem solid var(--color-navItemTopBorder);
+		border-bottom: 0.3rem solid var(--color-navItemBottomBorder);
+	}
+
+	.navItem:hover .navLink {
+		/* UI Properties */
+		color: var(--color-navItemTextActive);
+	}
+
+	.navLink {
+		/* Self Layout Properties */
+		height: 100%;
+
+		/* Content Layout Properties */
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		/* UI Properties */
+		color: var(--color-navItemTextInactive);    
+		text-decoration: none;
+	}
 }
