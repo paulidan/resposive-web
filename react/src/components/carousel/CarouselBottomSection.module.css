@@ -88,13 +88,13 @@
 
     #bottomPhotoBox1 {
         /* UI Properties */
-        background: transparent url('@/icons/smartphone/Clip_y.png') 0% 0% no-repeat padding-box;
+        background-image: url('@/icons/smartphone/Clip_y.png');
         background-size: cover;
     }
 
     #bottomPhotoBox2 {
         /* UI Properties */
-        background: transparent url('@/icons/smartphone/Clip.png') 0% 0% no-repeat padding-box;
+        background-image: url('@/icons/smartphone/Clip.png');
         background-size: cover;
     }
 
@@ -112,7 +112,7 @@
         bottom: 0;
         
         /* UI Properties */
-        background: transparent url('@/icons/smartphone/Polygon_1.png') 0% bottom no-repeat padding-box;
+        background: url('@/icons/smartphone/Polygon_1.png') bottom no-repeat;
         background-size: contain;
     }
 
@@ -126,7 +126,7 @@
         top: 0;
 
         /* UI Properties */
-        background: transparent url('@/icons/smartphone/Polygon_1_copy.png') 0% top no-repeat padding-box;
+        background: url('@/icons/smartphone/Polygon_1_copy.png') top no-repeat;
         background-size: contain;
     }
 
@@ -168,12 +168,12 @@
 
     #bottomPhotoBox1 {
         /* UI Properties */
-        background: transparent url('@/icons/tablet/Clip_.png') 0% 0% no-repeat padding-box;
+        background-image: url('@/icons/tablet/Clip_.png');
     }
 
     #bottomPhotoBox2 {
         /* UI Properties */
-        background: transparent url('@/icons/tablet/Clip.png') 0% 0% no-repeat padding-box;
+        background-image: url('@/icons/tablet/Clip.png');
     }
 
     .bottomPhotoOverlay span {
@@ -183,12 +183,12 @@
 
     #bottomPhotoOverlay1 {
         /* UI Properties */
-        background: transparent url('@/icons/tablet/Polygon_1.png') 0% 0% no-repeat padding-box;
+        background-image: url('@/icons/tablet/Polygon_1.png');
     }
 
     #bottomPhotoOverlay2 {
         /* UI Properties */
-        background: transparent url('@/icons/tablet/Layer_34.png') 0% 0% no-repeat padding-box;
+        background-image: url('@/icons/tablet/Layer_34.png');
     }
 }
 
@@ -211,7 +211,7 @@
         padding: 19rem 10.3rem;
 
         /* UI Properties */
-        background: transparent url('@/icons/desktop/Clip_.png') 0% 0% no-repeat padding-box;
+        background-image: url('@/icons/desktop/Clip_.png');
     }
 
     #bottomPhotoBox2 {
@@ -219,7 +219,7 @@
         padding: 19rem 10.5rem;
         
         /* UI Properties */
-        background: transparent url('@/icons/desktop/Clip.png') 0% 0% no-repeat padding-box;
+        background-image: url('@/icons/desktop/Clip.png');
     }
 
     .bottomPhotoOverlay span {
@@ -229,12 +229,12 @@
 
     #bottomPhotoOverlay1 {
         /* UI Properties */
-        background: transparent url('@/icons/desktop/Polygon_1_bb.png') 0% 0% no-repeat padding-box;
+        background-image: url('@/icons/desktop/Polygon_1_bb.png');
     }
 
     #bottomPhotoOverlay2 {
         /* UI Properties */
-        background: transparent url('@/icons/desktop/Layer_24.png') 0% 0% no-repeat padding-box;
+        background-image: url('@/icons/desktop/Layer_24.png');
     }
 }
 

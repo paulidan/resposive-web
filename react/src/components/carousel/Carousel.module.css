@@ -32,7 +32,7 @@
 @media only screen and (max-width: 600px) {
     #mainBox {
         /* UI Properties */
-        background: transparent url('@/icons/smartphone/BG.png') 0% 0% no-repeat padding-box;
+        background-image: url('@/icons/smartphone/BG.png');
         background-position: center 5.5%;
         background-size: 200% 210%;
     }
@@ -47,7 +47,7 @@
 @media only screen and (min-width: 600px) and (max-width: 992px) {
     #mainBox {
         /* UI Properties */
-        background: transparent url('@/icons/tablet/BG.png') 0% 0% no-repeat padding-box;
+        background-image: url('@/icons/tablet/BG.png');
         background-position: center 5.5%;
         background-size: 200% 210%;
     }
@@ -72,7 +72,7 @@
         row-gap: 4.4rem;
 
         /* UI Properties */
-        background: transparent url('@/icons/desktop/BG.png') 0% 0% no-repeat padding-box;
+        background-image: url('@/icons/desktop/BG.png');
         background-position-y: 5.5%;
         background-size: 101% 216%;
     }

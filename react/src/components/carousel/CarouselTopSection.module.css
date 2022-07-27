@@ -103,12 +103,12 @@
 
     #topPhotoBox1 {
         /* UI Properties */
-        background: transparent url('@/icons/smartphone/Layer_16.png') 0% 0% no-repeat padding-box;
+        background-image: url('@/icons/smartphone/Layer_16.png');
     }
 
     #topPhotoBox2 {
         /* UI Properties */
-        background: transparent url('@/icons/smartphone/Layer_16_copy.png') 0% 0% no-repeat padding-box;
+        background-image: url('@/icons/smartphone/Layer_16_copy.png');
     }
 
     .hoverContainer:hover img {
@@ -137,12 +137,12 @@
 
     #topPhotoBox3 {
         /* UI Properties */
-        background: transparent url('@/icons/smartphone/Layer_30.png') 0% 0% no-repeat padding-box;
+        background-image: url('@/icons/smartphone/Layer_30.png');
     }
 
     #topPhotoBox4 {
         /* UI Properties */
-        background: transparent url('@/icons/smartphone/Layer_16_copy_4.png') 0% 0% no-repeat padding-box;
+        background-image: url('@/icons/smartphone/Layer_16_copy_4.png');
     }
 }
 
@@ -182,7 +182,7 @@
         order: 1;
 
         /* UI Properties */
-        background: transparent url('@/icons/tablet/Layer_16.png') 0% 0% no-repeat padding-box;
+        background-image: url('@/icons/tablet/Layer_16.png');
     }
 
     #topPhotoBox2 {
@@ -190,7 +190,7 @@
         order: 3;
 
         /* UI Properties */
-        background: transparent url('@/icons/tablet/Layer_16_copy.png') 0% 0% no-repeat padding-box;
+        background-image: url('@/icons/tablet/Layer_16_copy.png');
     }
 
     #topPhotoBox3, #topPhotoBox4 {
@@ -222,7 +222,7 @@
         order: 2;
 
         /* UI Properties */
-        background: transparent url('@/icons/tablet/Layer_30.png') 0% 0% no-repeat padding-box;
+        background-image: url('@/icons/tablet/Layer_30.png');
     }
 
     #topPhotoBox4 {
@@ -230,7 +230,7 @@
         order: 4;
 
         /* UI Properties */
-        background: transparent url('@/icons/tablet/Layer_16_copy_4.png') 0% 0% no-repeat padding-box;
+        background-image: url('@/icons/tablet/Layer_16_copy_4.png');
     }
 }
 
@@ -252,7 +252,7 @@
 
     #topPhotoBox1 {
         /* UI Properties */
-        background: transparent url('@/icons/desktop/Layer_16.png') 0% 0% no-repeat padding-box;
+        background-image: url('@/icons/desktop/Layer_16.png');
     }
 
     .topPhotoPhone, .topPhotoTablet {
@@ -276,7 +276,7 @@
 
     #topPhotoBox2 {
         /* UI Properties */
-        background: transparent url('@/icons/desktop/Layer_16_copy.png') 0% 0% no-repeat padding-box;
+        background-image: url('@/icons/desktop/Layer_16_copy.png');
     }
 
     #topPhotoBox3 .hoverContainer, #topPhotoBox4 .hoverContainer, #topPhotoBox3, #topPhotoBox4 {
@@ -301,11 +301,11 @@
 
     #topPhotoBox3 {
         /* UI Properties */
-        background: transparent url('@/icons/desktop/Layer_16_copy_2.png') 0% 0% no-repeat padding-box;
+        background-image: url('@/icons/desktop/Layer_16_copy_2.png');
     }
 
     #topPhotoBox4 {
         /* UI Properties */
-        background: transparent url('@/icons/desktop/Layer_16_copy_3.png') 0% 0% no-repeat padding-box;
+        background-image: url('@/icons/desktop/Layer_16_copy_3.png');
     }
 }
