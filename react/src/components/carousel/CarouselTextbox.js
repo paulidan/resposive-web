@@ -6,7 +6,7 @@ const CarouselTextbox = () => {
     return (
         <div id={Styles.textBox}>
             <div id={Styles.textBoxHeader}>
-                <img src={Icon} alt="Icon" />
+                <img src={Icon} alt="Textbox title" />
                 <p>Title</p>
             </div>
             <TextboxContent />

@@ -18,23 +18,23 @@ const CarouselTopSection = () => {
         <div id={Styles.topPhotoContainer}>
             <CarouselTopPhoto 
                 id={Styles.topPhotoBox1}
-                alt="Top Photo 1"
+                alt="Boy in a suit standing on a skateboard and wearing a helmet."
                 src={{desktop: img_desk_topPhotoBox1, tablet: img_tablet_topPhotoBox1, phone: img_phone_topPhotoBox1}}
             />
             <CarouselTopPhoto 
                 id={Styles.topPhotoBox2}
-                alt="Top Photo 2"
+                alt="Girl rollerskating in a park."
                 src={{desktop: img_desk_topPhotoBox2, tablet: img_tablet_topPhotoBox2, phone: img_phone_topPhotoBox2}}
             />
             <CarouselTopPhoto 
                 id={Styles.topPhotoBox3}
-                alt="Top Photo 3"
+                alt="Athletic man running down a road."
                 src={{desktop: img_desk_topPhotoBox3, tablet: img_tablet_topPhotoBox3, phone: img_phone_topPhotoBox3}}
                 captioned={true}
             />
             <CarouselTopPhoto 
                 id={Styles.topPhotoBox4}
-                alt="Top Photo 4"
+                alt="Woman with sunglasses walking and listening to music."
                 src={{desktop: img_desk_topPhotoBox4, tablet: img_tablet_topPhotoBox4, phone: img_phone_topPhotoBox4}}
                 captioned={true}
             />
