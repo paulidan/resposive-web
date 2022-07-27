@@ -22,9 +22,11 @@ const ICONS = {
     'Rain': rain,
     'Clouds': cloud
 };
+
 const dateFormatPurposueDescription = {
   date: "cccc, dd/MM/yy, h:mm",
 };
+
 const DisplayCity = ({ city }) => {
   return !!city ? (
     <div className={CurrentStyle.location}>{city}</div>
@@ -32,7 +34,9 @@ const DisplayCity = ({ city }) => {
     <>N/A</>
   );
 };
+
 const CurrentWeather = ({ data }) => {
+  console.log(data)
   if (!data) {
     return <>N/A</>;
   }
@@ -150,9 +154,6 @@ const CurrentWeather = ({ data }) => {
           </div>
         </div>
       </div>
-      {
-        //  </div><div className={CurrentStyle.weather}>
-      }
     </div>
   );
 };

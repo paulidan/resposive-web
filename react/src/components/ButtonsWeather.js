@@ -1,6 +1,6 @@
-import ButtonsWeatherStyle from "./ButtonsWeather.module.css";
 import React from 'react';
 import { Link } from "react-router-dom";
+import ButtonsWeatherStyle from "./ButtonsWeather.module.css";
 
 const ButtonsWeather = () => {
     return (

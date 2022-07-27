@@ -6,10 +6,6 @@ import {
     AccordionItemButton,
     AccordionItemPanel,
 } from "react-accessible-accordion";
-import ForecastStyle from './Forecast.module.css';
-import sun from '../../../icons/desktop/weathersun.png';
-import rain from '../../../icons/desktop/weatherrain.png';
-import cloud from '../../../icons/desktop/weathercloud.png';
 import {
     DisplayPressure,
     DisplayClouds,
@@ -19,7 +15,10 @@ import {
     DisplayData,
     DisplayHumidity,
 } from "../APIValidation";
-
+import ForecastStyle from './Forecast.module.css';
+import sun from '../../../icons/desktop/weathersun.png';
+import rain from '../../../icons/desktop/weatherrain.png';
+import cloud from '../../../icons/desktop/weathercloud.png';
 
 const ICONS = {
     'Clear': sun,
@@ -39,7 +38,7 @@ const Forecast = ({ data }) => {
         <>
             <div className={ForecastStyle.title}>Pogoda długoterminowa</div>
             <Accordion allowZeroExpanded className={ForecastStyle.container}>
-                {data.list.splice(0, 7).map((item, idx) => (
+                {data.list.splice(0, 5).map((item, idx) => (
                     <AccordionItem key={idx}>
                         <AccordionItemHeading>
                             <AccordionItemButton className={ForecastStyle.wrapper}>
