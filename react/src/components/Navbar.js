@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import Styles from './Navbar.module.css';
 import logo from '@/icons/desktop/Logo.png';
 
-function Navbar(){
+const Navbar = () => {
     return(
         <div id={Styles.menu}>
             <div className={Styles.navbar}>

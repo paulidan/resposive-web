@@ -7,7 +7,7 @@ import layer_9 from '@/icons/desktop/Layer_9.png';
 import layer_10 from '@/icons/desktop/Layer_10.png';
 import layer_37 from '@/icons/desktop/Layer_37.png';
 
-function Header(){
+const Header = () => {
     return(
       <div id={HeaderStyle.header}> 
         <div className={HeaderStyle.background}>
