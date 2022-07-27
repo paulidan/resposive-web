@@ -31,7 +31,7 @@ const Forecast = ({ data }) => {
             <Accordion allowZeroExpanded className={ForecastStyle.container}>
                 {data?.list.splice(0, 7).map((item, idx) => (
                     <AccordionItem key={idx}>
-                        <AccordionItemHeading>
+                        <AccordionItemHeading>3
                             <AccordionItemButton className={ForecastStyle.wrapper}>                           
                                 <li className={ForecastStyle.daily_item}>
                                     <div className={ForecastStyle.weather}>

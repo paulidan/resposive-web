@@ -1,11 +1,5 @@
 import React from "react";
 
-const DisplayData = ({ data }) => {
-  if(!!data) {
-    return <span>{data}</span>;
-  }else{
-    return <>N/A</>;
-  }
-};
+const DisplayData = ({ data }) => <span> {!!data ? data : "N/A"}</span>;
 
 export { DisplayData };
