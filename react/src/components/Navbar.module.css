@@ -1,4 +1,16 @@
 #navbar {
+  /* Descriptive variables */
+  --color-silver: #B0B0B0;
+  --color-faintYellow: #EAD280;
+  --color-gray: #5A5C5B;
+
+  /* Functional variables */
+  --color-navItemTopBorder: var(--color-yellow);
+  --color-navItemBottomBorder: var(--color-silver);
+  --color-navItemBg: var(--color-faintYellow);
+  --color-navItemTextInactive: var(--color-gray);
+  --color-navItemTextActive: var(--color-white);
+  
   /* Self Layout Properties */
   height: 11%;
   margin: 0 auto;
@@ -22,36 +34,37 @@
 
   /* UI Properties */
   list-style: none;
-  font-family: 'Roboto', sans-serif;
+  overflow: visible;
+}
+
+.navItem {
+  /* Self Layout Properties */
+  flex: auto;
+  margin-top: -0.7rem;
+  height: 118%;
+
+  /* UI Properties */
+  font: var(--font-lato-bold);
   font-size: 1.5rem;
   overflow: visible;
 }
 
+.navItem:active, .navItem:visited, .navItem:hover {
+  /* Content Layout Properties */
+  box-sizing: border-box;
+
+  /* UI Properties */
+  background-color: var(--color-navItemBg);
+  border-top: 0.7rem solid var(--color-navItemTopBorder);
+  border-bottom: 0.3rem solid var(--color-navItemBottomBorder);
+}
+
+.navItem:hover .navLink {
+  /* UI Properties */
+  color: var(--color-navItemTextActive);
+}
+
 .navLink {
-  /* Self Layout Properties */
-  flex: auto;
-  margin-top: -11px;
-  height: 118%;
-
-  /* UI Properties */
-  font-family: 'Lato', sans-serif;
-  font-weight: 600;
-  overflow: visible;
-}
-
-.navLink:active, .navLink:visited, .navLink:hover {
-  /* UI Properties */
-  background-color: #EAD280;
-  border-top: 10px solid #DFBB42;
-  border-bottom: 5px solid #B0B0B0;
-}
-
-.navLink:hover .navItem {
-  /* UI Properties */
-  color: white;
-}
-
-.navItem {
   /* Self Layout Properties */
   height: 100%;
 
@@ -61,25 +74,6 @@
   justify-content: center;
 
   /* UI Properties */
-  color:#5A5C5B;    
-}
-
-.navItem:link {
-  /* UI Properties */
+  color: var(--color-navItemTextInactive);    
   text-decoration: none;
-}
-
-.navItem:visited {
-  /* UI Properties */
-  text-decoration: none;
-}
-
-.navItem:active {
-  /* UI Properties */
-  text-decoration: none;
-}
-
-.navItem:hover {
-  /* UI Properties */
-  text-decoration: goldenrod;
 }
