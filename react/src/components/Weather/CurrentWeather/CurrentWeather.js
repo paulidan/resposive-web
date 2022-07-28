@@ -1,22 +1,32 @@
 import React from "react";
 import { format } from "date-fns";
 import { pl } from "date-fns/locale";
-import { DisplayData } from "../APIValidation";
+import { DisplayData } from "../DataDisplay";
+import {
+  getSunriseTime,
+  getDate,
+  getAqi,
+  getClouds,
+  getFeelsLike,
+  getHumidity,
+  getPressure,
+  getSunsetTime,
+  getTemp,
+  getWindSpeed,
+} from "../Getters";
 import CurrentStyle from "./CurrentW.module.css";
 import sun from "../../../icons/desktop/weathersun.png";
 import rain from "../../../icons/desktop/weatherrain.png";
 import cloud from "../../../icons/desktop/weathercloud.png";
 
 const ICONS = {
-    'Clear': sun,
-    'Rain': rain,
-    'Clouds': cloud
+  Clear: sun,
+  Rain: rain,
+  Clouds: cloud,
 };
-
 const dateFormatPurposueDescription = {
   date: "cccc, dd/MM/yy, h:mm",
 };
-
 const DisplayCity = ({ city }) => {
   return !!city ? (
     <div className={CurrentStyle.location}>{city}</div>
@@ -24,11 +34,11 @@ const DisplayCity = ({ city }) => {
     <>N/A</>
   );
 };
-
 const CurrentWeather = ({ data }) => {
   if (!data) {
     return <>N/A</>;
   }
+
   return (
     <div className={CurrentStyle.app}>
       <div className={CurrentStyle.weather_side}>
@@ -51,7 +61,8 @@ const CurrentWeather = ({ data }) => {
               {data.weather[0].main}{" "}
             </div>
             <div className={CurrentStyle.weather_temp}>
-              <DisplayData data={data.main.temp.toLocaleString(undefined, {
+              <DisplayData
+                data={data.main.temp.toLocaleString(undefined, {
                   maximumFractionDigits: 0,
                 })}
               />
@@ -70,7 +81,8 @@ const CurrentWeather = ({ data }) => {
             <div className={CurrentStyle.feels_temp}>
               <span className={CurrentStyle.title}>
                 Odczuwalna temperatura:{" "}
-                <DisplayData data={data.main.feels_like.toLocaleString(undefined, {
+                <DisplayData
+                  data={data.main.feels_like.toLocaleString(undefined, {
                     maximumFractionDigits: 0,
                   })}
                 />
@@ -80,35 +92,30 @@ const CurrentWeather = ({ data }) => {
             </div>
             <div className={CurrentStyle.sunrise}>
               <span className={CurrentStyle.title}>
-                Wschód słońca:{" "}
-                <DisplayData data={new Date(data.sys.sunrise * 1000).toLocaleTimeString(
-                    "pl-IN"
-                  )}
-                />
+                Wschód słońca: <DisplayData data={getSunriseTime(data)} />
               </span>
               <br></br>
             </div>
             <div className={CurrentStyle.sunset}>
               <span className={CurrentStyle.title}>
                 Zachód słońca:{" "}
-                <DisplayData data={new Date(data.sys.sunset * 1000).toLocaleTimeString(
-                    "pl-IN"
-                  )}
+                <DisplayData
+                  data={getSunsetTime(data)}
                 />
               </span>
               <br></br>
             </div>
             <div className={CurrentStyle.humidity}>
               <span className={CurrentStyle.title}>
-                Wilgotność powietrza:{" "}
-                <DisplayData data={data.main.humidity} /> %
+                Wilgotność powietrza: <DisplayData data={getHumidity(data)} />{" "}
+                %
               </span>
               <br></br>
             </div>
             <div className={CurrentStyle.pressure}>
               <span className={CurrentStyle.title}>
                 Ciśnienie atmosferyczne:{" "}
-                <DisplayData data={data.main.pressure} /> hPa
+                <DisplayData data={getPressure(data)} /> hPa
               </span>
               <br></br>
             </div>
@@ -116,9 +123,7 @@ const CurrentWeather = ({ data }) => {
               <span className={CurrentStyle.title}>
                 Prędkość wiatru:{" "}
                 <DisplayData
-                 data={(data.wind.speed * 3.6).toLocaleString(undefined, {
-                    maximumFractionDigits: 0,
-                  })}
+                  data={getWindSpeed(data)}
                 />{" "}
                 KM/h
               </span>
@@ -126,13 +131,13 @@ const CurrentWeather = ({ data }) => {
             </div>
             <div className={CurrentStyle.clouds}>
               <span className={CurrentStyle.title}>
-                Zachmurzenie: <DisplayData data={data.clouds.all} /> %{" "}
+                Zachmurzenie: <DisplayData data={getClouds(data)} /> %{" "}
               </span>
               <br></br>
             </div>
             <div className={CurrentStyle.aqi}>
               <span className={CurrentStyle.title}>
-                Smog: <DisplayData data={data.aqi} />
+                Smog: <DisplayData data={getAqi(data)} />
               </span>
               <br></br>
             </div>
