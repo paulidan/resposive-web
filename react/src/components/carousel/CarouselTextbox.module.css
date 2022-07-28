@@ -1,0 +1,114 @@
+/* Universal Layout */
+#textBox {
+    /* Descriptive variables */
+    --color-lightBlue: #7ec8ea;
+
+    /* Functional variables */
+    --color-header: var(--color-lightBlue);
+
+    /* UI Properties */
+    background-color: var(--color-white);
+}
+
+#textBoxHeader {
+    /* Self Layout Properties */
+    width: 100%;
+    
+    /* Content Layout Properties */
+    display: flex;
+    align-items: center;
+    
+    /* UI Properties */
+    background-color: var(--color-header);
+}
+
+#textBoxHeader p {
+    /* Self Layout Properties */
+    margin: 0;
+    padding-left: 0.75rem;
+
+    /* UI Properties */
+    text-align: left;
+    font: var(--font-primary);
+    font-style: italic;
+}
+
+/* Smartphone & Tablet Layout */
+@media only screen and (max-width: 992px) {
+    #textBoxHeader p {
+        /* Self Layout Properties */
+        margin: 0;
+    }
+}
+
+/* Tablet & Desktop Layout */
+@media only screen and (min-width: 600px) {
+    #textBoxHeader p {
+        /* UI Properties */
+        font-size: 3rem;
+        letter-spacing: 0.9rem;
+    }
+}
+
+/* Smartphone Layout */
+@media only screen and (max-width: 600px) {
+    #textBoxHeader {
+        /* Self Layout Properties */
+        padding: 0.88rem 1.3rem;
+        height: 17.55%;
+    }
+    
+    #textBoxHeader p {
+        /* UI Properties */
+        font-size: 2.4rem;
+        letter-spacing: 0.7rem;
+    }
+}
+
+/* Tablet Layout */
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    #textBox {
+        /* Self Layout Properties */
+        width: 100%;
+        padding-bottom: 4rem;
+    }
+    
+    #textBoxHeader {
+        /* Self Layout Properties */
+        padding: 0.9rem 1.3rem;
+        height: 12.4%;
+    }
+    
+    #textBoxHeader p {
+        /* UI Properties */
+        line-height: 1;
+    }
+}
+
+/* Desktop Layout */
+@media only screen and (min-width: 992px) {
+    #textBox {
+        /* Self Layout Properties */
+        max-height: 38rem;
+        width: 39%;
+        padding-bottom: 3.75rem;
+    }
+    
+    #textBoxHeader {
+        /* Self Layout Properties */
+        padding: 0.85rem 1.3rem;
+    }
+    
+    #textBoxHeader p {
+        /* UI Properties */
+        line-height: 0.6;
+    }
+}
+
+/* Stretch Textbox if wrapped */
+@media only screen and (min-width: 992px) and (max-width: 1500px) {
+    #textBox {
+        /* Self Layout Properties */
+        width: 100%;
+    }
+}

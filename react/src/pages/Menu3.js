@@ -1,7 +1,7 @@
-import Navbar from '../components/Navbar';
-import Header from '../components/Header';
+import Navbar from '@/components/Navbar';
+import Header from '@/components/Header';
 
-function Menu3Page(){
+const Menu3Page = () => {
     return (
         <div className="App">
           <div id="header"> 

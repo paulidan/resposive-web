@@ -1,17 +1,17 @@
-import Styles from './Navbar.module.css';
-import logo from '../icons/desktop/Logo.png';
 import { Link } from 'react-router-dom';
+import logo from '@/icons/desktop/Logo.png';
+import Styles from './Navbar.module.css';
 
 
-function Navbar(){
-    return(
+const Navbar = () => {
+    return (
         <div id={Styles.menu}>
             <div className={Styles.navbar}>
                 <div id={Styles.logo}>
                   <img src={logo} alt="logo" />
                 </div>    
                 <ul className={Styles.main_nav}>
-                <li className={Styles.nav_link} active>
+                <li className={Styles.nav_link} active="true">
                   <div className={Styles.nav_item}>
                     <Link className={Styles.nav_item} to="/">Home</Link>
                   </div>

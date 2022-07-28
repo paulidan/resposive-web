@@ -1,0 +1,39 @@
+/* Universal Layout */
+#textBoxContent {
+    /* Self Layout Properties */
+    margin: 0;
+}
+
+/* Tablet & Desktop Layout */
+@media only screen and (min-width: 600px) {
+    #textBoxContent {
+        /* Content Layout Properties */
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-evenly;
+
+        /* UI Properties */
+        list-style-type: none;
+        padding-left: 0;
+    }
+}
+
+/* Smartphone Layout */
+@media only screen and (max-width: 600px) {
+    #textBoxContent {
+        /* Self Layout Properties */
+        padding: 0 0.6rem 0.6rem 0.6rem;
+
+        /* UI Properties */
+        list-style-position: inside;
+        text-align: left;
+    }
+}
+
+/* Tablet Layout */
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    #textBoxContent {
+        /* Self Layout Properties */
+        height: 87.6%;
+    }
+}

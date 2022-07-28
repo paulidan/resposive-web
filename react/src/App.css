@@ -106,3 +106,18 @@
   font-style: italic;
   font-weight: 900;
 }
+
+:root {
+  /* Descriptive variables */
+  --font-lato-bold: 600 1rem 'gLato', sans-serif;
+  --color-white: #FFF;
+  --color-lightGray: #f1f1f1;
+  --color-darkGray: #333;
+  --font-lato: 400 1rem 'gLato', sans-serif;
+  --font-lato-light: 300 1rem 'gLato', sans-serif;
+
+  /* Functional variables */
+  --color-bg: var(--color-lightGray);
+  --font-primary: var(--font-lato);
+  --font-secondary: var(--font-lato-light);
+}
