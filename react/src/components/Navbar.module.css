@@ -32,9 +32,47 @@
 		display: none;
 	}
 
+	#logoPhone {
+		/* Self Layout Properties */
+		width: min(9.8rem, 70%);
+	}
+
+	#sidebarOn {
+		/* Self Layout Properties */
+		top: 0;
+	}
+
+	#sidebarOff {
+		/* Self Layout Properties */
+		top: -4rem;
+	}
+
+	#sidebarOn, #sidebarOff {
+		/* Self Layout Properties */
+		transition: all 0.2s ease-in-out;
+		position: fixed;
+		left: 0;
+		width: 100%;
+		height: 4rem;
+		margin: 0;
+		padding-left: 0;
+		
+		/* Content Layout Properties */
+		display: flex;
+
+		/* UI Properties */
+		background-color: rgba(0,0,0,0.9);
+		list-style: none;
+	}
+
 	#mainNav {
 		/* Content Layout Properties */
 		display: none;
+	}
+
+	#navbarIconPhone {
+		/* Self Layout Properties */
+		width: min(2.38rem, 20%);
 	}
 
 	#navbarIconPhone:hover {
@@ -50,12 +88,12 @@
 	.navItem {
 		/* Self Layout Properties */
 		flex: auto;
-		margin-top: -0.7rem;
-		height: 118%;
+		margin-top: -0.35rem;
+		width: 100%;
 
 		/* UI Properties */
 		font: var(--font-lato-bold);
-		font-size: 1.5rem;
+		font-size: 0.75rem;
 		overflow: visible;
 	}
 
@@ -65,8 +103,8 @@
 
 		/* UI Properties */
 		background-color: var(--color-navItemBg);
-		border-top: 0.7rem solid var(--color-navItemTopBorder);
-		border-bottom: 0.3rem solid var(--color-navItemBottomBorder);
+		border-top: 0.35rem solid var(--color-navItemTopBorder);
+		border-bottom: 0.15rem solid var(--color-navItemBottomBorder);
 	}
 
 	.navItem:hover .navLink {
@@ -113,6 +151,35 @@
 		display: none;
 	}
 
+	#sidebarOn {
+		/* Self Layout Properties */
+		left: 0;
+	}
+
+	#sidebarOff {
+		/* Self Layout Properties */
+		left: -10rem;
+	}
+
+	#sidebarOn, #sidebarOff {
+		/* Self Layout Properties */
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		width: 10rem;
+		margin: 0;
+		padding-left: 0;
+		
+		/* Content Layout Properties */
+		display: flex;
+		flex-wrap: wrap;
+
+		/* UI Properties */
+		background-color: rgba(0,0,0,0.9);
+		transition: all 0.2s ease-in-out;
+		list-style: none;
+	}
+
 	#navbarIconTablet:hover {
 		/* Content Layout Properties */
 		cursor: pointer;
@@ -127,7 +194,7 @@
 		/* Self Layout Properties */
 		flex: auto;
 		margin-top: -0.7rem;
-		height: 118%;
+		width: 100%;
 
 		/* UI Properties */
 		font: var(--font-lato-bold);
@@ -183,11 +250,14 @@
 		display: none;
 	}
 
+	#sidebarOn, #sidebarOff {
+		display: none;
+	}
+
 	#mainNav {
 		/* Self Layout Properties */
 		width: 38.45%;
 		height: 100%;
-		margin: 0;
 		padding: 0;
 		
 		/* Content Layout Properties */
@@ -199,8 +269,14 @@
 		overflow: visible;
 	}
 
+	#navbarIconTablet, #navbarIconPhone {
+		/* Content Layout Properties */
+		display: none;
+	}
+
 	.navItem {
 		/* Self Layout Properties */
+		padding: 0 1rem;
 		flex: auto;
 		margin-top: -0.7rem;
 		height: 118%;

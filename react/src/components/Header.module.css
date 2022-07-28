@@ -1,9 +1,9 @@
 /* Smartphone Layout */
 @media only screen and (max-width: 600px) {
-	#mainBox {
+	#mainBox, #mainBoxShrunk {
 		/* Self Layout Properties */
 		margin: 0 auto;
-		height: 39.5rem;
+		max-height: 39.5rem;
 		width: 100%;
 
 		/* UI Properties */
@@ -62,14 +62,14 @@
 		justify-content: center;
 	}
 
+	.textBox {
+		/* Self Layout Properties */
+		max-width: 90%;
+	}
+
 	#boxes div:not(:last-child) .textBox {
 		/* Self Layout Properties */
 		padding-bottom: 1.25rem;
-	}
-
-	.blueBoxes, .greenBoxes {
-		/* UI Properties */
-		opacity: 0.75;
 	}
 }
 
@@ -77,15 +77,26 @@
 @media only screen and (min-width: 600px) and (max-width: 992px) {
 	#mainBox {
 		/* Self Layout Properties */
-		margin: 0 auto;
-		height: 39.5rem;
+		margin-left: 0;
 		width: 100%;
+	}
+
+	#mainBox, #mainBoxShrunk {
+		/* Self Layout Properties */
+		height: 39.5rem;
 
 		/* UI Properties */
+		transition: all 0.2s ease-in-out;
 		background: url('@/icons/tablet/Layer_37.png');
-		background-size: cover;
+		background-size: 100% 100%;
 		background-repeat: no-repeat;
 		background-position-y: -7.4rem;
+	}
+
+	#mainBoxShrunk {
+		/* Self Layout Properties */
+		margin-left: 10rem;
+		width: calc(100% - 10rem);
 	}
 
 	#container {
@@ -116,38 +127,56 @@
 	
 	#boxes {
 		/* Self Layout Properties */
-		width: 100%;
+		width: calc(100% - 2.25rem);
 
 		/* Content Layout Properties */
 		display: flex;
-		justify-content: space-between;
+		flex-wrap: wrap;
+		row-gap: 1.25rem;
+		justify-content: space-around;
 	}
 
 	#redBoxes, #blueBoxes, #greenBoxes {
 		/* Content Layout Properties */
+		max-width: 231px;
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: center;
 	}
+}
 
-	.blueBoxes, .greenBoxes {
-		/* UI Properties */
-		opacity: 0.75;
+@media only screen and (min-width: 600px) and (max-width: 670px) {
+	#heading {
+		font-size: 3rem;
+	}
+
+	#redBoxes, #blueBoxes, #greenBoxes {
+		/* Content Layout Properties */
+		max-width: 12rem;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	.textBox {
+		width: 90%;
 	}
 }
 
 /* Desktop Layout */
 @media only screen and (min-width: 992px) {
-	#mainBox {
+	#mainBox, #mainBoxShrunk {
 		/* Self Layout Properties */
 		margin: 0 auto;
-		height: 53.5rem;
+		height: 53.55rem;
 		max-width: 93.75rem;
 
 		/* UI Properties */
-		background: url('@/icons/desktop/Layer_37.png') 61% bottom no-repeat;
-		background-size: 101% auto;
+		background-image: url('@/icons/desktop/Layer_37.png');
+		background-position: center bottom;
+		background-repeat: no-repeat;
 	}
 
 	#container {
@@ -187,11 +216,8 @@
 	#redBoxes, #blueBoxes, #greenBoxes {
 		/* Content Layout Properties */
 		display: flex;
+		flex-wrap: wrap;
 		align-items: center;
-	}
-
-	.blueBoxes, .greenBoxes {
-		/* UI Properties */
-		opacity: 0.75;
+		justify-content: center;
 	}
 }

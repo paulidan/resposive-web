@@ -4,9 +4,6 @@ const PogodaPage = () => {
     return (
         <div className="App">
             <Header />
-            <div>
-                POGODA
-            </div>
         </div>
     );
 }

@@ -4,9 +4,6 @@ const Menu2Page = () => {
     return (
         <div className="App">
             <Header />
-            <div>
-                MENU2
-            </div>
         </div>
     );
 }

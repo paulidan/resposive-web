@@ -1,4 +1,5 @@
 import layer_7_c from '@/icons/desktop/Layer_7_c.png';
+import { useState } from 'react';
 import layer_11_c from '@/icons/desktop/Layer_11_c.png';
 import layer_8_c from '@/icons/desktop/Layer_8_c.png';
 import layer_12 from '@/icons/desktop/Layer_12.png';
@@ -8,8 +9,14 @@ import Navbar from '@/components/Navbar';
 import Styles from "./Header.module.css";
 
 const Header = () => {
+  const [showSidebar, setShowSidebar] = useState(false);
+
+  const handleShowSidebar = () => {
+    setShowSidebar(!showSidebar);
+  };
+
     return(
-      <div id={Styles.mainBox}>
+      <div id={showSidebar ? Styles.mainBoxShrunk : Styles.mainBox}>
         <div id={Styles.container}>
           <p id={Styles.heading}>Feel the Power of Typography</p>
           <div id={Styles.boxes}>
@@ -27,7 +34,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <Navbar />
+        <Navbar toggleSidebar={handleShowSidebar} showSidebar={showSidebar}/>
       </div>
     );
 }

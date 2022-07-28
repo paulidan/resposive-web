@@ -4,9 +4,6 @@ const HomePage = () => {
     return (
         <div className="App">
             <Header />
-            <div>
-                HOME
-            </div>
         </div>
     );
 }
