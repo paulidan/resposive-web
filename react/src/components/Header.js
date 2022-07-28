@@ -36,7 +36,8 @@ const Header = () => {
         </div>
         <Navbar toggleSidebar={handleShowSidebar} showSidebar={showSidebar}/>
       </div>
-    );
+    </div>
+  );
 }
 
 export default Header;
