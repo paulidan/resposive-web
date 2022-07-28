@@ -15,31 +15,31 @@
 
 /* Smartphone Layout */
 @media only screen and (max-width: 600px) {
-	#navBar {
+	#navbar {
 		/* Self Layout Properties */
-		height: 11%;
+		height: 3.13rem;
+		padding: 0 1.25rem 0 2.19rem; 
 		margin: 0 auto;
 		
 		/* Content Layout Properties */
 		display: flex;
 		align-items: center;
-		justify-content: space-evenly;
+		justify-content: space-between;
 	}
 
 	#mainNav {
-		/* Self Layout Properties */
-		width: 38.45%;
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		
 		/* Content Layout Properties */
-		display: flex;
-		justify-content: center;
+		display: none;
+	}
 
-		/* UI Properties */
-		list-style: none;
-		overflow: visible;
+	#navbarIconPhone:hover {
+		/* Content Layout Properties */
+		cursor: pointer;
+	}
+
+	#navbarIconTablet {
+		/* Content Layout Properties */
+		display: none;
 	}
 
 	.navItem {
@@ -86,31 +86,31 @@
 
 /* Tablet Layout */
 @media only screen and (min-width: 600px) and (max-width: 992px) {
-	#navBar {
+	#navbar {
 		/* Self Layout Properties */
-		height: 11%;
+		height: 5.88rem;
+		padding: 0 1.25rem 0 2.19rem; 
 		margin: 0 auto;
 		
 		/* Content Layout Properties */
 		display: flex;
 		align-items: center;
-		justify-content: space-evenly;
+		justify-content: space-between;
 	}
 
 	#mainNav {
-		/* Self Layout Properties */
-		width: 38.45%;
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		
 		/* Content Layout Properties */
-		display: flex;
-		justify-content: center;
+		display: none;
+	}
 
-		/* UI Properties */
-		list-style: none;
-		overflow: visible;
+	#navbarIconTablet:hover {
+		/* Content Layout Properties */
+		cursor: pointer;
+	}
+
+	#navbarIconPhone {
+		/* Content Layout Properties */
+		display: none;
 	}
 
 	.navItem {
@@ -157,9 +157,9 @@
 
 /* Desktop Layout */
 @media only screen and (min-width: 992px) {
-	#navBar {
+	#navbar {
 		/* Self Layout Properties */
-		height: 11%;
+		height: 5.9rem;
 		margin: 0 auto;
 		
 		/* Content Layout Properties */

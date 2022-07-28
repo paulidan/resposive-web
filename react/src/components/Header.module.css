@@ -3,18 +3,20 @@
 	#mainBox {
 		/* Self Layout Properties */
 		margin: 0 auto;
-		height: 53.5rem;
-		max-width: 93.75rem;
+		height: 39.5rem;
+		width: 100%;
 
 		/* UI Properties */
-		background: transparent url('@/icons/desktop/Layer_37.png') 61% bottom no-repeat padding-box;
-		background-size: 101% auto;
+		background: url('@/icons/smartphone/Layer_38.png');
+		background-repeat: no-repeat;
+		background-position: center top;
 	}
 
 	#container {
 		/* Self Layout Properties */
-		height: 77.22%;
-		padding: 6.5rem 0 7rem 0;
+		width: 100%;
+		height: 25.69rem;
+		padding: 3.13rem 0;
 
 		/* Content Layout Properties */
 		box-sizing: border-box;
@@ -29,27 +31,39 @@
 		margin: 0;
 
 		/* UI Properties */
-		opacity: 1;
-		color: #FFF;
+		color: var(--color-white);
 		line-height: 1;
 		letter-spacing: 0;
-		font-size: 4.25rem;
+		font-size: 2.13rem;
 		font-family: 'Lato Black', Lato, sans-serif;
 	}
 	
 	#boxes {
 		/* Self Layout Properties */
-		width: 69.7%;
+		width: 100%;
 
 		/* Content Layout Properties */
 		display: flex;
-		justify-content: space-between;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.iconBox {
+		/* Content Layout Properties */
+		display: none;
 	}
 
 	#redBoxes, #blueBoxes, #greenBoxes {
 		/* Content Layout Properties */
 		display: flex;
+		flex-wrap: wrap;
 		align-items: center;
+		justify-content: center;
+	}
+
+	#boxes div:not(:last-child) .textBox {
+		/* Self Layout Properties */
+		padding-bottom: 1.25rem;
 	}
 
 	.blueBoxes, .greenBoxes {
@@ -63,18 +77,21 @@
 	#mainBox {
 		/* Self Layout Properties */
 		margin: 0 auto;
-		height: 53.5rem;
-		max-width: 93.75rem;
+		height: 39.5rem;
+		width: 100%;
 
 		/* UI Properties */
-		background: transparent url('@/icons/desktop/Layer_37.png') 61% bottom no-repeat padding-box;
-		background-size: 101% auto;
+		background: url('@/icons/tablet/Layer_37.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position-y: -7.4rem;
 	}
 
 	#container {
 		/* Self Layout Properties */
-		height: 77.22%;
-		padding: 6.5rem 0 7rem 0;
+		width: 100%;
+		height: 32.13rem;
+		padding: 3.13rem 0;
 
 		/* Content Layout Properties */
 		box-sizing: border-box;
@@ -89,8 +106,7 @@
 		margin: 0;
 
 		/* UI Properties */
-		opacity: 1;
-		color: #FFF;
+		color: var(--color-white);
 		line-height: 1;
 		letter-spacing: 0;
 		font-size: 4.25rem;
@@ -99,7 +115,7 @@
 	
 	#boxes {
 		/* Self Layout Properties */
-		width: 69.7%;
+		width: 100%;
 
 		/* Content Layout Properties */
 		display: flex;
@@ -109,7 +125,9 @@
 	#redBoxes, #blueBoxes, #greenBoxes {
 		/* Content Layout Properties */
 		display: flex;
+		flex-wrap: wrap;
 		align-items: center;
+		justify-content: center;
 	}
 
 	.blueBoxes, .greenBoxes {
@@ -127,7 +145,7 @@
 		max-width: 93.75rem;
 
 		/* UI Properties */
-		background: transparent url('@/icons/desktop/Layer_37.png') 61% bottom no-repeat padding-box;
+		background: url('@/icons/desktop/Layer_37.png') 61% bottom no-repeat;
 		background-size: 101% auto;
 	}
 
@@ -149,8 +167,7 @@
 		margin: 0;
 
 		/* UI Properties */
-		opacity: 1;
-		color: #FFF;
+		color: var(--color-white);
 		line-height: 1;
 		letter-spacing: 0;
 		font-size: 4.25rem;
