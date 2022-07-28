@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { useState } from 'react';
 import { AsyncPaginate } from 'react-select-async-paginate';
 import { GEO_API_OPTIONS, GEO_API_URL } from '../Api';
@@ -7,11 +8,11 @@ const Search = ({ onSearchChange }) => {
     const [search, setSearch] = useState(null);
 
     const loadOptions = (inputValue) => {
-        return fetch(
+        return axios.get(
             `${GEO_API_URL}/cities?minPopulation=10000&namePrefix=${inputValue}`,
             GEO_API_OPTIONS
         )
-            .then((response) => response.json())
+            .then((response) => response.data)
             .then((response) => {
                 return {
                     options: response.data.map((city) => {

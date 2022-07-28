@@ -16,7 +16,7 @@ const WeatherSearchPage = () => {
       `${WEATHER_API.base}/weather?lat=${lat}&lon=${lon}&appid=${WEATHER_API.key}&units=metric`
     ).then((response) => {
       console.log("data", response)
-      setCurrentWeather({ city: searchData.label, ...response });
+      setCurrentWeather({ city: searchData.label, ...response.data });
     });
   }
 
