@@ -12,9 +12,9 @@ import rain from '../../../icons/desktop/weatherrain.png';
 import cloud from '../../../icons/desktop/weathercloud.png';
 
 const ICONS = {
-    'Clear': sun,
-    'Rain': rain,
-    'Clouds': cloud
+    "Clear": sun,
+    "Rain": rain,
+    "Clouds": cloud
 };
 
 const WEEK_DAYS = ['Poniedziałek', 'Wtorek', 'Środa', 'Czwartek', 'Piątek', 'Sobota', 'Niedziela'];
@@ -29,7 +29,7 @@ const Forecast = ({ data }) => {
         <>
             <label className={ForecastStyle.title}>Pogoda długoterminowa</label>
             <Accordion allowZeroExpanded className={ForecastStyle.container}>
-                {data?.list.splice(0, 7).map((item, idx) => (
+                {data.list.splice(0, 5).map((item, idx) => (
                     <AccordionItem key={idx}>
                         <AccordionItemHeading>3
                             <AccordionItemButton className={ForecastStyle.wrapper}>                           

@@ -27,13 +27,7 @@ const ICONS = {
 const dateFormatPurposueDescription = {
   date: "cccc, dd/MM/yy, h:mm",
 };
-const DisplayCity = ({ city }) => {
-  return !!city ? (
-    <div className={CurrentStyle.location}>{city}</div>
-  ) : (
-    <>N/A</>
-  );
-};
+
 const CurrentWeather = ({ data }) => {
   if (!data) {
     return <>N/A</>;
@@ -61,11 +55,7 @@ const CurrentWeather = ({ data }) => {
               {data.weather[0].main}{" "}
             </div>
             <div className={CurrentStyle.weather_temp}>
-              <DisplayData
-                data={data.main.temp.toLocaleString(undefined, {
-                  maximumFractionDigits: 0,
-                })}
-              />
+              <DisplayData data={getTemp(data)} />
               °C
             </div>
             <img
@@ -79,67 +69,36 @@ const CurrentWeather = ({ data }) => {
         <div className={CurrentStyle.feels_info_container}>
           <div className={CurrentStyle.feels}>
             <div className={CurrentStyle.feels_temp}>
-              <span className={CurrentStyle.title}>
-                Odczuwalna temperatura:{" "}
-                <DisplayData
-                  data={data.main.feels_like.toLocaleString(undefined, {
-                    maximumFractionDigits: 0,
-                  })}
-                />
-                °C
-              </span>
-              <br></br>
+              <div className={CurrentStyle.title}>Odczuwalna temperatura:</div>
+              <DisplayData data={getFeelsLike(data)} /> °C
             </div>
             <div className={CurrentStyle.sunrise}>
-              <span className={CurrentStyle.title}>
-                Wschód słońca: <DisplayData data={getSunriseTime(data)} />
-              </span>
-              <br></br>
+              <div className={CurrentStyle.title}>Wschód słońca:</div>
+              <DisplayData data={getSunriseTime(data)} />
             </div>
             <div className={CurrentStyle.sunset}>
-              <span className={CurrentStyle.title}>
-                Zachód słońca:{" "}
-                <DisplayData
-                  data={getSunsetTime(data)}
-                />
-              </span>
-              <br></br>
+              <div className={CurrentStyle.title}>Zachód słońca:</div>
+              <DisplayData data={getSunsetTime(data)} />
             </div>
             <div className={CurrentStyle.humidity}>
-              <span className={CurrentStyle.title}>
-                Wilgotność powietrza: <DisplayData data={getHumidity(data)} />{" "}
-                %
-              </span>
-              <br></br>
+              <div className={CurrentStyle.title}>Wilgotność powietrza:</div>
+              <DisplayData data={getHumidity(data)} /> %
             </div>
             <div className={CurrentStyle.pressure}>
-              <span className={CurrentStyle.title}>
-                Ciśnienie atmosferyczne:{" "}
-                <DisplayData data={getPressure(data)} /> hPa
-              </span>
-              <br></br>
+              <div className={CurrentStyle.title}>Ciśnienie atmosferyczne:</div>
+              <DisplayData data={getPressure(data)} /> hPa
             </div>
             <div className={CurrentStyle.wind}>
-              <span className={CurrentStyle.title}>
-                Prędkość wiatru:{" "}
-                <DisplayData
-                  data={getWindSpeed(data)}
-                />{" "}
-                KM/h
-              </span>
-              <br></br>
+              <div className={CurrentStyle.title}>Prędkość wiatru:</div>
+              <DisplayData data={getWindSpeed(data)} /> KM/h
             </div>
             <div className={CurrentStyle.clouds}>
-              <span className={CurrentStyle.title}>
-                Zachmurzenie: <DisplayData data={getClouds(data)} /> %{" "}
-              </span>
-              <br></br>
+              <div className={CurrentStyle.title}>Zachmurzenie:</div>
+              <DisplayData data={getClouds(data)} /> %{" "}
             </div>
             <div className={CurrentStyle.aqi}>
-              <span className={CurrentStyle.title}>
-                Smog: <DisplayData data={getAqi(data)} />
-              </span>
-              <br></br>
+              <div className={CurrentStyle.title}>Smog:</div>
+              <DisplayData data={getAqi(data)} />
             </div>
           </div>
         </div>
