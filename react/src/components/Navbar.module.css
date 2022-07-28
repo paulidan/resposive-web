@@ -27,6 +27,11 @@
 		justify-content: space-between;
 	}
 
+	#logoRegular {
+		/* Content Layout Properties */
+		display: none;
+	}
+
 	#mainNav {
 		/* Content Layout Properties */
 		display: none;
@@ -98,6 +103,11 @@
 		justify-content: space-between;
 	}
 
+	#logoPhone {
+		/* Content Layout Properties */
+		display: none;
+	}
+
 	#mainNav {
 		/* Content Layout Properties */
 		display: none;
@@ -166,6 +176,11 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-evenly;
+	}
+
+	#logoPhone {
+		/* Content Layout Properties */
+		display: none;
 	}
 
 	#mainNav {

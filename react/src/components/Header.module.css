@@ -28,6 +28,7 @@
 
 	#heading {
 		/* Self Layout Properties */
+		white-space: nowrap;
 		margin: 0;
 
 		/* UI Properties */
