@@ -11,6 +11,7 @@
   height: 45%;
   border: 0.3rem solid #ead280;
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
 }
 
@@ -58,7 +59,7 @@
 .daily_details_grid {
   margin: 1rem;
   width: 13rem;
-  display: block;
+  display: block; 
   overflow: hidden;
   border-radius: 1rem;
   background-color: #ffffff;
