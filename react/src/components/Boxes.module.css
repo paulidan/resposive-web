@@ -259,6 +259,7 @@
 
         /* UI Properties */
         background: url('@/icons/smartphone/Pattern.png') bottom no-repeat;
+        overflow: hidden;
     }
 
     #centerBoxInner p {
