@@ -2,7 +2,10 @@ import { Route, Routes } from 'react-router-dom';
 import HomePage from '@/pages/Home';
 import Menu2Page from '@/pages/Menu2';
 import Menu3Page from '@/pages/Menu3';
-import PogodaPage from '@/pages/Pogoda';
+import WeatherPage from '@/pages/WeatherPage';
+import WeatherSearchPage from '@/pages/WeatherSearchPage';
+import WeatherTermPage from '@/pages/WeatherTermPage';
+import WeatherToday from '@/pages/WeatherToday';
 import './App.css';
 
 const App = () => {

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { DisplayData } from "../DataDisplay";
+import {DisplayData} from "../DataDisplay";
 import {
   getSunriseTime,
   getDate,

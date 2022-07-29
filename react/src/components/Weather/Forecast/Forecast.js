@@ -32,9 +32,9 @@ const Forecast = ({ data }) => {
         <>
             <div className={ForecastStyle.title}>Pogoda długoterminowa</div>
             <Accordion allowZeroExpanded className={ForecastStyle.container}>
-                {data.list.splice(0, 7).map((item, idx) => (
+                {data.list.splice(0, 6).map((item, idx) => (
                     <AccordionItem key={idx}>
-                        <AccordionItemHeading>3
+                        <AccordionItemHeading>
                             <AccordionItemButton className={ForecastStyle.wrapper}>                           
                                 <li className={ForecastStyle.daily_item}>
                                     <div className={ForecastStyle.weather}>
