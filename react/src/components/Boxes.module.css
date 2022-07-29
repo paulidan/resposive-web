@@ -123,13 +123,8 @@
     color: var(--color-centerBoxText);
 }
 
-@media only screen and (max-width: 992px) {
-    .pDesktopSubBox {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 600px) {
+/* Smartphone & Tablet Layout */
+@media only screen and (max-width: 61.99rem) {
     #mainBox {
         /* Content Layout Properties */
         display: flex;
