@@ -1,7 +1,5 @@
-
 import Navbar from '@/components/Navbar';
 import Header from '@/components/Header';
-
 
 const Menu3Page = () => {
   return (
