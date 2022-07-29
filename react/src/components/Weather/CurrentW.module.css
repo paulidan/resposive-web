@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Lato-Black, Lato, sans-serif;
+}
+
+.app{
+    background-size: cover;
+
+}
+
+main{
+    min-height: 100vh;
+    padding: 25px;
+}
+
+
+.location_box .location{
+    color: #858585;
+    font-size: 32px;
+    text-align: center;
+
+}
+
+.location_box .date{
+    color: #858585;
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+
+}
+
+.weather_box{
+    align-items: center;
+}
+
+.weather_box .temp{
+    position: relative;
+    display: inline-block;
+    margin: 30px auto;
+    background-color: rgba(195, 195, 195, 0.35);
+    padding: 15px 45px;
+    color: #DFBB42;
+    font-size: 102px;
+    text-shadow: 3px 6px rgba(195, 195, 195, 0.35);
+}
+
+.weather_box .feels {
+    position: relative;
+    margin: 10px auto;
+    background-color: rgba(195, 195, 195, 0.35);
+    padding: 15px 35px;
+    color: #DFBB42;
+    font-size: 30px;
+    text-shadow: 3px 3px rgba(195, 195, 195, 0.25);
+}
+
+.weather_box .weather{
+    color: #DFBB42;
+    font-size: 37px;
+    text-shadow: 3px 3px rgba(255, 255, 255, 0.5);
+}
+
+.weather_box .weather >img{
+    opacity: 1;
+    height: 70px;
+}
+.text{
+    color: #858585;
+    font-size: 30px;
+    text-align: left;
+    position: relative;
+
+}
