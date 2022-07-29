@@ -1,86 +1,88 @@
 #menu {
-    max-width: 1500px;
-    max-height:94px;
-    margin: 0 auto;
-    padding: 10px;
-    display: flex;
-    
-    }
-    
-#logo {
-top: 660px;
-left: 182px;
-width: 269px;
-height: 66px;
-display: inline-block;
-margin-top: 95px;
-margin-left: 0;
-
-}
-.main_nav{
+  max-width: 65%;
+  left: 13.5rem;
+  padding: 0.6rem;
   display: flex;
-  width: 55%;
+  margin-top: -5%;
+  position: sticky;
+}
+
+#logo {
+  top: 41rem;
+  left: 9rem;
+  max-width: 17rem;
+  max-height: 4rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.main_nav {
+  display: flex;
   float: right;
   list-style: none;
   font-family: 'Roboto', sans-serif;
-  font-size: 26px;
-  margin-top: 70px;
-  
+  font-size: 1.6rem;
+  margin-top: -2.75%;
 }
-
 
 .navbar {
-    padding-top: 1%;
-    padding-bottom: 1%;
-    display:flex;
-    width: 100vw;
-    justify-content: space-between;
-    float: right;
-    list-style: none;
-    border-color: white;    
+  padding-top: 1%;
+  padding-bottom: 1%;
+  display: flex;
+  width: 192rem;
+  justify-content: space-between;
+  list-style: none;
+  border-color: white;
 }
 
-*{
+* {
   box-sizing: border-box;
 }
 
 .nav_link {
-
   display: inline-block;
-  width:118px;
-  height: 4em;
+  width: 7.5rem;
+  height: 4rem;
+}
+
+.nav_link.active,
+.nav_link:hover {
+  background-color: #EAD280;
+  border-top: 0.6rem solid #DFBB42;
+  border-bottom: 0.3rem solid #B0B0B0;
 
 }
-.nav_link.active, .nav_link:hover {
+
+.nav_link.active,
+.nav_link:focus {
   background-color: #EAD280;
-  border-top: 10px solid #DFBB42;
-  border-bottom: 5px solid #B0B0B0;
-  
+  border-top: 0.6rem solid #DFBB42;
+  border-bottom: 0.3rem solid #B0B0B0;
+
 }
-.nav_link.active, .nav_link:visited {
-  background-color: #EAD280;
-  border-top: 10px solid #DFBB42;
-  border-bottom: 5px solid #B0B0B0;
-}
+
 
 .nav_item {
-  margin-top: 30px;
+  margin-top: 1.8rem;
 }
-a {
-    color:#5A5C5B ;
-    word-spacing: 10px;        
-    }
-a:link {
-        text-decoration: none
-    }
-a:visited {
-        text-decoration: none
-    }
-a:active {
-        text-decoration: none
-    }
-a:hover {
-        text-decoration: goldenrod;
-    }
 
-    
+a {
+  color: #5A5C5B;
+  word-spacing: 0.6rem;
+}
+
+a:link {
+  text-decoration: none
+}
+
+a:visited {
+  text-decoration: none
+}
+
+a:active {
+  text-decoration: none
+}
+
+a:hover {
+  text-decoration: goldenrod;
+}

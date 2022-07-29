@@ -15,12 +15,12 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 55.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(0.6rem + 2vmin);
   color: white;
 }
 
@@ -32,16 +32,10 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
-}
-
-@font-face {
-  font-family: 'gLato';
-  src: url('./fonts/Lato-Thin.ttf');
-  font-style: normal;
-  font-weight: 100;
 }
 
 @font-face {
