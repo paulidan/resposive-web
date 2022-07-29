@@ -72,17 +72,18 @@ a {
 }
 
 a:link {
-  text-decoration: none
+  text-decoration-color: none
 }
 
 a:visited {
-  text-decoration: none
+  text-decoration-color: none
 }
 
 a:active {
-  text-decoration: none
+  text-decoration-color: none
 }
 
 a:hover {
-  text-decoration: goldenrod;
+  text-decoration-color: #DFBB42;
 }
+

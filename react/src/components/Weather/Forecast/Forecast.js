@@ -6,24 +6,18 @@ import {
     AccordionItemButton,
     AccordionItemPanel,
 } from "react-accessible-accordion";
-import {
-    DisplayPressure,
-    DisplayClouds,
-    DisplayFeelTemp,
-    DisplayWind,
-    DisplayTemp,
-    DisplayData,
-    DisplayHumidity,
-} from "../APIValidation";
+import { DisplayData } from '../DataDisplay';
+import { getWind } from "../getters";
 import ForecastStyle from './Forecast.module.css';
 import sun from '../../../icons/desktop/weathersun.png';
 import rain from '../../../icons/desktop/weatherrain.png';
 import cloud from '../../../icons/desktop/weathercloud.png';
 
+
 const ICONS = {
-    'Clear': sun,
-    'Rain': rain,
-    'Clouds': cloud
+    "Clear": sun,
+    "Rain": rain,
+    "Clouds": cloud
 };
 
 const WEEK_DAYS = ['Poniedziałek', 'Wtorek', 'Środa', 'Czwartek', 'Piątek', 'Sobota', 'Niedziela'];
@@ -40,33 +34,33 @@ const Forecast = ({ data }) => {
             <Accordion allowZeroExpanded className={ForecastStyle.container}>
                 {data.list.splice(0, 7).map((item, idx) => (
                     <AccordionItem key={idx}>
-                        <AccordionItemHeading>
-                            <AccordionItemButton className={ForecastStyle.wrapper}>
-                                <div className={ForecastStyle.daily_item}>
+                        <AccordionItemHeading>3
+                            <AccordionItemButton className={ForecastStyle.wrapper}>                           
+                                <li className={ForecastStyle.daily_item}>
                                     <div className={ForecastStyle.weather}>
                                         <img src={ICONS[item.weather[0].main]} />
                                     </div>
                                     <div className={ForecastStyle.day}>{forecastDays[idx]}</div>
                                     <div className={ForecastStyle.min_max}>
-                                    <DisplayTemp 
+                                    <DisplayData 
                                         temp={item.main.temp.toLocaleString(undefined, {
                                             maximumFractionDigits: 0,
                                         })}
                                     />
                                     °C  
                                     </div>                              
-                                </div>
+                                </li>
                             </AccordionItemButton>
                         </AccordionItemHeading>
                         <AccordionItemPanel className={ForecastStyle.wrapper}>
                             <div className={ForecastStyle.daily_details_grid}>
                                 <span className={ForecastStyle.daily_details_grid_item}>
                                     Ciśnienie:{" "}
-                                    <DisplayPressure pressure={item.main.pressure} /> hPa
+                                    <DisplayData pressure={item.main.pressure} /> hPa
                                 </span>
                                 <div className={ForecastStyle.daily_details_grid_item}>
                                     Wilgotność:{" "}
-                                    <DisplayHumidity humidity={item.main.humidity} /> %
+                                    <DisplayData humidity={item.main.humidity} /> %
                                 </div>
                                 <div className={ForecastStyle.daily_details_grid_item}>
                                     Zachmurzenie: <DisplayData clouds={item.clouds.all} /> %{" "}
@@ -74,15 +68,13 @@ const Forecast = ({ data }) => {
                                 <div className={ForecastStyle.daily_details_grid_item}>
                                     Wiatr:{" "}
                                     <DisplayData
-                                        wind={(item.wind.speed * 3.6).toLocaleString(undefined, {
-                                            maximumFractionDigits: 0,
-                                        })}
+                                        wind={getWind(item)}
                                     />{" "}
                                     KM/h
                                 </div>
                                 <div className={ForecastStyle.daily_details_grid_item}>
                                     Odczuwalna temp:{" "}
-                                    <DisplayFeelTemp
+                                    <DisplayData
                                         feelTemp={item.main.feels_like.toLocaleString(undefined, {
                                             maximumFractionDigits: 0,
                                         })}
@@ -95,6 +87,7 @@ const Forecast = ({ data }) => {
                 ))}
             </Accordion>
         </>
+
     );
 };
 
