@@ -13,4 +13,4 @@ const Menu2Page = () => {
   );
 }
 
-export default Menu2Page
+export default Menu2Page;
