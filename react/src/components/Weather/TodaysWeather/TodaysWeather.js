@@ -8,13 +8,12 @@ const TodaysWeather = () => {
   const [lat, setLat] = useState([]);
   const [long, setLong] = useState([]);
   const [weatherData, setWeatherData] = useState([]);
-  const [Error, setError] = useState(null);
+
 
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(function (position) {
-      setLat(position.coords.latitude);
-      setLong(position.coords.longitude);
-    });
+      const lat = position.coords.latitude;
+      const lon = position.coords.longitude;
 
     getWeather(lat, long)
       .then((weather) => {
@@ -55,5 +54,5 @@ const TodaysWeather = () => {
       )}
     </div>
   );
-};
-export default TodaysWeather;
+      }}};
+export default TodaysWeather

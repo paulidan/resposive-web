@@ -1,7 +1,7 @@
 import Navbar from '../components/Navbar';
 import Header from '../components/Header';
 
-function Menu2Page() {
+const Menu2Page = () => {
   return (
     <div className="App">
       <Header />

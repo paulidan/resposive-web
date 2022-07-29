@@ -1,9 +1,9 @@
-export const weatherApi = {
+export const WEATHER_API = {
   key: process.env.REACT_APP_WEATHERAPIKEY,
   base: 'https://api.openweathermap.org/data/2.5'
 }
 
-export const geoApiOptions = {
+export const GEO_API_OPTIONS = {
   method: 'GET',
   headers: {
     'X-RapidAPI-Key': process.env.REACT_APP_GEOAPIKEY,

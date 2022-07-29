@@ -37,6 +37,9 @@ const getClouds = (data) => data?.clouds?.all;
 
 const getAqi = (data) => data?.aqi;
 
+const getWind = (item) => (item?.wind?.speed * 3.6).toLocaleString(undefined, {
+  maximumFractionDigits: 0,
+})
 
 export {
   getSunriseTime,
@@ -48,5 +51,6 @@ export {
   getPressure,
   getSunsetTime,
   getTemp,
-  getWindSpeed
+  getWindSpeed,
+  getWind
 };

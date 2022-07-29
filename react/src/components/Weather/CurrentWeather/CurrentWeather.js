@@ -26,6 +26,7 @@ const ICONS = {
 
 
 const CurrentWeather = ({ data }) => {
+  console.log(data)
   if (!data) {
     return <>N/A</>;
   }
