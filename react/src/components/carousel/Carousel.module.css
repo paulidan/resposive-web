@@ -1,0 +1,79 @@
+/* Universal Layout */
+#container {
+    /* Self Layout Properties */
+    margin: 0 auto;
+}
+
+/* Smartphone & Tablet Layout */
+@media only screen and (max-width: 992px) {
+    #container {
+        /* Self Layout Properties */
+        padding: 2.5rem 0;
+    }
+}
+
+/* Tablet & Desktop Layout */
+@media only screen and (min-width: 600px) {
+    #mainBox {
+        /* Self Layout Properties */
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    #container {
+        /* Content Layout Properties */
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+    }
+}
+
+/* Smartphone Layout */
+@media only screen and (max-width: 600px) {
+    #mainBox {
+        /* UI Properties */
+        background-image: url('@/icons/smartphone/BG.png');
+        background-position: center 5.5%;
+        background-size: 200% 210%;
+    }
+
+    #container {
+        /* Self Layout Properties */
+        width: 93.75%;
+    }
+}
+
+/* Tablet Layout */
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    #mainBox {
+        /* UI Properties */
+        background-image: url('@/icons/tablet/BG.png');
+        background-position: center 5.5%;
+        background-size: 200% 210%;
+    }
+
+    #container {
+        /* Self Layout Properties */
+        width: 94.8%;
+    }
+}
+
+/* Desktop Layout */
+@media only screen and (min-width: 992px) {
+    #mainBox {
+        /* UI Properties */
+        background-color: var(--color-lightGray);
+    }
+
+    #container {
+        /* Self Layout Properties */
+        padding: 4.5rem 11.25rem 4.5rem 11.25rem;
+        max-width: 93.75rem;
+        row-gap: 4.4rem;
+
+        /* UI Properties */
+        background-image: url('@/icons/desktop/BG.png');
+        background-position-y: 5.5%;
+        background-size: 101% 216%;
+    }
+}

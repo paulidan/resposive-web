@@ -1,5 +1,5 @@
-import Navbar from '../components/Navbar';
-import Header from '../components/Header';
+import Navbar from '@/components/Navbar';
+import Header from '@/components/Header';
 
 const Menu2Page = () => {
   return (
@@ -13,4 +13,4 @@ const Menu2Page = () => {
   );
 }
 
-export default Menu2Page
+export default Menu2Page;
