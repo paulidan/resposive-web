@@ -123,8 +123,13 @@
     color: var(--color-centerBoxText);
 }
 
-/* Smartphone & Tablet Layout */
-@media only screen and (max-width: 61.99rem) {
+@media only screen and (max-width: 992px) {
+    .pDesktopSubBox {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
     #mainBox {
         /* Content Layout Properties */
         display: flex;
@@ -259,7 +264,6 @@
 
         /* UI Properties */
         background: url('@/icons/smartphone/Pattern.png') bottom no-repeat;
-        overflow: hidden;
     }
 
     #centerBoxInner p {
