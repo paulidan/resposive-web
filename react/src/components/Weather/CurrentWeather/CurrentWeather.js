@@ -1,6 +1,5 @@
 import React from "react";
-import { format } from "date-fns";
-import { pl } from "date-fns/locale";
+
 import { DisplayData } from "../DataDisplay";
 import {
   getSunriseTime,
@@ -13,7 +12,7 @@ import {
   getSunsetTime,
   getTemp,
   getWindSpeed,
-} from "../Getters";
+} from "../getters";
 import CurrentStyle from "./CurrentW.module.css";
 import sun from "../../../icons/desktop/weathersun.png";
 import rain from "../../../icons/desktop/weatherrain.png";
@@ -24,9 +23,7 @@ const ICONS = {
   Rain: rain,
   Clouds: cloud,
 };
-const dateFormatPurposueDescription = {
-  date: "cccc, dd/MM/yy, h:mm",
-};
+
 
 const CurrentWeather = ({ data }) => {
   if (!data) {
@@ -43,9 +40,7 @@ const CurrentWeather = ({ data }) => {
               <DisplayData data={data.name} />
             </span>
             <span className={CurrentStyle.date}>
-              {format(new Date(), dateFormatPurposueDescription.date, {
-                locale: pl,
-              })}
+              <DisplayData data ={getDate(data)} />
             </span>
           </div>
         </div>
